@@ -1,0 +1,142 @@
+/*登录框*/
+
+.form-horizontal .control-group.log_box_opt {
+    margin-bottom: 12px;
+}
+
+.log_box {
+    margin: 0;
+    padding-left: 418px;
+}
+
+.log_box>dt {
+    font-size: 30px;
+    text-align: center;
+    line-height: 32px;
+    color: #7b599d;
+    padding-bottom: 20px;
+    background: url(../img/border01.png) no-repeat center bottom;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.log_box>dd {
+    padding-top: 35px;
+}
+
+.log_box_in {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.log_box_in label {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    color: #5e5e5e;
+    font-weight: normal;
+    text-align: right;
+    font-size: 14px;
+}
+
+.log_box_in input {
+    width: 238px;
+}
+
+.log_box_in input.w106 {
+    width: 106px;
+}
+
+.log_box_in img {
+    height: 30px;
+    vertical-align: top;
+}
+
+.log_box_opt label {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.log_box_btn {
+    padding-bottom: 0px;
+    margin-top: 10px;
+}
+
+.log_box_btn input.w250 {
+    width: 250px;
+}
+
+.log_ewm_box {
+    width: 495px;
+    *width: auto;
+    margin: 0 auto;
+}
+
+.log_ewm_box ul {
+    list-style-type: none;
+    overflow: hidden;
+    zoom: 1;
+    width: 300px;
+    margin: 16px auto 3px;
+}
+
+.log_ewm_box li {
+    float: left;
+    display: inline;
+    width: 50%;
+    text-align: center;
+}
+
+.log_ewm_box img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.log_ewm_box a {}
+
+.log_ewm_warn {
+    text-align: center;
+    line-height: 32px;
+    margin-top: 12px;
+}
+
+.log_reg {
+    width: 600px;
+    border: 1px solid #96aad8;
+    background: #e9f2fc;
+    text-align: center;
+    margin: 25px auto 10px;
+    height: 44px;
+    line-height: 44px;
+}
+
+.log_reg .w188 {
+    width: 188px;
+}
+
+#codeImg {
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+}
+
+.left_side {
+    float: left;
+    width: 418px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    width: 960px;
+    height: 580px;
+    margin: 40px auto 108px;
+    background: #fff;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,70 @@
+/* iCheck plugin Polaris skin
+----------------------------------- */
+.icheckbox_polaris,
+.iradio_polaris {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background: url(custom2.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_polaris {
+    background-position: -1px 0;
+}
+    .icheckbox_polaris.hover {
+        background-position: -19px 0;
+    }
+    .icheckbox_polaris.checked {
+        background-position: -37px 0;
+    }
+    .icheckbox_polaris.disabled,.error .icheckbox_polaris.disabled {
+        background-position: -55px 0;
+        cursor: default;
+    }
+    .icheckbox_polaris.checked.disabled,.error .icheckbox_polaris.checked.disabled {
+        background-position: -73px 0;
+    }
+    .error .icheckbox_polaris,.error .icheckbox_polaris.hover {
+        background-position: -91px 0;
+    }
+
+.iradio_polaris {
+    background-position: -110px 0;
+}
+    .iradio_polaris.hover {
+        background-position: -128px 0;
+    }
+    .iradio_polaris.checked {
+        background-position: -146px 0;
+    }
+    .iradio_polaris.disabled,.error .iradio_polaris.disabled {
+        background-position: -164px 0;
+        cursor: default;
+    }
+    .iradio_polaris.checked.disabled,.error .iradio_polaris.checked.disabled {
+        background-position: -182px 0;
+    }
+    .error .iradio_polaris,.error .iradio_polaris.hover {
+        background-position: -200px 0;
+    }
+
+/* HiDPI support */
+/*
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    .icheckbox_polaris,
+    .iradio_polaris {
+        background-image: url(polaris@2x.png);
+        -webkit-background-size: 310px 31px;
+        background-size: 310px 31px;
+    }
+}
+*/
+.ichecbox.error {
+    color:#f47838;
+}

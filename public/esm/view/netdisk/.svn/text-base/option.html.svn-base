@@ -1,0 +1,42 @@
+<div class="c-page-wrap">
+    <div>
+        <div class="c-page-nav">
+            <ul class="nav nav-pills">
+                <li><a href="javascript:void(0);" da-toggle="#netdisk/overview">网盘文件</a></li>
+                <li class="active"><a href="javascript:void(0);" da-toggle="#netdisk/option">访问控制</a></li>
+            </ul>
+        </div>
+        <div class="c-page-content">
+            <div class="row-fluid overview-content">
+                <div id="custom-toolbar" class="form-inline client-cmd ">
+                    <label><input type="checkbox" id="netdiskEnable">新加入终端默认启用网盘功能</label>
+                </div>
+                <table id="tbClient" data-toolbar-align="left" data-toolbar="#custom-toolbar" data-toggle="table" data-resizable="true">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    .icheckbox_polaris {
+        height: 22px;
+    }
+    
+    #custom-toolbar label {
+        font-size: 12px;
+    }
+</style>
+
+<div id="netdiskModal" class="modal hide" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" id="closeMs2" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>全部禁用</h3>
+    </div>
+    <div class="modal-body">
+        <div style="text-align:center;"><span class="orderFlowIco">确定关闭新加入终端的“安全网盘”功能？</span></div>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:void(0)" id="netdiskModal_cancel">取消</a>
+        <button id="netdiskModal_sure" class="btn btn-primary btn-sure" data-dismiss="modal" aria-hidden="true">确定</button>
+    </div>
+</div>

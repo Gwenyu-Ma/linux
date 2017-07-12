@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception
+END
+AMQPIOWaitException.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPIOWaitException.php
+END
+AMQPLogicException.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPLogicException.php
+END
+AMQPConnectionException.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPConnectionException.php
+END
+AMQPExceptionInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPExceptionInterface.php
+END
+AMQPProtocolException.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPProtocolException.php
+END
+AMQPIOException.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPIOException.php
+END
+AMQPOutOfBoundsException.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPOutOfBoundsException.php
+END
+AMQPChannelException.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPChannelException.php
+END
+AMQPOutOfRangeException.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPOutOfRangeException.php
+END
+AMQPException.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPException.php
+END
+AMQPProtocolConnectionException.php
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPProtocolConnectionException.php
+END
+AMQPRuntimeException.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPRuntimeException.php
+END
+AMQPTimeoutException.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPTimeoutException.php
+END
+AMQPBasicCancelException.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPBasicCancelException.php
+END
+AMQPInvalidArgumentException.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPInvalidArgumentException.php
+END
+AMQPProtocolChannelException.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPProtocolChannelException.php
+END

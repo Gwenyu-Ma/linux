@@ -1,0 +1,16 @@
+/* 忘记密码 */
+
+.step_box_process{
+    background: url(../img/rpwd_step.png) no-repeat center 0;
+}
+.rem_pwd{
+    text-align:center;
+    font-size:13px;
+    color: #999;
+}
+.controls input{
+    width: 248px;
+}
+.controls .w106{
+    width: 116px;
+}

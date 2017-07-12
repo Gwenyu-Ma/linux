@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm/!svn/ver/30023/soho/code/ESMCenter/vendor/codeguy/upload/tests/Validation
+END
+MimetypeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm/!svn/ver/30023/soho/code/ESMCenter/vendor/codeguy/upload/tests/Validation/MimetypeTest.php
+END
+SizeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/esm/!svn/ver/30023/soho/code/ESMCenter/vendor/codeguy/upload/tests/Validation/SizeTest.php
+END
+ExtensionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm/!svn/ver/30023/soho/code/ESMCenter/vendor/codeguy/upload/tests/Validation/ExtensionTest.php
+END

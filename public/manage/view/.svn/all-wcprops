@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/esm/!svn/ver/30625/soho/code/ESMCenter/public/manage/view
+END
+layout.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm/!svn/ver/30137/soho/code/ESMCenter/public/manage/view/layout.html
+END
+common.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm/!svn/ver/30192/soho/code/ESMCenter/public/manage/view/common.js
+END
+home.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm/!svn/ver/29914/soho/code/ESMCenter/public/manage/view/home.js
+END
+bag.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm/!svn/ver/30065/soho/code/ESMCenter/public/manage/view/bag.js
+END
+sys.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm/!svn/ver/29914/soho/code/ESMCenter/public/manage/view/sys.js
+END

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" > </meta>
+    <title>激活账号</title>
+    <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{$css}/register.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1 class="logo-title">激活</h1>
+      </div>
+      <div class="row reg">
+        <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label">登录邮箱</label>
+            <div class="controls">
+              <label id="username" style="padding-top:5px;">{$email}</label>
+              <input id="str" type="hidden" value="{$str}">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">注册类型</label>
+            <div class="controls">
+              <label class="radio inline">
+                <input type="radio" name="radRegType" value="1" checked>企业版
+              </label>
+              <label class="radio inline">
+                <input type="radio" name="radRegType" value="2">家庭版
+              </label>
+            </div>
+          </div>
+          <div class="control-group extendItem">
+            <label class="control-label" for="txtCompanyName">企业名称</label>
+            <div class="controls">
+              <input id="txtCompanyName" type="text">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="txtCode">验证码</label>
+            <div class="controls">
+              <input id="txtCode" type="text">
+              <img id="imgCode" style="width:120px;height:50px;" src="/index.php/Index/verify" alt="验证码">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button id="btnActivate" type="button" class="btn btn-success" data-loading-text="激活中...">激活</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="{$pub}/dep/jquery.js"></script>
+    <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+    <script src="{$js}/welcome/activateAccount.js"></script>
+  </body>
+</html>

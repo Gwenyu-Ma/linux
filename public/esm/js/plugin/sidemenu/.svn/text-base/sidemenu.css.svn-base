@@ -1,0 +1,158 @@
+/* 侧边菜单 */
+ul.side-menu {
+  list-style-type: none;
+  margin: 0;
+  background-color: #eee;
+}
+ul.side-menu ul {
+  list-style-type: none;
+  margin: 0;
+  display: none;
+  border-bottom: 1px solid #ccc;
+}
+ul.side-menu a {
+  display: block;
+  text-decoration: none;
+  color: #444;
+}
+ul.side-menu>li>a {
+  /*line-height: 2.5em;
+  padding: 0 8px;*/
+  font-weight: bold;
+  padding: 8px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #c8c8cb;
+  background: #efeff0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efeff0), color-stop(1, #ffffff));
+  background: -ms-linear-gradient(bottom, #efeff0, #ffffff);
+  background: -moz-linear-gradient(center bottom, #efeff0 0%, #ffffff 100%);
+  background: -o-linear-gradient(bottom, #efeff0, #ffffff);
+  filter: progid:dximagetransform.microsoft.gradient(startColorStr='#ffffff', EndColorStr='#efeff0');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff',EndColorStr='#efeff0')";
+}
+ul.side-menu a>i.fa.pull-right {
+	margin-top: 3px;
+}
+ul.side-menu>li>a>i {
+  margin-right: 4px;
+  *margin-right: 8px;
+}
+
+ul.side-menu>li>ul a {
+  padding: .5em 1em;
+  padding-left: 32px;
+}
+ul.side-menu li li li>a {
+  padding-left: 42px;
+}
+ul.side-menu>li>ul a:hover {
+  background-color: #e0e0e8;
+}
+
+.arrow {
+  display: inline-block;
+  /* IE7 hack */
+  *display:inline;
+  *zoom:1;
+  width: 0;
+  height: 0;  
+  border: 4px solid transparent;
+  content: "";
+  border-top-color: #808b9c;
+}
+.arrow.right {
+  border-left-color: #fff;
+}
+.arrow.down {
+  border-top-color: #fff;
+}
+ul.side-menu .arrow {
+  /*position: absolute;
+  margin-top: 8px;
+  right: 10px;*/
+  float: right;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+ul.side-menu .open>a,
+ul.side-menu .active>a {
+  color: #444;
+}
+ul.side-menu .open>a>.arrow,
+ul.side-menu .active.open>a>.arrow {
+  border-color: transparent;
+  border-left-color: #808b9c;
+  margin-top: 6px !important;
+  margin-right: -3px;
+}
+ul.side-menu .active>a>.arrow {
+  border-top-color: #808b9c;
+}
+ul.side-menu .current>a {
+  background-color: #d2d2dd;
+}
+ul.side-menu .current>a:hover {
+  background-color: #c3c3d2;
+}
+
+ul.side-menu .fa {
+  width: 15px;
+}
+
+
+/*
+.arrow.right {
+  border-left-color: #fff;
+}
+.arrow.down {
+  border-top-color: #fff;
+}
+*/
+
+
+
+
+/*ul.side-menu a>i {
+  float: right;
+}*/
+/* 修复IE7下图标无法对齐 */
+/*ul.side-menu a>[class^="icon-"],
+ul.side-menu a>[class*=" icon-"] {
+  *+vertical-align: 2px;
+}*/
+
+ul.side-menu li {
+  /*防止两个相邻marigin合并*/
+  overflow: hidden;
+}
+ul.side-menu a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+ul.side-menu ul.client-manage>li>a>span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 130px;
+  vertical-align: top;
+}
+
+
+ul.client-manage a>i.pull-right {
+  margin-top: 2px;
+  display: none;
+}
+ul.client-manage a>i.pull-right:hover {
+  color: #0c5ea3;
+}
+ul.client-manage a:hover>i.pull-right {
+  display: inline-block;
+}
+
+ul.side-menu a.group-add:hover {
+  color: #0c5ea3;
+}

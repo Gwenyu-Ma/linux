@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/esm/!svn/ver/30563/soho/code/ESMCenter/dl/Model
+END
+Base.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm/!svn/ver/30563/soho/code/ESMCenter/dl/Model/Base.php
+END
+Path.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm/!svn/ver/29969/soho/code/ESMCenter/dl/Model/Path.php
+END
+Sign.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm/!svn/ver/30563/soho/code/ESMCenter/dl/Model/Sign.php
+END
+Auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm/!svn/ver/29969/soho/code/ESMCenter/dl/Model/Auth.php
+END
+Eid.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/esm/!svn/ver/30078/soho/code/ESMCenter/dl/Model/Eid.php
+END
+Task.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm/!svn/ver/29969/soho/code/ESMCenter/dl/Model/Task.php
+END
+Queue.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/esm/!svn/ver/30025/soho/code/ESMCenter/dl/Model/Queue.php
+END
+Upgrade.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/esm/!svn/ver/30557/soho/code/ESMCenter/dl/Model/Upgrade.php
+END

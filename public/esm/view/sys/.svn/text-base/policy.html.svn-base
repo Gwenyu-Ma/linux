@@ -1,0 +1,173 @@
+<div class="c-moudle-nav">
+    {{^noGoble}}
+    <div class="autoGroup-opt">
+        <button type="button" class="btn ml10 mt10" id="autoGroup_addRule"></button>
+        <button type="button" class="btn ml10 mt10 mr20" id="autoGroup_reAuto"></button>
+    </div>
+    {{/noGoble}}
+    <ul class="nav nav-pills" id="policyTab">
+        {{#noGoble}}
+        <li class="active"><a href="javascript:void(0)" da-toggle="#tab-admin" style="width:70px;">管理员身份</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-eptray" style="width:70px;">托盘设置</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-policy" style="width:70px;">软件更新</a></li>
+        {{/noGoble}} {{^noGoble}}
+        <li {{^noGoble}}class="active" {{/noGoble}}><a href="javascript:void(0)" da-toggle="#tab-auto" style="width:60px;">自动入组</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-log" style="width:60px;">日志保留</a></li>
+        {{/noGoble}}
+    </ul>
+</div>
+<div class="c-moudle-container form-horizontal policy-form" id="policyContent">
+    <div class="c-moudle-wrap">
+        {{#noGoble}}
+        <div class="policy-box" id="tab-admin">
+            <h3 class="policy-tit">管理员身份</h3>
+            <div class="policy-bod active">
+                <dl>
+                    <dd>
+                        <span class="inblock" style="width:100px;"><i id="epmsg_admin_pwdLock" class="lock"></i>管理员密码：</span>
+                        <span class="inblock"><input type="text" value="" id="epmsg_admin_pwd_show" style="display:none;" /><input type="password"
+                                value="" id="epmsg_admin_pwd" /><em class="eye hide" id="showPWD"></em></span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-eptray">
+            <h3 class="policy-tit">托盘设置</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd>
+                        <i id="eptrayLock" class="lock"></i>
+                        <label class="checkbox"><input type="checkbox" value="" id="eptray_lock">隐藏任务栏托盘图标</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-policy">
+            <h3 class="policy-tit">软件更新</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd>
+                        <span class="inblock" style="width:100px;"><i id="upLock" class="lock"></i>升级内容：</span>
+                        <label class="radio" style="width:120px;">
+                            <input type="radio" value="0" name="component" libtype="all" checked>升级所有组件</label>
+                    </dd>
+                    <dd>
+                        <span class="inblock" style="width:100px;float:left;">&nbsp;</span>
+                        <i id="xfwurllibLock" class="lock"></i>
+                        <label class="checkbox">
+                            <input type="checkbox" value="0" name="xfwurllib">恶意网址库即时生效</label>
+                        <span>(即时生效可能引起网络瞬间断开，需要重新连接)</span>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"></span>
+                        <label class="radio">
+                            <input type="radio" value="0" name="component" libtype="libonly">仅升级病毒库</label>
+                    </dd>
+                </dl>
+                <dl class="policy-border">
+                    <dt><i id="policyLock" class="lock"></i>升级模式</dt>
+                    <dd>
+                        <label class="radio">
+                            <input type="radio" value="2" name="policy_time">手动</label>
+                    </dd>
+                    <dd>
+                        <label class="radio inline">
+                            <input type="radio" value="0" name="policy_time" checked>每天</label>
+                        <input type="text" name="policy_timeTxt" value="12:00" class="input-mini js_time"> (例19:00)
+                    </dd>
+                    <dd class="policy-week">
+                        <label class="radio inline mr10">
+                            <input type="radio" value="1" name="policy_time">每周</label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="2" name="policy_timeWeek">一</label>
+                        <label class="checkbox ">
+                            <input type="checkbox" value="4" name="policy_timeWeek">二</label>
+                        <label class="checkbox ">
+                            <input type="checkbox" value="8" name="policy_timeWeek">三</label>
+                        <label class="checkbox ">
+                            <input type="checkbox" value="16" name="policy_timeWeek">四</label>
+                        <label class="checkbox ">
+                            <input type="checkbox" value="32" name="policy_timeWeek">五</label>
+                        <label class="checkbox ">
+                            <input type="checkbox" value="64" name="policy_timeWeek">六</label>
+                        <label class="checkbox ">
+                            <input type="checkbox" value="1" name="policy_timeWeek">日</label>
+                        <input type="text" name="policy_timeTxt2" value="12:00" class="input-mini js_time"> (例19:00)
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><i id="nettypeLock" class="lock"></i>代理设置</dt>
+                    <dd class="policy-border">
+                        <label class="radio" style="width:120px;">
+                            <input type="radio" name="nettype" value="0" checked>使用IE设置</label>
+                        <label class="radio" style="width:120px;">
+                            <input type="radio" name="nettype" value="1">直接连接</label>
+                        <label class="radio">
+                            <input type="radio" name="nettype" value="2">通过代理</label>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd class="form-inline policy-border">
+                        <label>地址：
+                            <input type="text" name="ip" value="" validation="ip">
+                        </label>
+                        <label>端口：
+                            <input class="input-small" type="text" name="port" value="" validation="intNum">
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <input type="checkbox" name="Authentication" value="">启动验证</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label>账号：
+                            <input type="text" name="username" value="" disabled="">
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label>密码：
+                            <input type="password" name="password" value="" disabled>
+                        </label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        {{/noGoble}} {{^noGoble}}
+        <div class="policy-box" id="tab-auto">
+            <h3 class="policy-tit">自动入组</h3>
+            <div class="policy-bod">
+                <ul class="unstyled autoGroupUL">
+                </ul>
+                <div class="js_no_data autoGroup-no-data">
+                    <div><span>现在没有入组策略</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-log" style="padding-bottom:100px;">
+            <h3 class="policy-tit">日志保留</h3>
+            <div class="policy-bod">
+                <div class="group">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+        {{/noGoble}}
+    </div>
+</div>
+<div class="c-policy-btn">
+    <a href="javascript:;" class="btn" id="policy-save">应用</a>
+</div>
+<!-- Modal -->
+<div id="autoGroup_modal" class="modal hide fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>选择组</h3>
+    </div>
+    <div class="modal-body">
+        <ul id="autoGroup_list" class="unstyled"></ul>
+    </div>
+    <div class="modal-footer">
+        <button id="autoGroup_chioce" class="btn btn-primary btn-sure">选择</button>
+        <button class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">取消</button>
+    </div>
+</div>

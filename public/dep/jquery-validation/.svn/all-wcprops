@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm/!svn/ver/30487/soho/code/ESMCenter/public/dep/jquery-validation
+END
+jquery.validate.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm/!svn/ver/29178/soho/code/ESMCenter/public/dep/jquery-validation/jquery.validate.js
+END
+messages_zh.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/jquery-validation/messages_zh.js
+END
+additional-methods.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/jquery-validation/additional-methods.js
+END
+jquery.validate.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/jquery-validation/jquery.validate.min.js
+END
+messages_zh.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/jquery-validation/messages_zh.min.js
+END
+additional-methods.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/jquery-validation/additional-methods.min.js
+END
+custom-methods.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm/!svn/ver/30487/soho/code/ESMCenter/public/dep/jquery-validation/custom-methods.js
+END

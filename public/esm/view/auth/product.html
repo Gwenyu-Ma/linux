@@ -1,0 +1,32 @@
+<div class="c-page-wrap">
+
+    <div class="c-page-nav">
+        <ul class="nav nav-pills">
+            <li><a href="javascript:void(0);" da-toggle="#auth/overview">今日授权终端</a></li>
+            <li><a href="javascript:void(0);" da-toggle="#auth/history">历史授权终端</a></li>
+            <li class="active"><a href="javascript:void(0);" da-toggle="#auth/product">产品授权</a></li>
+        </ul>
+    </div>
+    <div class="c-page-content">
+        <div class="row-fluid overview-content">
+            <div id="custom-toolbar" style="position:relative;">
+                <div class="tod_term_info">当前获得瑞星授权子产品<em class="black">0</em>项<a href="javascript:void(0);" class="js_sq_info_modal">查看详情</a></div>
+            </div>
+            <table id="tbClient" data-toolbar-align="left" data-toolbar="#custom-toolbar" data-toggle="table"></table>
+
+            <!-- 弹出框 -->
+            <div class="modal hide js_sq_info_box sq_info_box noborder" style="width:850px;margin-left:-425px;" tabindex="-1" aria-hidden="true"
+                data-backdrop="static">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>当前授权详情</h3>
+                </div>
+                <div class="modal-body" style="margin-bottom:20px;">
+                    <div class="sq_info_detail"><em>橙色</em>:便是到期的产品，请及时导入授权。</div>
+                    <table id="sqInfo" style="width:810px;"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

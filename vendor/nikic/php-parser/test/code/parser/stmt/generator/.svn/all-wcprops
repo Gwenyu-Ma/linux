@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/generator
+END
+basic.test
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/generator/basic.test
+END
+yieldUnaryPrecedence.test
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/generator/yieldUnaryPrecedence.test
+END
+yieldPrecedence.test
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/generator/yieldPrecedence.test
+END

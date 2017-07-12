@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" > </meta>
+    <title>注册</title>
+    <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{$css}/register.css">
+  </head>
+  <body>
+    <!--<div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">瑞星安全云</a>
+        </div>
+      </div>
+    </div>-->
+    <!--<div class="block">
+      <p class="block-heading">注册</p>
+      <form class="block-body">
+        <label>邮箱 / 手机</label>
+        <input id="txtUName" type="text">
+        <label>注册类型</label>
+        <label class="radio inline">
+          <input type="radio" name="radRegType" value="1" checked>企业版
+        </label>
+        <label class="radio inline">
+          <input type="radio" name="radRegType" value="2">家庭版
+        </label>
+        <label>密码</label>
+        <input id="txtPwd" type="password">
+        <label>确认密码</label>
+        <input id="txtRPwd" type="password">
+        <img id="imgCode" src="../../../../index.php?m=home&c=Index&a=verify" alt="验证码">
+        验证码<input id="txtCode" type="text">
+        <div class="bar clearfix">
+          <button id="btnReg" type="button" class="btn btn-success pull-right" data-loading-text="注册中...">注册</button>
+          <a href="index.php" class="pull-right" style="margin-right:1em;">返回</a>
+          <label class="checkbox"><input type="checkbox">同意 “服务及隐私条款”</label>
+        </div>
+      </form>
+    </div>-->
+    <div class="container">
+      <div class="row">
+        <h1 class="logo-title">注册</h1>
+      </div>
+      <div class="row reg">
+        <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="txtUName">登录邮箱</label>
+            <div class="controls">
+              <input id="txtUName" type="text">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">注册类型</label>
+            <div class="controls">
+              <label class="radio inline">
+                <input type="radio" name="radRegType" value="1" checked>企业版
+              </label>
+              <label class="radio inline">
+                <input type="radio" name="radRegType" value="2">家庭版
+              </label>
+            </div>
+          </div>
+          <div class="control-group extendItem">
+            <label class="control-label" for="txtCompanyName">企业名称</label>
+            <div class="controls">
+              <input id="txtCompanyName" type="text">
+            </div>
+          </div>
+          <!--<div class="control-group">
+            <label class="control-label" for="txtPwd">密码</label>
+            <div class="controls">
+              <input id="txtPwd" type="password">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="txtRPwd">确认密码</label>
+            <div class="controls">
+              <input id="txtRPwd" type="password">
+            </div>
+          </div>-->
+          <div class="control-group">
+            <label class="control-label" for="txtCode">验证码</label>
+            <div class="controls">
+              <input id="txtCode" type="text">
+              <img style="width:120px;height:50px;" id="imgCode" src="/index.php/Index/verify" alt="验证码">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <label class="checkbox" style="display:inline-block;">
+                <input id="chkAgree" type="checkbox" checked> <a href="{$pub}/pages/agreement.html" target="_blank">用户"隐私及条款"</a>
+              </label>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button id="btnReg" type="button" class="btn btn-success" data-loading-text="注册中...">注册</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="{$pub}/dep/jquery.js"></script>
+    <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+    <script src="{$js}/welcome/register.js"></script>
+  </body>
+</html>

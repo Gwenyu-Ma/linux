@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/esm/!svn/ver/30333/soho/code/ESMCenter/dl/scripts
+END
+test.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/esm/!svn/ver/29984/soho/code/ESMCenter/dl/scripts/test.php
+END
+crontab.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm/!svn/ver/30333/soho/code/ESMCenter/dl/scripts/crontab.txt
+END
+work.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/esm/!svn/ver/29969/soho/code/ESMCenter/dl/scripts/work.php
+END

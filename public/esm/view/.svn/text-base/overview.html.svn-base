@@ -1,0 +1,402 @@
+<div class="row-fluid overview-content">
+    <div id="custom-toolbar" class="form-inline client-cmd {{#client}}mt20{{/client}}">
+        {{#sys}} {{^type}}
+        <span class="select-new-mode mr10 js_no_mobi">
+            <a href="javascript:void(0);" id="btnUpdate" class="" data-cmdid="update" >立即升级</a>
+            <i></i>
+            <div class="select-new-mode-ul">
+              <a href="javascript:void(0);" id="btnRepair" class="" data-cmdid="repair" >立即修复</a>
+            </div>            
+          </span>
+
+        <a href="javascript:void(0);" id="btnSedMsg" class="btn btn-primary mr10" data-cmdid="msg" style="width:75px;">发消息</a> {{/type}} {{^unIns}}
+        <a href="javascript:void(0);" id="btnMoveTo" class="btn btn-primary mr10" style="width:75px;">移动到</a> {{/unIns}} {{#type}}
+        <a href="javascript:void(0);" id="btnCliDel" class="btn btn-primary mr10" style="width:75px;">删除</a> {{/type}} {{/sys}} {{#virus}}{{^type}}
+        <ul class="clearfix unstyled">
+            <li class="dropdown-layer">
+                <span>快速查杀 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="1" data-status="1" data-cmdid="quickscanstart">开始</li>
+                    <li data-type="1" data-status="4" data-cmdid="quickscanstop">停止</li>
+                </ul>
+            </li>
+            <li class="dropdown-layer">
+                <span>全盘查杀 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="2" data-status="1" data-cmdid="allscanstart">开始</li>
+                    <li data-type="2" data-status="4" data-cmdid="allscanstop">停止</li>
+                </ul>
+            </li>
+            <li class="dropdown-layer">
+                <span>文件监控 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="3" data-status="1" data-cmdid="filemonopen">开启</li>
+                    <li data-type="3" data-status="0" data-cmdid="filemonclose">关闭</li>
+                </ul>
+            </li>
+            <li class="dropdown-layer">
+                <span>邮件监控 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="4" data-status="1" data-cmdid="mailmon:open">开启</li>
+                    <li data-type="4" data-status="0" data-cmdid="mailmon:close">关闭</li>
+                </ul>
+            </li>
+            <li class="dropdown-layer">
+                <span>共享监控 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="3" data-cmdid="rfwsharmon:open" data-status="1">开启</li>
+                    <li data-type="3" data-cmdid="rfwsharmon:close" data-status="0">关闭</li>
+                </ul>
+            </li>
+        </ul>
+        {{/type}}{{/virus}} {{#protection}}{{^type}}
+        <ul class="clearfix unstyled">
+            <li class="dropdown-layer">
+                <span>拦截恶意木马网址 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="3" data-cmdid="rfwurl.virus:open" data-status="1">开启</li>
+                    <li data-type="3" data-cmdid="rfwurl.virus:close" data-status="0">关闭</li>
+                </ul>
+            </li>
+            <li class="dropdown-layer">
+                <span>拦截钓鱼网址 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="3" data-cmdid="rfwurl.antifish:open" data-status="1">开启</li>
+                    <li data-type="3" data-cmdid="rfwurl.antifish:close" data-status="0">关闭</li>
+                </ul>
+            </li>
+            <li class="dropdown-layer">
+                <span>拦截恶意下载 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="3" data-cmdid="rfwurl.evildown:open" data-status="1">开启</li>
+                    <li data-type="3" data-cmdid="rfwurl.evildown:close" data-status="0">关闭</li>
+                </ul>
+            </li>
+            <li class="dropdown-layer">
+                <span>防黑客攻击 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="3" data-cmdid="rfwiprule.rs:open" data-status="1">开启</li>
+                    <li data-type="3" data-cmdid="rfwiprule.rs:close" data-status="0">关闭</li>
+                </ul>
+            </li>
+            <li class="dropdown-layer">
+                <span>拦截跨站脚本攻击 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="3" data-cmdid="rfwurl.xss:open" data-status="1">开启</li>
+                    <li data-type="3" data-cmdid="rfwurl.xss:close" data-status="0">关闭</li>
+                </ul>
+            </li>
+            <li class="dropdown-layer">
+                <span>搜索引擎结果检查 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="3" data-cmdid="rfwurl.search:open" data-status="1">开启</li>
+                    <li data-type="3" data-cmdid="rfwurl.search:close" data-status="0">关闭</li>
+                </ul>
+            </li>
+            <li class="dropdown-layer">
+                <span>广告过滤 <i class="fa fa-caret-down"></i></span>
+                <ul>
+                    <li data-type="3" data-cmdid="rfwurl.adfilter:open" data-status="1">开启</li>
+                    <li data-type="3" data-cmdid="rfwurl.adfilter:close" data-status="0">关闭</li>
+                </ul>
+            </li>            
+        </ul>
+        {{/type}}{{/protection}} {{#mobile}}{{^type}}
+        <a href="javascript:;" id="btnUpLocation" class="btn btn-primary" data-cmdid="0x4001" style="width:90px;">立即上报位置</a> {{/type}}{{/mobile}}
+        <div style="clear:both;overflow:hidden;height:0;"></div>
+    </div>
+    {{#group}} {{#sys}}
+    <div id="customSearchBox">
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">在线状态：</label>
+                <div class="controls js_act">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">在线</a>
+                    <a href="javascript:void(0);" val="0">不在线</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">筛选条件：</label>
+                <div class="controls js_search">
+                    <span>
+                            <select class="input-small js_searchType" style="width:100px">                            
+                                <option value="name">终端名称</option>
+                                <option value="ip">IP地址</option>
+                                <option value="mac">MAC</option>
+                                <option value="version">版本</option>
+                                <option value="sys">操作系统</option>
+                            </select>
+                        </span>
+                    <input type="text" value="" class="js_searchKey">
+                    <button type="button" class="btn js_btn_search">筛选</button>
+                </div>
+            </div>
+        </form>
+        <div style="clear:both;overflow:hidden;height:0;"></div>
+    </div>
+    {{/sys}} {{#virus}}
+    <div id="customSearchBox">
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">在线状态：</label>
+                <div class="controls js_act">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">在线</a>
+                    <a href="javascript:void(0);" val="0">不在线</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">文件监控：</label>
+                <div class="controls js_filemon">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">邮件监控：</label>
+                <div class="controls js_mailmon">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">系统加固：</label>
+                <div class="controls js_sysmon">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">应用加固：</label>
+                <div class="controls js_VirusAction">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">筛选条件：</label>
+                <div class="controls js_search">
+                    <span>
+                            <select class="input-small js_searchType" style="width:100px">                            
+                                <option value="name">终端名称</option>
+                                <option value="ip">IP地址</option>
+                                <option value="vlibver">病毒库版本</option>
+                            </select>
+                        </span>
+                    <input type="text" value="" class="js_searchKey">
+                    <button type="button" class="btn js_btn_search">筛选</button>
+                </div>
+            </div>
+        </form>
+        <div style="clear:both;overflow:hidden;height:0;"></div>
+    </div>
+    {{/virus}} {{#protection}}
+    <div id="customSearchBox">
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">在线状态：</label>
+                <div class="controls js_act">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">在线</a>
+                    <a href="javascript:void(0);" val="0">不在线</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">网址访问：</label>
+                <div class="controls js_rfwurlaudit">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">黑客攻击：</label>
+                <div class="controls js_rfwiprulers">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">联网程序：</label>
+                <div class="controls js_rfwtdi">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">流量管理：</label>
+                <div class="controls js_rfwflux">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">共享管理：</label>
+                <div class="controls js_rfwshare">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">筛选条件：</label>
+                <div class="controls js_search">
+                    <span>
+                            <select class="input-small js_searchType" style="width:100px">                            
+                                <option value="name">终端名称</option>
+                                <option value="ip">IP地址</option>
+                            </select>
+                        </span>
+                    <input type="text" value="" class="js_searchKey">
+                    <button type="button" class="btn js_btn_search">筛选</button>
+                </div>
+            </div>
+        </form>
+        <div style="clear:both;overflow:hidden;height:0;"></div>
+    </div>
+    {{/protection}} {{#mobile}}
+    <div id="customSearchBox">
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">在线状态：</label>
+                <div class="controls js_act">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">在线</a>
+                    <a href="javascript:void(0);" val="0">不在线</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">骚扰拦截：</label>
+                <div class="controls js_spam">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">定位：</label>
+                <div class="controls js_loc">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">时间拦截：</label>
+                <div class="controls js_time_spam">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">已开启</a>
+                    <a href="javascript:void(0);" val="0">已关闭</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">筛选条件：</label>
+                <div class="controls js_search">
+                    <span>
+                            <select class="input-small js_searchType" style="width:120px">                            
+                                <option value="name">终端名称</option>
+                                <option value="ip">IP地址</option>
+                                <option value="vlibver">病毒库版本</option>
+                            </select>
+                        </span>
+                    <input type="text" value="" class="js_searchKey">
+                    <button type="button" class="btn js_btn_search">筛选</button>
+                </div>
+            </div>
+        </form>
+        <div style="clear:both;overflow:hidden;height:0;"></div>
+    </div>
+    {{/mobile}}
+    <table id="tbClient" data-toolbar-align="left" data-toolbar="#custom-toolbar" data-toggle="table" data-resizable="true"></table>
+    {{/group}} {{#client}}
+    <!-- <div class="content-header">
+            <a href="javascript:;" class="btn right mr5 mt5" id="back">返回</a>
+            <h1>当前客户端: {{computername}}</h1>
+          </div> -->
+    <div class="content-body mt10">
+        <a class="client-view-back" href="javascript:void(0)">&lt;&lt;  返回终端列表</a>
+        <div class="container-fluid client-view">
+            <div class="row-fluid">
+                <h4>产品信息</h4>
+                <table class="table table-bordered ">
+                    <tbody>
+                        <tr>
+                            <th>终端名称：</th>
+                            <td>{{username}}</td>
+                            <th>在线情况：</th>
+                            <td><span class="overview-ico"><em class="{{onlineClass}}"></em>{{onlineTxt}}</span></td>
+                        </tr>
+                        <tr>
+                            <th>IP地址：</th>
+                            <td>{{ip}}</td>
+                            <th>MAC地址：</th>
+                            <td>{{mac}}</td>
+                        </tr>
+                        <tr>
+                            <th>所属组：</th>
+                            <td class="js_group_info" groupid="{{groupid}}">{{groupname}}</td>
+                            <th>加入日期：</th>
+                            <td>{{joingroupTime}}</td>
+                        </tr>
+                        <tr>
+                            <th>机器名称：</th>
+                            <td>{{computername}}</td>
+                            <th>最后上线：</th>
+                            <td>{{edate}}</td>
+                        </tr>
+                        <tr>
+                            <th>操作系统：</th>
+                            <td colspan="3">{{os}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4 style="margin-top:-2px;">产品信息</h4>
+                <table class="table table-bordered">
+                    <tbody>
+                        {{#productList}}
+                        <tr>
+                            <th>{{name}}
+                                <!--{{#codename}}({{codename}}){{/codename}}-->
+                            </th>
+                            <td>{{version}}</td>
+                            <th>{{name2}}
+                                <!--{{#codename2}}({{codename2}}){{/codename2}}-->
+                            </th>
+                            <td>{{version2}}</td>
+                        </tr>
+                        {{/productList}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {{/client}}
+</div>
+
+<div id="mMoveTo" class="modal hide" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>移动到</h3>
+    </div>
+    <div class="modal-body">
+        <div class="row-fluid">
+            <label>终端</label>
+            <input id="txtClient" type="text" class="span12">
+            <label>目标组</label>
+            <div id="targetGroup" class="well well-small" style="overflow:auto;max-height:260px;">
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button id="btnSaveMoveTo" class="btn btn-primary btn-sure">确定</button>
+        <button class="btn btn-cancel" data-dismiss="modal">取消</button>
+    </div>
+</div>

@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt
+END
+switch.test
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/switch.test
+END
+throw.test
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/throw.test
+END
+class.test
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/class.test
+END
+foreach.test
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/foreach.test
+END
+while.test
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/while.test
+END
+goto.test
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/goto.test
+END
+groupUse.test
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/groupUse.test
+END
+class_const.test
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/class_const.test
+END
+namespaces.test
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/namespaces.test
+END
+tryCatch.test
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/tryCatch.test
+END
+nullable_types.test
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/nullable_types.test
+END
+const.test
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/const.test
+END
+for.test
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/for.test
+END
+break_continue.test
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/break_continue.test
+END
+alias.test
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/alias.test
+END
+function_signatures.test
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/function_signatures.test
+END
+do_while.test
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/do_while.test
+END
+multiCatch.test
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/multiCatch.test
+END
+if.test
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/if.test
+END
+global_static_variables.test
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/global_static_variables.test
+END
+declare.test
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/declare.test
+END
+haltCompiler.file-test
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/haltCompiler.file-test
+END
+traitUse.test
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/stmt/traitUse.test
+END

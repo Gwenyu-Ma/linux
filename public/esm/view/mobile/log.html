@@ -1,0 +1,174 @@
+<div class="log-content">
+    <div id="custom-toolbar">
+        <ul class="nav nav-pills">
+            <li {{#mb_msg}} class="active" {{/mb_msg}}><a href="javascript:void(0);" da-toggle="mb_msg">举报短信</a></li>
+            <li {{#mb_phone}} class="active" {{/mb_phone}}><a href="javascript:void(0);" da-toggle="mb_phone">举报电话</a></li>
+            <li {{#mb_detail}} class="active" {{/mb_detail}}><a href="javascript:void(0);" da-toggle="mb_detail">威胁详情</a></li>
+            <li {{#mb_scan}} class="active" {{/mb_scan}}><a href="javascript:void(0);" da-toggle="mb_scan">安全扫描</a></li>
+        </ul>
+    </div>
+    <div id="custom-type">
+        <div>
+            {{#mb_msg}}
+            <a href="javascript:void(0);" data-type="0" val="detail" class="active">按详情显示</a> {{/mb_msg}} {{#mb_phone}}
+            <a href="javascript:void(0);" data-type="0" val="detail" class="active">按详情显示</a> {{/mb_phone}} {{#mb_detail}}
+            <a href="javascript:void(0);" data-type="1" val="xav">按威胁显示</a>
+            <a href="javascript:void(0);" data-type="0" class="active" val="ep">按终端显示</a> {{/mb_detail}} {{#mb_scan}}
+            <a href="javascript:void(0);" data-type="0" val="detail" class="active">按详情显示</a> {{/mb_scan}}
+        </div>
+    </div>
+    <div id="customSearchBox">
+        {{#mb_msg}}
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">时间范围：</label>
+                <div class="controls js_date">
+                    <a href="javascript:void(0);" class="active" val="nolimt">全部</a>
+                    <a href="javascript:void(0);" val="week">本周</a>
+                    <a href="javascript:void(0);" val="month">本月</a>
+                    <a href="javascript:void(0);" val="lastMonth">上月</a>
+                    <span class="date"><a href="javascript:void(0);" val="special">指定：</a><input id="timeStart" type="text" value="" class="input-mini" style="width:106px" placeholder="请选择开始日期" disabled> — <input id="timeEnd" type="text" value="" class="input-mini"  style="width:106px" placeholder="请选择结束日期" disabled></span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">筛选条件：</label>
+                <div class="controls js_search">
+                    <span>
+                        <select class="input-small js_searchType" style="width:100px">
+                            <option value="computername">终端名称</option>
+                            <option value="phone">来源</option>
+                            <option value="content">内容</option>
+                            <option value="reason">原因</option>
+                        </select>
+                    </span>
+                    <input type="text" value="" class="js_searchKey">
+                    <button type="button" class="btn js_btn_search">筛选</button>
+                </div>
+            </div>
+        </form>
+        {{/mb_msg}} {{#mb_phone}}
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">时间范围：</label>
+                <div class="controls js_date">
+                    <a href="javascript:void(0);" class="active" val="nolimt">全部</a>
+                    <a href="javascript:void(0);" val="week">本周</a>
+                    <a href="javascript:void(0);" val="month">本月</a>
+                    <a href="javascript:void(0);" val="lastMonth">上月</a>
+                    <span class="date"><a href="javascript:void(0);" val="special">指定：</a><input id="timeStart" type="text" value="" class="input-mini" style="width:106px" placeholder="请选择开始日期" disabled> — <input id="timeEnd" type="text" value="" class="input-mini"  style="width:106px" placeholder="请选择结束日期" disabled></span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">筛选条件：</label>
+                <div class="controls js_search">
+                    <span>
+                        <select class="input-small js_searchType" style="width:100px">
+                            <option value="computername">终端名称</option>
+                            <option value="phone">电话</option>
+                            <option value="reason">原因</option>
+                        </select>
+                    </span>
+                    <input type="text" value="" class="js_searchKey">
+                    <button type="button" class="btn js_btn_search">筛选</button>
+                </div>
+            </div>
+        </form>
+        {{/mb_phone}} {{#mb_detail}}
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">时间范围：</label>
+                <div class="controls js_date">
+                    <a href="javascript:void(0);" class="active" val="nolimt">全部</a>
+                    <a href="javascript:void(0);" val="week">本周</a>
+                    <a href="javascript:void(0);" val="month">本月</a>
+                    <a href="javascript:void(0);" val="lastMonth">上月</a>
+                    <span class="date"><a href="javascript:void(0);" val="special">指定：</a><input id="timeStart" type="text" value="" class="input-mini" style="width:106px" placeholder="请选择开始日期" disabled> — <input id="timeEnd" type="text" value="" class="input-mini"  style="width:106px" placeholder="请选择结束日期" disabled></span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">威胁类型：</label>
+                <div class="controls js_def">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="0">未知</a>
+                    <a href="javascript:void(0);" val="1">恶意扣费</a>
+                    <a href="javascript:void(0);" val="2">隐私窃取</a>
+                    <a href="javascript:void(0);" val="3">远程控制</a>
+                    <a href="javascript:void(0);" val="4">恶意传播</a>
+                    <a href="javascript:void(0);" val="5">资费消耗</a>
+                    <a href="javascript:void(0);" val="6">系统破坏</a>
+                    <a href="javascript:void(0);" val="7">诱骗斯诈</a>
+                    <a href="javascript:void(0);" val="8">流氓行为</a>
+                    <a href="javascript:void(0);" val="9">广告软件</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">状态：</label>
+                <div class="controls js_state">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="0">未卸载</a>
+                    <a href="javascript:void(0);" val="1">未隔离</a>
+                    <a href="javascript:void(0);" val="2">已卸载</a>
+                    <a href="javascript:void(0);" val="3">已隔离</a>
+                    <a href="javascript:void(0);" val="4">已删除</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">筛选条件：</label>
+                <div class="controls js_search">
+                    <span>
+                        <select class="input-small js_searchType" style="width:100px">
+                            <option value="computername">终端名称</option>
+                            <option value="ip">IP地址</option>
+                            <option value="virusclass">威胁名</option>
+                            {{#ep}}
+                            <option value="filepath">文件路径</option>
+                            {{/ep}}
+                        </select>
+                    </span>
+                    <input type="text" value="" class="js_searchKey">
+                    <button type="button" class="btn js_btn_search">筛选</button>
+                </div>
+            </div>
+        </form>
+        {{/mb_detail}} {{#mb_scan}}
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">时间范围：</label>
+                <div class="controls js_date">
+                    <a href="javascript:void(0);" class="active" val="nolimt">全部</a>
+                    <a href="javascript:void(0);" val="week">本周</a>
+                    <a href="javascript:void(0);" val="month">本月</a>
+                    <a href="javascript:void(0);" val="lastMonth">上月</a>
+                    <span class="date"><a href="javascript:void(0);" val="special">指定：</a><input id="timeStart" type="text" value="" class="input-mini" style="width:106px" placeholder="请选择开始日期" disabled> — <input id="timeEnd" type="text" value="" class="input-mini"  style="width:106px" placeholder="请选择结束日期" disabled></span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">状态：</label>
+                <div class="controls js_state">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="0">未卸载</a>
+                    <a href="javascript:void(0);" val="1">未隔离</a>
+                    <a href="javascript:void(0);" val="2">已卸载</a>
+                    <a href="javascript:void(0);" val="3">已隔离</a>
+                    <a href="javascript:void(0);" val="3">已删除</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">筛选条件：</label>
+                <div class="controls js_search">
+                    <span>
+                        <select class="input-small js_searchType" style="width:100px">
+                            <option value="computername">终端名称</option>
+                            <option value="ip">IP地址</option>
+                        </select>
+                    </span>
+                    <input type="text" value="" class="js_searchKey">
+                    <button type="button" class="btn js_btn_search">筛选</button>
+                </div>
+            </div>
+        </form>
+        {{/mb_scan}}
+        <div style="clear:both;overflow:hidden;height:0;"></div>
+    </div>
+    <table id="tbClient" data-toolbar-align="left" data-toolbar="#custom-toolbar" data-toggle="table"></table>
+</div>

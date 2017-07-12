@@ -1,0 +1,328 @@
+<div class="userCenter">
+    <div class="uc-content">
+
+        <div class="uc-content-left">
+            <div class="uc-cl-1" style="margin-top:15px;">
+                <h3>
+                    <span>
+						企业信息
+					</span>
+                    <p class="hide">
+                        <span class="left">
+							建议你先补充相关资料~
+						</span>
+                        <a class="left iknow">
+							我知道了
+						</a>
+                    </p>
+                </h3>
+                <ul>
+                    <li>
+                        <p class="first">
+                            <label>
+								用户名：
+							</label>
+                            <input type="text" value="" class="disabled" disabled id="loginName" />
+                            <span class="errorTip">
+							</span>
+							
+                        </p>
+                    </li>
+                    <li>
+                        <span style="margin-left:-8px;float:left;color:#f40;margin-top:14px;height:10px;line-height: 10px;">*</span>
+                        <p class="first">
+                            <label>
+								主标题：
+							</label>
+                            <input type="text" value="" class="disabled eitInfo" disabled id="title" />
+                            <span class="errorTip">
+							</span>
+                            <span class="disabledEdit">
+								<i class="edit">
+								</i>
+							</span>							
+                        </p>
+                    </li>
+                    <li>
+                        <p class="first">
+                            <label>
+								副标题：
+							</label>
+                            <input type="text" value="" class="disabled eitInfo" disabled id="subTitle" />
+                            <span class="errorTip">
+							</span>
+                            <span class="disabledEdit">
+								<i class="edit">
+								</i>
+							</span>
+                        </p>
+                    </li>
+                    <li class="upload">
+                        <div class="uploadlogo">
+                            <label>
+								自定义LOGO：
+							</label>
+                            <p class="mask lmask logopreview" id="ulogo">
+                                <img src="/Systemconfig/getLogo">
+                            </p>
+                            <form id="logoForm" action="/Systemconfig/uploadlogo" enctype="multipart/form-data" method="post">
+                                <input type="file" value="" capture="camera" name="logo" id="logo" class="webuploader-element-invisible" multiple="multiple"
+                                    accept=".jpg,.gif,.png">
+                                <input type="hidden" value="0" name="top" id="txtX1" />
+                                <input type="hidden" value="0" name="left" id="txtY1" />
+                                <input type="hidden" value="180" name="width" id="txtW" />
+                                <input type="hidden" value="70" name="height" id="txtH" />
+                            </form>
+                            <a>更换</a>
+                            <a class="restoreDefault hide">重置</a>
+                            <span>
+								格式：jpg/png&nbsp;&nbsp;尺寸：180px*70px&nbsp;&nbsp;大小：1M以内
+							</span>
+                        </div>
+                        <div class="tip">
+                            <p>
+                                企业logo
+                                <i class="angDown">
+								</i>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="first">
+                            <label>
+								登录密码：
+							</label>
+                            <span class="anyPassword">************</span>
+                            <a class="midPassword">修改</a>
+                            <!-- <span class="right">
+								<label class="pdl60">
+									邮箱地址：
+								</label>
+								<input type="text" value="" class="disabled" id="email" disabled/>
+								<span class="errorTip">
+								</span>
+								<i class="edit">
+								</i>
+							</span> -->
+                        </p>
+                    </li>
+                    <li >                    
+                        <p class="first">
+                            <label>
+								域名：
+							</label>
+                            <input type="text" value=""  class="disabled eitInfo" disabled id="domainUrl" />
+                            <span class="errorTip">
+							</span>
+                            <span class="disabledEdit">
+								<i class="edit">
+								</i>
+							</span>
+							<span class="formTip">
+							格式:http://xxx.xxx.xxx.xxx或https://xxx.xxx.xxx.xxx
+							</span>
+                        </p>                       
+                    </li>
+                </ul>
+            </div>
+            <!-- 		
+			<div class="uc-cl-2">
+				<h3>用户信息</h3>
+				<ul>
+
+				</ul>	
+			</div> -->
+            <div class="uc-cl-3">
+                <div class="uc-shadow uploadLogoShadow midAvtShadow hide">
+                </div>
+                <div class="uc-mid-pwd uc-mpwd  hide">
+                    <h3 class="pop">修改密码
+                        <a class="close" id="mPWD">&times;</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <label>
+								旧密码：
+							</label>
+                            <input type="password" placeholder="原密码" id="oldPwd" />
+                            <span class="tip">
+							</span>
+                        </li>
+                        <li>
+                            <label>
+								新密码：
+							</label>
+                            <input type="password" placeholder="新密码" id="newPwd" />
+                            <span class="pwdStrong hide">
+			                  <div>密码强度:<i>低</i></div>
+			                  <ul>
+			                    <li class="low"></li>
+			                    <li class="middle"></li>
+			                    <li class="high"></li>
+			                  </ul>
+			                </span>
+                            <span class="tip midpasswordt">
+							</span>
+                        </li>
+                        <li>
+                            <label>
+								确认密码：
+							</label>
+                            <input type="password" placeholder="重新输入密码" id="confirmPwd" />
+                            <span class="tip">
+							</span>
+                        </li>
+                        <li class="uc-btn">
+                            <a class="uploadBtn">确定</a>
+                            <a class="cancelBtn">取消</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uc-mid-pwd reBindAccount reBindPhone hide">
+                    <h3 class="pop">账号重新绑定
+                        <a class="close"></a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <label>
+								原账号：
+							</label>
+                            <span class="initAccount">
+							</span>
+                        </li class="hide">
+                        <li>
+                            <label>
+								原密码：
+							</label>
+                            <input type="password" placeholder="请输入原始密码" id="roldPwd" />
+                            <span class="tip hide">
+								原密码错误
+							</span>
+                        </li class="hide" class="hide">
+                        <li>
+                            <label>
+								新账号：
+							</label>
+                            <input type="text" placeholder="手机号码或邮箱" id="newAccount" />
+                            <span class="tip hide">
+							</span>
+                        </li>
+                        <li class="hide">
+                            <label>
+								手机验证码：
+							</label>
+                            <input type="text" placeholder="校验码" id="code" class="code" />
+                            <a class="getCode reBindPho">
+								获取校验码
+							</a>
+                            <span class="tip">
+							</span>
+                        </li>
+                        <li class="reTime hide">
+                            <span>校验码已发出，请注意查收短信。如果没有收到，您可以在<i>60</i>秒后重新获取
+							</span>
+                        </li>
+                        <li class="hide">
+                            <label>
+								验证码：
+							</label>
+                            <input type="text" placeholder="校验码" id="icode" class="code" />
+                            <a class="getCode reBindEmail">
+                                <img src="/index.php/Code/verify?rdm=114" />
+                                <i>
+								</i>
+                            </a>
+                            <span class="tip">
+							</span>
+                        </li>
+                        <li class="bindPhone hide">
+                            <span class="success">
+								恭喜您！账号重新绑定成功
+							</span>
+                            <span class="baccount">
+							</span>
+                        </li>
+                        <li class="bindLogin hide">
+                            <span class="success">
+								立即登陆后，查看更多账户信息。
+							</span>
+                            <a href="/login.html" target="_blank">立即登录</a>
+                        </li>
+                        <li class="bindPhone hide">
+                            <span class="success">
+								确认邮件已经发送到你的邮箱：
+							</span>
+                            <span class="baccount">
+							</span>
+                        </li>
+                        <li class="bindLogin hide">
+                            <span class="success">
+								邮箱激活后查看更多账号信息
+							</span>
+                            <a href="/login.html" target="_blank">
+								立即登录
+							</a>
+                        </li>
+                        <li class="uc-btn">
+                            <span>重新绑定账号之前，先验证原始密码</span>
+                            <a class="nextBtn">下一步</a>
+                            <a class="cancelBtn">取消</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uc-mid-pwd uploadLogo uplogo hide" id="uplogo">
+                    <h3 class="pop">上传企业LOGO
+                        <a class="close"></a>
+                    </h3>
+                    <ul>
+                        <li class="logo">
+                            <img alt="图片加载中" id="target" />
+                            <span class="loadding hide">
+								图片加载中
+							</span>
+                        </li>
+                        <li class="desc">
+                            上传的图片将成比例缩放至180*70像素，请留意LOGO是否清晰。建议选用白色透底图片。
+                        </li>
+                        <li class="uc-btn">
+                            <a class="uploadBtn">确定</a>
+                            <a class="cancelBtn">取消</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uc-mid-pwd uploadLogo midAvt hide" id="auplogo">
+                    <h3 class="pop">修改头像
+                        <a class="close"></a>
+                    </h3>
+                    <ul>
+                        <li class="logo midAvtImg">
+                            <img alt="图片加载中" id="atarget" />
+                            <span class="loadding hide">
+								图片加载中
+							</span>
+                        </li>
+                        <li class="desc">
+                            上传的图片将成比例缩放至72*72像素，请留意头像是否清晰。
+                        </li>
+                        <li class="uc-btn">
+                            <a class="uploadBtn">确定</a>
+                            <a class="cancelBtn">取消</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a  class="saveBtn disabledSubmit" disabled = 'true'>
+				保存修改
+			</a>
+            <div class="shadowPopBox hide">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <form id="restoreDefault" action="/mycenter/uploadlogo" enctype="multipart/form-data" method="post"> 
+	<input type="file" value="" capture="camera" name="logo" id="restorePic" accept=".jpg,.gif,.png">
+	<input type="hidden" value="0" name="top" id="txtX1"/> 
+	<input type="hidden" value="0" name="left" id="txtY1"/> 
+	<input type="hidden" value="180" name="width" id="txtW"/> 
+	<input type="hidden" value="70" name="height" id="txtH"/> 
+</form> -->

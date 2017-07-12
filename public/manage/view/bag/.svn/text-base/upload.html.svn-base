@@ -1,0 +1,45 @@
+<div class="bag-content">
+    <div class="up_packages">
+        <form novalidate="novalidate"  enctype="multipart/form-data">
+            <div class="plat_form">
+                <label>选择平台:</label>
+                <select id="platForm"  name="platform" value="">
+                    <option value="" selected>请选择</option>
+                    <option value="linux">linux</option>
+                    <option value="windows">windows</option>
+                </select>
+                <em>*</em>
+            </div>
+            <div class="plat_form">
+                <label>选择包：</label>
+                <div class="packages_file"><i></i><input type="file" id="base" name="base"></div>
+                <input type="text" class="js_seriseFile" placeholder="请上传文件">
+                <em>*</em>
+            </div>
+            <div class="upload_blg">
+                <a class="upload_btn">上传</a>
+            </div>
+            <!--<div class="upload_tips">
+                <p><span>*</span>注：只有Windows需要上传</p>
+            </div>-->
+        </form>
+    </div>
+    <div class="packages_now">
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>平台</th>
+                        <th>上传时间</th>
+                        <th>版本号</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3" style="text-align:center;">暂无数据</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

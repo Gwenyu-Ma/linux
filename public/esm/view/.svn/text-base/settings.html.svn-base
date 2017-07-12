@@ -1,0 +1,381 @@
+<div class="userCenter">
+	<ul>
+		<li class="active" data-current="overview">账户信息</li>
+		<li data-current="message">我的消息</li>
+		<li data-current="operlog" style="display:none">操作日志</li>
+		<li class="last" data-current="accountManage"  style="display:none">账号管理</li>
+	</ul>
+	<div class="uc-content">
+		<div class="uc-content-right right">
+			<h3>云中心信息</h3>
+			<ul class="soreInfo">
+			</ul>
+			<div class="uc-grant">
+				<p>
+					共计授权
+					<span id="authDev"></span>
+					台&nbsp;&nbsp;已使用
+					<span id="useDev"></span>
+					台
+				</p>
+				<div class="uc-grant-percent">
+					<p class="uc-grant-pic">
+						<span class="windows">
+						</span>
+						<span class="Linux">
+						</span>
+						<span class="Android">
+						</span>
+					</p>
+					<p class="uc-grant-tit">
+						<span class="windows">
+							windows(<i></i>)
+						</span>
+						<span class="Linux">
+							Linux(<i></i>)
+						</span>
+						<span class="Android">
+							Android(<i></i>)
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="uc-storage">
+				<p>
+					云中心存储信息情况
+				</p>
+				<ul>
+				</ul>
+			</div>
+			<div class="uc-pay-tip">
+				<p>
+					<span class="tit">
+						升级为付费用户
+					</span>
+					<span>
+						你将获得更多安全防护、更优先的服务支持
+					</span>
+				</p>
+				<dl>
+					<dt>
+						目前有以下付费项目
+					</dt>
+					<dd>
+					  1.付费规则***************
+					</dd>
+					<dd>
+					  2.付费规则***************
+					</dd>
+					<dd>
+					  3.付费规则***************
+					</dd>
+				</dl>
+				<p class="uc-hotline">
+					<b>咨询热线:</b><span class="phone">400-650-6025</span>
+					<span>(未开通400地区:010-82678866-380)
+				</p>
+			</div>
+		</div>
+		<div class="uc-content-left">
+			<div class="uc-cl-1">
+				<h3>
+					<span>
+						企业信息
+					</span>
+					<p>
+						<span class="left">
+							建议你先补充相关资料~
+						</span>
+						<a class="left iknow">
+							我知道了
+						</a>
+					</p>
+				</h3>
+				<ul>
+					<li>
+						<p class="last">
+							<label>
+								注册账号：
+							</label>
+							<span class="account">
+								229841443@qq.com
+							</span>
+							<span class="openPwd">
+								<b></b>启用中心密码：<i>(客户端连接中心时所用)</i>
+								<input type="text" value="" class="disabled hide" disabled id="centerPass"/>
+								<i class="edit">
+								</i>
+							</span>
+						</p>
+						<div class="tip">
+							<p>
+								客户端连接中心时所用
+								<i class="angDown">
+								</i>
+							</p>
+						</div>
+					</li>
+					<li>
+						<p class="first">
+							<span class="left">
+								<label>
+									企业名称：
+								</label>
+								<input type="text" value="" class="disabled" disabled id="company"/>
+								<i class="edit">
+								</i>
+							</span>
+						</p>
+					</li>
+					<li>
+						<p class="first sel">
+							<label>
+								所属行业：
+							</label>
+							<select disabled class="disabled" id="industry">
+								<option value="请选择" selected>请选择所属行业</option>
+								<option value="IT">IT</option>
+								<option value="服务业">服务业</option>
+								<option value="金融">金融</option>
+								<option value="通讯">通讯</option>
+							</select>
+							<i class="edit">
+							</i>
+							<i class="maskAng">
+							</i>
+						</p>
+						<div class="tip">
+							<p>
+								公司所属行业
+								<i class="angDown">
+								</i>
+							</p>
+						</div>
+					</li>
+					<li>
+						<p class="first sel">
+							<label>
+								公司规模：
+							</label>
+							<select disabled class="disabled" id="companySize">
+								<option value="请选择" selected>请选择</option>
+								<option value="20人以下" data-min="1" data-max="20">20人以下</option>
+								<option value="22到99" data-min="22" data-max="99">22到99</option>
+								<option value="100到499" data-min="100" data-max="499">100到499</option>
+								<option value="500到999" data-min="500" data-max="999">500到999</option>
+								<option value="1000到9999" data-min="1000" data-max="9999">1000到9999</option>
+								<option value="10000人以上" data-min="10000" data-max="9999999">10000人以上</option>
+							</select>
+							<i class="edit">
+							</i>
+							<i class="maskAng">
+							</i>
+						</p>
+					</li>
+					<li class="upload">
+						<div class="uploadlogo">
+							<label>
+								自定义LOGO：
+							</label>
+							<p class="mask lmask">
+								<img src=""/>
+							</p>
+							<span>
+								格式：jpg/png&nbsp;&nbsp;尺寸：180px*70px&nbsp;&nbsp;大小：1M以内
+							</span>
+						</div>
+						<div class="tip">
+							<p>
+								企业logo
+								<i class="angDown">
+								</i>
+							</p>
+						</div>
+					</li>
+					<li>
+						<p class="first">
+							<span class="left">
+								<label>
+									联系人：
+								</label>
+								<input type="text" value="" class="disabled" disabled id="contact"/>
+								<i class="edit">
+								</i>
+							</span>
+							<span class="right">
+								<label class="pdl60">
+									联系电话：
+								</label>
+								<input type="text" value="" class="disabled" disabled id="tel"/>
+								<span class="errorTip">
+								</span>
+								<i class="edit">
+								</i>
+							</span>
+						</p>
+					</li>
+					<li>
+						<p class="first">
+							<span class="left">
+								<label>
+									联系地址：
+								</label>
+								<input type="text" value="" class="disabled" disabled id="address"/>
+								<i class="edit">
+								</i>
+							</span>
+							<span class="right">
+								<label class="pdl60">
+									邮政编码：
+								</label>
+								<input type="text" value="" class="disabled" disabled id="postCode"/>
+								<i class="edit">
+								</i>
+							</span>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="uc-cl-2">
+				<h3>用户信息</h3>
+				<ul>
+					<li>
+						<p class="first">
+							<span class="left">
+								<label>
+									用户名：
+								</label>
+								<input type="text" value="" class="disabled" id="userName" disabled/>
+								<i class="edit">
+								</i>
+							</span>
+							<span class="right">
+								<label class="pdl60">
+									昵称：
+								</label>
+								<input type="text" value="" class="disabled" id="nickName" disabled/>
+								<i class="edit">
+								</i>
+							</span>
+						</p>
+					</li>
+					<li class="upload uploadAvt">
+						<div class="uploadlogo">
+							<label>
+								头像：
+							</label>
+							<p class="mask amask">
+								<img src="" alt=""/>
+							</p>
+							<a>更换</a>
+							<span>
+								格式:jpg/png&nbsp;&nbsp;尺寸:72px*72px&nbsp;&nbsp;大小:100k以内
+							</span>
+						</div>
+					</li>
+					<li>
+						<p class="first">
+							<span class="left phoneNumber">
+								<label>
+									手机号码：
+								</label>
+								<input type="text" value="" class="disabled" id="phone" disabled/>
+								<span class="errorTip">
+								</span>
+								<i class="edit">
+								</i>
+							</span>
+							<span class="right">
+								<label class="pdl60">
+									邮箱地址：
+								</label>
+								<input type="text" value="" class="disabled" id="email" disabled/>
+								<span class="errorTip">
+								</span>
+								<i class="edit">
+								</i>
+							</span>
+						</p>
+					</li>
+				</ul>	
+			</div>
+			<div class="uc-cl-3">
+				 <h3>账户安全</h3>
+				 <p>
+					互联网账号存在被盗风险，建议您定期更改密码以保护账户安全。<a>立即修改密码</a>
+				 </p>
+				 <div class="uc-shadow uploadLogoShadow midAvtShadow hide">
+				 </div>
+				 <div class="uc-mid-pwd uc-mpwd hide">
+					<h3 class="pop">修改密码<a class="close"></a></h3>
+					<ul>
+						<li>
+							<label>
+								旧密码：
+							</label>
+							<input type="password" placeholder="原密码" id="oldPwd"/>
+							<span class="tip hide">
+								原密码错误
+							</span>
+						</li>
+						<li>
+							<label>
+								新密码：
+							</label>
+							<input type="password" placeholder="新密码" id="newPwd"/>
+							<span class="tip hide">
+								2次密码不一致
+							</span>
+						</li>
+						<li>
+							<label>
+								确认密码：
+							</label>
+							<input type="password" placeholder="重新输入密码" id="confirmPwd"/>
+							<span class="tip hide">
+								2次密码不一致
+							</span>
+						</li>
+						<li class="uc-btn">
+							<a class="uploadBtn">确定</a>
+							<a class="cancelBtn">取消</a>
+						</li>
+					</ul>	
+				 </div>	
+				 <div class="uc-mid-pwd uploadLogo uplogo hide">
+					<h3 class="pop">上传企业LOGO<a class="close"></a></h3>
+					<ul>
+						<li class="logo">
+							<img src=""/>
+						</li>
+						<li class="desc">
+							上传的图片将成比例缩放至160*50像素，请留意LOGO是否清晰。建议选用白色透底图片。
+						</li>
+						<li class="uc-btn">
+							<a class="uploadBtn">确定</a>
+							<a class="cancelBtn">取消</a>
+						</li>
+					</ul>	
+				 </div>	
+				 <div class="uc-mid-pwd uploadLogo midAvt hide">
+					<h3 class="pop">修改头像<a class="close"></a></h3>
+					<ul>
+						<li class="logo midAvtImg">
+							<img src=""/>
+						</li>
+						<li class="desc">
+							上传的图片将成比例缩放至35*35像素，请留意头像是否清晰。
+						</li>
+						<li class="uc-btn">
+							<a class="uploadBtn">确定</a>
+							<a class="cancelBtn">取消</a>
+						</li>
+					</ul>	
+				 </div>	
+			</div>
+			<a class="saveBtn">
+				保存修改
+			</a>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,19 @@
+<div class="c-page-wrap">
+    <div>
+        <div class="c-page-nav">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="javascript:void(0);" da-toggle="#report/overview">预警规则</a></li>
+                <li><a href="javascript:void(0);" da-toggle="#report/warning">预警记录</a></li>
+            </ul>
+        </div>
+        <div class="c-page-content">
+            <div class="row-fluid overview-content">
+                <div id="custom-toolbar" class="form-inline client-cmd ">
+                    <!--<a href="javascript:void(0);" id="btnAddReport" class="btn btn-primary mr10" data-cmdid="msg" style="width:75px;">添加预警</a>-->
+                </div>
+                <table id="tbClient" data-toolbar-align="left" data-toolbar="#custom-toolbar" data-toggle="table" data-resizable="true">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

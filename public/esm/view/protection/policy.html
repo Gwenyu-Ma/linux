@@ -1,0 +1,591 @@
+<div class="c-moudle-nav">
+    <ul class="nav nav-pills" id="policyTab">
+        <li class="active"><a href="javascript:void(0)" da-toggle="#tab-pub">上网防护</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-whitelist">白名单</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-rsIpList">防黑客攻击</a></li>
+        <li style="display:none;"><a href="javascript:void(0)" da-toggle="#tab-ads">广告过滤</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-brower">受限网址</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-net">受限程序</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-flux">流量管理</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-share">安全共享</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-adsl">ADSL共享</a></li>
+    </ul>
+</div>
+<div class="c-moudle-container form-horizontal policy-form" id="policyContent">
+    <div class="c-moudle-wrap">
+        <div class="policy-box" id="tab-pub">
+            <h3 class="policy-tit">上网防护</h3>
+            <div class="policy-bod active">
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;">网络防护:</span>
+                        <label class="checkbox" style="width:170px;">
+                            <i id="FwStatus_lock" class="lock"></i>
+                            <input type="checkbox" id="pub_FwStatus" checked>开机启用
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;">
+                            <!-- <i id="AntiEvilUrl_lock" class="lock"></i> -->拦截恶意木马网址：
+                        </span>
+                        <label class="checkbox" style="width:170px;">
+                            <i id="AntiEvilUrl_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="AntiEvilUrl_MonStatus"  checked>开机启用
+                        </label>
+                        <label class="checkbox">
+                            <i id="AntiEvilUrl_lock_LogStatus" class="lock"></i>
+                            <input type="checkbox" id="AntiEvilUrl_LogStatus"  checked>记录日志
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><!-- <i id="AntiFishUrl_lock" class="lock"></i> -->拦截钓鱼网址：</span>
+                        <label class="checkbox" style="width:170px;">
+                            <i id="AntiFishUrl_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="AntiFishUrl_MonStatus"  checked>开机启用
+                        </label>
+                        <label class="checkbox">
+                            <i id="AntiFishUrl_lock_LogStatus" class="lock"></i>
+                            <input type="checkbox" id="AntiFishUrl_LogStatus"  checked>记录日志
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><!-- <i id="AntiEvilDown_lock" class="lock"></i> -->拦截恶意下载：</span>
+                        <label class="checkbox" style="width:170px;">
+                            <i id="AntiEvilDown_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="AntiEvilDown_MonStatus"  checked>开机启用
+                        </label>
+                        <label class="checkbox">
+                            <i id="AntiEvilDown_lock_LogStatus" class="lock"></i>
+                            <input type="checkbox" id="AntiEvilDown_LogStatus"  checked>记录日志
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;">
+                            <!-- <i id="rsIpList_lock" class="lock"></i> -->防黑客攻击：
+                        </span>
+                        <label class="checkbox" style="width:170px;">
+                            <i id="rsIpList_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="rsIpList_MonStatus" >开机启用
+                        </label>
+                        <label class="checkbox">
+                            <i id="rsIpList_lock_LogStatus" class="lock"></i>
+                            <input type="checkbox" id="rsIpList_LogStatus"  checked>记录日志
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><!-- <i id="AntiXss_lock" class="lock"></i> -->拦截跨站脚本攻击：</span>
+                        <label class="checkbox" style="width:170px;">
+                            <i id="AntiXss_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="AntiXss_MonStatus"  checked>开机启用
+                        </label>
+                        <label class="checkbox">
+                            <i id="AntiXss_lock_LogStatus" class="lock"></i>
+                            <input type="checkbox" id="AntiXss_LogStatus"  checked>记录日志
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><!-- <i id="SearchUrlProtect_lock" class="lock"></i> -->搜索引擎结果检查：</span>
+                        <label class="checkbox" style="width:170px;">
+                            <i id="SearchUrlProtect_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="SearchUrlProtect_MonStatus"  checked>开机启用
+                        </label>
+                        <label class="checkbox">
+                            <i id="SearchUrlProtect_lock_LogStatus" class="lock"></i>
+                            <input type="checkbox" id="SearchUrlProtect_LogStatus"  checked>记录日志
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><!-- <i id="AdFilter_lock" class="lock"></i> -->广告过滤：</span>
+                        <label class="checkbox" style="width:170px;">
+                            <i id="AdFilter_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="AdFilter_MonStatus"  checked>开机启用
+                        </label>
+                        <label class="checkbox">
+                            <i id="AdFilter_lock_logStatus" class="lock"></i>
+                            <input type="checkbox" id="AdFilter_LogStatus"  checked>记录日志
+                        </label>
+                    </dd>                    
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-whitelist">
+            <h3 class="policy-tit">白名单</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd>
+                        <label class="checkbox">
+                            <i id="whiteList_lock" class="lock"></i>
+                            <input type="checkbox" id="whiteList_WhiteUrlStatus" checked>启用白名单
+                        </label>
+                    </dd>
+                    <dd>
+                        <div class="mb5" style="position:relative;">
+                            <input type="text" value="" id="whiteList_txt">
+                            <button class="btn btn-small btn-add" id="whiteList_add">&nbsp;</button>
+                        </div>
+                        <div class="whiteListBox" style="width:440px">
+                            <table class="whiteListBoxTit">
+                                <tr>
+                                    <td style="width:380px;">URL网址</td>
+                                    <td>操作</td>
+                                </tr>
+                            </table>
+                            <div class="whiteList">
+                                <div class="js_white_wrap">
+                                    <table id="WhiteUrlList">
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-rsIpList">
+            <h3 class="policy-tit">防黑客攻击</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <label class="checkbox" style="width:150px;">
+                            <i id="rsIpList_lock_AlertStatus" class="lock"></i>
+                            <input type="checkbox" id="rsIpList_AlertStatus">发现攻击提示用户
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label>
+                            <i id="rsIpList_lock_BreakTimes" class="lock"></i> 阻止攻击源IP
+                            <input type="text" id="rsIpList_BreakTimes" class="input-mini" validation="intNum gte" valid_gte="1" value="5">分钟
+                            <span class="help-inline">(最小时间间隔为1分钟)</span>
+                        </label>
+                    </dd>
+                    <dd>
+                        <div>目前已启用<span id="js_totle_RsIpRuleList" class="orange"></span>个防护规则，<span id="js_RsIpRuleList_noOpen" class="orange"></span>个未启用</div>
+                        <div class="whiteListBox" style="width:500px">
+                            <table class="whiteListBoxTit">
+                                <tr>
+                                    <td style="width:420px;">防护项</td>
+                                    <td>操作</td>
+                                </tr>
+                            </table>
+                            <div class="whiteList">
+                                <div class="js_white_wrap">
+                                    <table id="RsIpRuleList"></table>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-ads"  style="display:none;">
+            <h3 class="policy-tit">广告过滤</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd>
+                        <i id="adUrlList_lock" class="lock"></i><span class="inblock">广告过滤规则：</span>
+                    </dd>
+                    <dd>
+                        <div class="mb5" style="position:relative;">
+                            <input type="text" value="" id="adUrlList_txt">
+                            <button class="btn btn-small btn-add" id="adUrlList_add">&nbsp;</button>
+                        </div>
+                        <div class="whiteListBox" style="width:440px">
+                            <table class="whiteListBoxTit">
+                                <tr>
+                                    <td style="width:380px;">规则</td>
+                                    <td>操作</td>
+                                </tr>
+                            </table>
+                            <div class="whiteList">
+                                <div class="js_white_wrap">
+                                    <table id="adUrlList">
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-brower">
+            <h3 class="policy-tit">受限网址</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">
+                            <i id="BrowserAudit_lock" class="lock"></i>受限网址：
+                        </span>
+                        <label class="checkbox" style="width:130px;">
+                            <i id="BrowserAudit_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="BrowserAudit_MonStatus">开启网址管理
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="BrowserAudit_lock_LogAllWeb" class="lock"></i>网址访问记录:</span>
+                        <label class="radio" class="checkbox" style="width:80px;">
+                            <input type="radio" name="BrowserAudit_LogAllWeb" value="0" checked>不记录
+                        </label>
+                        <label class="radio" class="checkbox" style="width:80px;">
+                            <input type="radio" name="BrowserAudit_LogAllWeb" value="2">智能记录
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="BrowserAudit_LogAllWeb" value="1">记录所有
+                        </label>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <i id="TimeRule_lock" class="lock"></i>
+                        <span>受限规则</span>
+                        <button id="add_rules" class="btn btn-small ml10 btn-add">&nbsp;</button>
+                    </dd>
+                    <dd class="browserAuditList" style="width:500px">
+                        <table class="whiteListBoxTit">
+                            <tr>
+                                <td style="width:300px;">受限时间</td>
+                                <td style="width:80px;">受限网址数</td>
+                                <td>操作</td>
+                            </tr>
+                        </table>
+                        <div class="whiteList">
+                            <div class="js_white_wrap">
+                                <table id="browserList">
+                                </table>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-net">
+            <h3 class="policy-tit">受限程序</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">
+                            <i id="NetProcAudit_lock" class="lock"></i>受限程序：
+                        </span>
+                        <label class="checkbox" style="width:130px;">
+                            <i id="NetProcAudit_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="NetProcAudit_MonStatus">开启程序联网
+                        </label>
+                        <label class="checkbox">
+                            <i id="NetProcAudit_lock_CheckModule" class="lock"></i>
+                            <input type="checkbox" id="NetProcAudit_CheckModule">启用模块联网通知检查
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">&nbsp;</span>
+                        <label class="checkbox" style="width:130px;">
+                            <i id="NetProcAudit_lock_LogStatus" class="lock"></i>
+                            <input type="checkbox" id="NetProcAudit_LogStatus" checked>记录拦截日志
+                        </label>
+                        <label class="checkbox">
+                            <i id="NetProcAudit_lock_CheckRsSign" class="lock"></i>
+                            <input type="checkbox" id="NetProcAudit_CheckRsSign" checked>智能判别信任程序并允许联网
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="NetProcAudit_lock_UnknowAction" class="lock"></i> 未知程序：</span>
+                        <label class="radio inline" style="width:60px;">
+                            <input type="radio" value="1" name="NetProcAudit_UnknownAction">允许</label>
+                        <label class="radio inline" style="width:60px;">
+                            <input type="radio" value="0" name="NetProcAudit_UnknownAction">拒绝</label>
+                        <label class="radio inline">
+                            <input type="radio" value="2" name="NetProcAudit_UnknownAction" checked>询问</label>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <i id="NetProcAudit_lock_TimeRuleList" class="lock"></i>
+                        <span>联网管理列表</span>
+                        <button id="net_add_rules" class="btn btn-small ml10 btn-add">&nbsp;</button>
+                    </dd>
+                    <dd class="netlist" style="width:500px;">
+                        <table class="whiteListBoxTit">
+                            <tr>
+                                <td style="width:300px;">受限时间</td>
+                                <td style="width:80px;">受限程序数</td>
+                                <td>操作</td>
+                            </tr>
+                        </table>
+                        <div class="whiteList">
+                            <div class="js_white_wrap">
+                                <table id="netList">
+                                </table>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-flux">
+            <h3 class="policy-tit">流量管理</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock"><i id="FluxMgr_lock" class="lock"></i>流量管理</span>
+                    </dd>
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <i id="FluxMgr_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="FluxMgr_MonStatus">开启联网管理
+                        </label>
+                    </dd>
+                    <dd>
+                        <label class="checkbox">
+                            <i id="FluxMgr_lock_LogTimer" class="lock"></i> 定时报告时间间隔
+                            <input type="text" value="5" id="FluxMgr_LogTimer" class="input-small" validation="intNum gte" valid_gte="1">分钟
+                            <span class="help-inline">(最小时间间隔为1分钟)</span>
+                        </label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-share">
+            <h3 class="policy-tit">安全共享</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock"><i id="ShareMgr_lock" class="lock"></i>共享设置：</span>
+                        <label class="checkbox">
+                            <i id="ShareMgr_lock_FileLogStatus" class="lock"></i>
+                            <input type="checkbox" id="ShareMgr_FileLogStatus">记录共享文件
+                        </label>
+                        <label class="checkbox">
+                            <i id="ShareMgr_lock_AccessLogStatus" class="lock"></i>
+                            <input type="checkbox" id="ShareMgr_AccessLogStatus">记录访问日志
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock"><i id="DisableDefaultShare_lock" class="lock"></i>系统共享：</span>
+                        <label class="checkbox">
+                            <input type="checkbox" id="DisableDefaultShare_status1">关闭默认共享(C$/D$/E$)
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" id="DisableDefaultShare_status2">关闭远程管理(ADMIN$)
+                        </label>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock"><i id="AccessControl_lock" class="lock"></i>控制规则：</span>
+                        <label class="checkbox">
+                            <i id="AccessControl_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="AccessControl_MonStatus">开启共享规则
+                        </label>
+                        <label class="checkbox">
+                            <i id="AccessControl_lock_AlertStatus" class="lock"></i>
+                            <input type="checkbox" id="AccessControl_AlertStatus">禁止访问提示用户
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <i id="AccessControl_lock_ControlCode" class="lock"></i>列表控制：
+                        <label class="radio inline">
+                            <input type="radio" name="AccessControl_ControlCode" value="1" checked>只允许指定IP访问
+                        </label>
+                        <label class="radio inline">
+                            <input type="radio" name="AccessControl_ControlCode" value="0">禁止指定IP访问
+                        </label>
+                    </dd>
+                    <dd>
+                        <i id="AccessControl_lock_RuleList" class="lock"></i>列表控制
+                        <select name="ip_select" style="width:60px">
+                            <option value="0">IP</option>
+                            <option value="1">IP段</option>
+                        </select>
+                        <input type="text" value="" class="start_ip" style="width:120px;">
+                        <span class="js_ip_select_target hide">~</span>
+                        <input type="text" value="" class="end_ip js_ip_select_target hide" style="width:120px;">
+                        <button id="list_add" class="btn btn-small btn-add">&nbsp;</button>
+                    </dd>
+                    <dd>
+                        <div class="whiteListBox" style="width:440px">
+                            <table class="whiteListBoxTit">
+                                <tr>
+                                    <td style="width:290px;">访问IP或IP段</td>
+                                    <td style="width:90px;">操作</td>
+                                    <td>删除</td>
+                                </tr>
+                            </table>
+                            <div class="whiteList">
+                                <div class="js_white_wrap">
+                                    <table id="ip_list">
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-adsl">
+            <h3 class="policy-tit">ADSL共享</h3>
+            <div class="policy-bod">
+                <dl>
+                    <!-- <dd class="policy-border">
+                        <span class="inblock"><i id="AdslShare_lock" class="lock"></i>ADSL共享</span>
+                    </dd> -->
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <i id="AdslShare_lock_MonStatus" class="lock"></i>
+                            <input type="checkbox" id="AdslShare_MonStatus">开启ADSL共享
+                        </label>
+                    </dd>
+                    <dd>
+                        <label class="checkbox">
+                            <i id="AdslShare_lock_TotalWidth" class="lock"></i> 总宽带
+                            <input type="text" value="5" id="AdslShare_TotalWidth" class="input-small" validation="intNum">M(兆)
+                            <span class="help-inline">注意:必须重置宽带后功能才能生效！</span>
+                        </label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="c-policy-btn">
+    <a href="javascript:;" class="btn" id="policy-save">应用</a>
+</div>
+
+
+<!-- ****start****  弹出框  受限规则  受限网址&受限程序-->
+<div class="modal hide js_dialog_box" style="width:600px;" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>新增受限网址规则</h3>
+    </div>
+    <div class="modal-body policy-form">
+
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:;" class="btn btn-primary btn-sure js_sure">确定</a>
+        <a href="javascript:;" class="btn btn-cancel js_cancel">取消</a>
+    </div>
+</div>
+<div class="modal hide js_dialog_box2" style="width:600px;" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>新增受限程序规则</h3>
+    </div>
+    <div class="modal-body policy-form">
+
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:;" class="btn btn-primary btn-sure js_sure">确定</a>
+        <a href="javascript:;" class="btn btn-cancel js_cancel">取消</a>
+    </div>
+</div>
+<!-- ****end****  弹出框  受限规则   受限网址&受限程序-->
+
+<!-- ****start****  弹出框  受限规则  自定义软件或服务名-->
+<div class="modal hide js_dialog_net_pro" style="width:600px;" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>新增受限规则</h3>
+    </div>
+    <div class="modal-body">
+        <div class="tabbable">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1" data-toggle="tab">自定义软件</a></li>
+                <li><a href="#tab2" data-toggle="tab">服务名</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                    <div class="control-group">
+                        <label class="control-lbael">填写规则：</label>
+                        <select name="" id="js_sys_macro">
+                            <option value="">不使用系统宏</option>
+                            <option value="?:\">?:\</option>
+                            <option value="%USERPROFILE%\">%USERPROFILE%\</option>
+                            <option value="%HOMEPATH%\">%HOMEPATH%\</option>
+                            <option value="%ALLUSERSPROFILE%\">%ALLUSERSPROFILE%\</option>
+                            <option value="%APPDATA%\">%APPDATA%\</option>
+                            <option value="%SYSTEMDRIVE%\">%SYSTEMDRIVE%\</option>
+                            <option value="%HOMEDRIVE%\">%HOMEDRIVE%\</option>
+                            <option value="%SYSTEMROOT%\">%SYSTEMROOT%\</option>
+                            <option value="%WINDIR%\">%WINDIR%\</option>
+                            <option value="%TEMP%\">%TEMP%\</option>
+                            <option value="%TMP%\">%TMP%\</option>
+                            <option value="%ProgramFiles%\">%ProgramFiles%\</option>
+                            <option value="%ProgramFiles%\">%ProgramFiles%\</option>
+                            <option value="%CommonProgramFiles%\">%CommonProgramFiles%\</option>
+                        </select>
+                        <input type="text" value="" id="js_sys_path">
+                    </div>
+                    <div class="control-group">
+                        <p>规则中可以包含系统宏，如：%WINDIR%\rule.exe</p>
+                        <table id="commentTable">
+                            <tr>
+                                <th width="160">系统宏</th>
+                                <th>代表含义</th>
+                            </tr>
+                            <tr>
+                                <td>?:</td>
+                                <td>任意驱动器</td>
+                            </tr>
+                            <tr>
+                                <td>%USERPROFILE%</td>
+                                <td>C:\Documents and Settings\当前用户名</td>
+                            </tr>
+                            <tr>
+                                <td>%HOMEPATH%</td>
+                                <td>C:\Documents and Settings\当前用户名</td>
+                            </tr>
+                            <tr>
+                                <td>%ALLUSERSPROFILE%</td>
+                                <td>C:\Documents and Settings\All Users</td>
+                            </tr>
+                            <tr>
+                                <td>%APPDATA%</td>
+                                <td>C:\Documents and Settings\当前用户名\Application Data</td>
+                            </tr>
+                            <tr>
+                                <td>%SYSTEMDRIVE%</td>
+                                <td>C:</td>
+                            </tr>
+                            <tr>
+                                <td>%HOMEDRIVE%</td>
+                                <td>C:</td>
+                            </tr>
+                            <tr>
+                                <td>%SYSTEMROOT%</td>
+                                <td>C:\WINDOWS</td>
+                            </tr>
+                            <tr>
+                                <td>%WINDIR%</td>
+                                <td>C:\WINDOWS</td>
+                            </tr>
+                            <tr>
+                                <td>%TEMP% 和 %TMP%</td>
+                                <td>C:\Documents and Settings\当前用户名\Local Settings\Temp</td>
+                            </tr>
+                            <tr>
+                                <td>%ProgramFiles%</td>
+                                <td>C:\Program Files</td>
+                            </tr>
+                            <tr>
+                                <td>%CommonProgramFiles%</td>
+                                <td>C:\Program Files\Common Files</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2" style="height:342px;">
+                    <div class="control-group">
+                        <label class="control-lbael">填写规则：</label>
+                        <input type="text" class="input-xlarge" id="js_server_name" value="">
+                    </div>
+                    <div class="control-group">
+                        <p class="">注意服务名不是服务的显示名称，如：Asp.Net State Service 请填写:aspnet_state</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:;" class="btn btn-primary btn-sure js_sure">确定</a>
+        <a href="javascript:;" class="btn btn-cancel js_cancel">取消</a>
+    </div>
+</div>
+<!-- ****end****  弹出框  受限规则  自定义软件或服务名-->

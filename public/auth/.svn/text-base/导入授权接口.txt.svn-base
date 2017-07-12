@@ -1,0 +1,58 @@
+1. 导入授权注册用户
+//导入授权
+/Auth/importAuth
+参数：
+    auth：授权文件,
+    sn: 序列号
+返回值：
+{
+    "r"：{
+            "code" ： 0,
+            "msg" : "错误信息",
+    },
+    'data': null,
+}
+
+//注册用户
+/User/regUser
+参数:
+    name:用户名
+    pwd1：密码1
+    pwd2：密码2
+返回值：
+{
+    r：{
+            code ： 0,
+            msg : "错误信息",
+    },
+    data: null,
+}
+
+2. 通过授权修改密码
+/Auth/checktAuth
+参数：
+    auth：授权文件,
+    sn: 序列号
+返回值：
+{
+    "r"：{
+            "code" ： 0,
+            "msg" : "错误信息",
+    },
+    'data': null,
+}
+
+//修改密码
+/User/modifyPwd
+参数:
+    name:用户名
+    pwd1：密码1
+    pwd2：密码2
+返回值：
+{
+    r：{
+            code ： 0,
+            msg : "错误信息",
+    },
+    data: null,
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" > </meta>
+  <title>重置密码</title>
+  <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="{$css}/fromMailPage.css">
+</head>
+<body>
+  <div class="container resetpwd">
+    <div class="row">
+      <h1 class="logo-title">重置密码</h1>
+    </div>
+    <div class="row panel">
+      <p>请为<span id="username" class="text-info">{$username}</span>输入新密码<input id="str" type="hidden" value="{$str}"></p>
+      <p class="muted">您的密码包括至少：6个字符，1个字母，1个数字</p>
+      <label for="pwd">新密码</label>
+      <input id="pwd" type="password">
+      <label for="rpwd">确认密码</label>
+      <input id="rpwd" type="password">
+      <div class="panel-code">
+        <label class="control-label" for="txtCode">验证码</label>
+        <input id="txtCode" type="text">
+        <img id="imgCode" src="/index.php/Forgotpwd/verify" alt="验证码" style="width:120px;height:50px;">
+      </div>
+      <p>
+        <a id="btnReset" href="/index.php/" class="btn btn-success" data-loading-text="重置密码">重置密码</a>
+      </p>
+    </div>
+  </div>
+  <script src="{$pub}/dep/jquery.js"></script>
+  <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+  <script src="{$js}/welcome/forgotPwdFromMail.js"></script>
+</body>
+</html>

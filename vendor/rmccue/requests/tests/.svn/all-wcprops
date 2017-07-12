@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests
+END
+IDNAEncoder.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/IDNAEncoder.php
+END
+Requests.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/Requests.php
+END
+Cookies.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/Cookies.php
+END
+bootstrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/bootstrap.php
+END
+SSL.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/SSL.php
+END
+phpunit.xml.dist
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/phpunit.xml.dist
+END
+IRI.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/IRI.php
+END
+Session.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/Session.php
+END
+Encoding.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/Encoding.php
+END
+ChunkedEncoding.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/ChunkedEncoding.php
+END

@@ -1,0 +1,182 @@
+<div class="c-page-wrap">
+    <div class="c-page-silder">
+        <div class="c-page-slider-mask"></div>
+        <div class="c-page-silder-hidden">
+            <span>终端分组</span>
+            <div class="c-page-slider-choice">
+                <span class="c-page-slider-choice-top"></span>
+                <div id="choice-client">&nbsp;</div>
+                <span class="c-page-slider-choice-bottom"></span>
+            </div>
+        </div>
+        <div class="c-page-silder-wrap">
+            <div class="client-list">
+                <span class="client-list-header"><i class="client-lock"></i><i class="client-show"></i><span class="group-add">&nbsp;</span>终端分组</span>
+                <!-- <div class="client-list-global"><a href="javascript:;" da-toggle="#0" title="全网终端">全网终端</a></div> -->
+                <ul class="nav nav-list"></ul>
+            </div>
+            <div class="group-cmd">
+                <div id="groupCmd" class="groupCmdBox">
+                    <div class="groupCmdTit">
+                        <span class="groupCmdToggle"><i class="arrow-double-up"></i></span>
+                        <em class="groupCmdTxt">组管理</em>
+                    </div>
+                    <div class="groupCmdBod">
+                        <ul>
+                            {{#sys}}
+                            <li>
+                                <span class="ico_cmd01">立即升级</span><a href="javascript:;" data-cmdid="update">升级</a><i></i>
+                                <div class="default_hide"><span>立即修复</span><a href="javascript:;" data-cmdid="repair">修复</a></div>
+                            </li>
+                            <li><span class="ico_cmd02">发消息 &nbsp;&nbsp;</span><a href="javascript:;" data-cmdid="msg">发送</a></li>
+                            {{/sys}} {{#virus}}
+                            <li>
+                                <span class="ico_cmd01">快速查杀</span>
+                                <a href="javascript:;" data-type="1" data-status="1" data-cmdid="quickscanstart">开始</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-type="1" data-status="4" data-cmdid="quickscanstop">停止</a>
+                            </li>
+                            <li>
+                                <span class="ico_cmd02">全盘查杀</span>
+                                <a href="javascript:;" data-type="2" data-status="1" data-cmdid="allscanstart">开始</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-type="2" data-status="4" data-cmdid="allscanstop">停止</a>
+                            </li>
+                            <li>
+                                <span class="ico_cmd03">文件监控</span>
+                                <a href="javascript:;" data-type="3" data-status="1" data-cmdid="filemonopen">开启</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-type="3" data-status="0" data-cmdid="filemonclose">关闭</a>
+                            </li>
+                            <li>
+                                <span class="ico_cmd04">邮件监控</span>
+                                <a href="javascript:;" data-type="4" data-status="1" data-cmdid="mailmon:open">开启</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-type="4" data-status="0" data-cmdid="mailmon:close">关闭</a>
+                            </li>
+                            <li>
+                                <span class="ico_cmd02">共享监控 &nbsp;&nbsp;</span>
+                                <a href="javascript:;" data-cmdid="rfwsharmon:open" data-status="1">开启</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-cmdid="rfwsharmon:close" data-status="0">关闭</a>
+                            </li>
+                            {{/virus}} {{#protection}}
+                            <li>
+                                <span class="ico_cmd01">拦截恶意木马网址</span>
+                                <a href="javascript:;" data-cmdid="rfwurl.virus:open" data-status="1">开启</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-cmdid="rfwurl.virus:close" data-status="0">关闭</a>
+                            </li>
+                            <li>
+                                <span class="ico_cmd02">拦截钓鱼网址</span>
+                                <a href="javascript:;" data-cmdid="rfwurl.antifish:open" data-status="1">开启</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-cmdid="rfwurl.antifish:close" data-status="0">关闭</a>
+                            </li>
+                            <li>
+                                <span class="ico_cmd03">拦截恶意下载</span>
+                                <a href="javascript:;" data-cmdid="rfwurl.evildown:open" data-status="1">开启</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-cmdid="rfwurl.evildown:close" data-status="0">关闭</a>
+                            </li>
+                            <li>
+                                <span class="ico_cmd02">防黑客攻击 </span>
+                                <a href="javascript:;" data-cmdid="rfwiprule.rs:open" data-status="1">开启</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-cmdid="rfwiprule.rs:close" data-status="0">关闭</a>
+                            </li>
+                            <li>
+                                <span class="ico_cmd04">拦截跨站脚本攻击</span>
+                                <a href="javascript:;" data-cmdid="rfwurl.xss:open" data-status="1">开启</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-cmdid="rfwurl.xss:close" data-status="0">关闭</a>
+                            </li>
+                            <li>
+                                <span class="ico_cmd01">搜索引擎结果检查</span>
+                                <a href="javascript:;" data-cmdid="rfwurl.search:open" data-status="1">开启</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-cmdid="rfwurl.search:close" data-status="0">关闭</a>
+                            </li>
+                            <li>
+                                <span class="ico_cmd02">广告过滤 </span>
+                                <a href="javascript:;" data-cmdid="rfwurl.adfilter:open" data-status="1">开启</a>
+                                <div>&nbsp;|&nbsp;</div>
+                                <a href="javascript:;" data-cmdid="rfwurl.adfilter:close" data-status="0">关闭</a>
+                            </li>                            
+                            {{/protection}} {{#mobile}}
+                            <li><span class="ico_cmd01">立即上报位置</span><a href="javascript:;" data-cmdid="0x4001">上报</a></li>
+                            {{/mobile}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-page-container">
+        <div class="c-page-nav">
+            <ul class="nav nav-pills">
+                {{#nav}}
+                <li da-type="{{value}}">
+                    <a href="javascript:;" da-toggle="#{{tag}}/{{value}}">{{name}}</a>
+                </li>
+                {{/nav}}
+            </ul>
+        </div>
+        <div class="c-page-content"></div>
+    </div>
+</div>
+<!--Modal-->
+<div id="mGroup" class="modal hide" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="mGroupTitle"></h3>
+    </div>
+    <div class="modal-body">
+        <label>组名称：</label>
+        <input id="txtGroupName" type="text" maxlenth="20" size="20">
+    </div>
+    <div class="modal-footer">
+        <button id="btnSaveGroup" class="btn btn-primary btn-sure">保存</button>
+        <button class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">关闭</button>
+    </div>
+</div>
+<div id="msGroup" class="modal hide" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" id="closeMs" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="msGroupTitle"></h3>
+    </div>
+    <div class="modal-body">
+        <textarea id="txtsGroupName">
+      </textarea>
+    </div>
+    <div class="modal-footer">
+        <button id="btnsSaveGroup" class="btn btn-primary btn-sure">确定</button>
+        <button id="btnsCloseGroup" class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">关闭</button>
+    </div>
+</div>
+<div id="orderFlow" class="modal hide" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" id="closeMs" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>发送命令</h3>
+    </div>
+    <div class="modal-body">
+        <div style="text-align:center;"><span class="orderFlowIco">命令创建成功，正等待终端接收与执行！</span></div>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:void(0)" url-data="sys/cmd" id="orderFlowGo">跟踪此命令</a>
+        <button id="orderFlowSave" class="btn btn-primary btn-sure" data-dismiss="modal" aria-hidden="true">确定</button>
+    </div>
+</div>
+<div id="orderFlow2" class="modal hide" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" id="closeMs2" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>发送消息</h3>
+    </div>
+    <div class="modal-body">
+        <div style="text-align:center;"><span class="orderFlowIco">消息创建成功，正等待终端接收与执行！</span></div>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:void(0)" url-data="sys/msg" id="orderFlowGo2">跟踪此消息</a>
+        <button id="orderFlowSave2" class="btn btn-primary btn-sure" data-dismiss="modal" aria-hidden="true">确定</button>
+    </div>
+</div>

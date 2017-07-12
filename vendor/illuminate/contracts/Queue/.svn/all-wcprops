@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/illuminate/contracts/Queue
+END
+Job.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/illuminate/contracts/Queue/Job.php
+END
+EntityResolver.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/illuminate/contracts/Queue/EntityResolver.php
+END
+ShouldQueue.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/illuminate/contracts/Queue/ShouldQueue.php
+END
+Queue.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/illuminate/contracts/Queue/Queue.php
+END
+QueueableCollection.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/illuminate/contracts/Queue/QueueableCollection.php
+END
+QueueableEntity.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/illuminate/contracts/Queue/QueueableEntity.php
+END
+Factory.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/illuminate/contracts/Queue/Factory.php
+END
+Monitor.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/illuminate/contracts/Queue/Monitor.php
+END
+EntityNotFoundException.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/illuminate/contracts/Queue/EntityNotFoundException.php
+END

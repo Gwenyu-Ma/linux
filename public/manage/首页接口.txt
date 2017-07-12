@@ -1,0 +1,7 @@
+Authhome/getAccreditNum
+
+Authhome/historySevenDay  最近七天授权
+
+Authhome/newAccredit  最新连接的客户端5条
+
+/Authhome/index 授权是否过期 今日授权：未授权：历史授权总数：

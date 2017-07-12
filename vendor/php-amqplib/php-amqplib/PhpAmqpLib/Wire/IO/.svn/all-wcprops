@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO
+END
+AbstractIO.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/AbstractIO.php
+END
+SocketIO.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/SocketIO.php
+END
+StreamIO.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php
+END

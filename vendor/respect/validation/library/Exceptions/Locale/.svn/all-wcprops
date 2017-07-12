@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/library/Exceptions/Locale
+END
+PlIdentityCardException.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/library/Exceptions/Locale/PlIdentityCardException.php
+END
+GermanBankAccountException.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/library/Exceptions/Locale/GermanBankAccountException.php
+END
+GermanBankException.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/library/Exceptions/Locale/GermanBankException.php
+END
+GermanBicException.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/library/Exceptions/Locale/GermanBicException.php
+END

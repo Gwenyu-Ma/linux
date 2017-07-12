@@ -1,0 +1,159 @@
+<div class="log-content">
+    <div class="auth_content">
+        <div class="auth_left">
+            <div class="logo_img">
+                <!-- <img src=".../img/com_logo.png" /> -->
+            </div>
+            <div class="com_details">
+                <ul>
+                    <!-- <li><span class="details_tit">授权对象：</span><p class="auth-name"></p></li> -->
+                    <li><span class="details_tit">授权有效期：</span><p class="remainY"></p>（<p class="auth-start-time"></p>&nbsp;至&nbsp;<p class="auth-end-time"></p>）<p class="remainD"></p></li>
+                    <li><span class="details_tit">授权状态：</span><p class="auth-status"></p></li>
+                    <li><span class="details_tit">授权用户数：</span><p class="user-num"></p></li>
+                    <li><span class="details_tit">授权子产品数：</span><p class="product-num"></p></li>
+                    <li><span class="details_tit">导入授权次数：</span><p class="import-num font_blue"></p></li>
+                    <li><span class="details_tit">最后导入授权：</span><p class="auth-last"></p></li>
+                    <!--<li><span class="details_tit">特殊备注：</span><p class="spe-remarks"></p></li>-->
+                </ul>
+            </div>
+            <div class="into_auth">
+                <a class="submit_auth js_sq_box_show" href="javascript:void(0)">导入授权</a>
+            </div>
+        </div>
+        <div class="auth_right">
+            <div class="right_top">
+                <span class="right_tit">授权用户使用情况：</span>
+                <ul>
+                    <li>可创建用户总数：<span class="auth-total"></span></li>
+                    <li>已创建：<span class="users-num"></span></li>
+                    <li>已授权：<span class="auth-num"></span></li>
+                    <li>未授权：<span class="not-auth-num font_orange"></span></li>
+                </ul>
+                <div class="pro_bar">
+                    <span>用户数：</span>
+                    <div class="bar_info"><div class="bar_on bar_on_01"></div></div>
+                    <span class="bar_num"><em class="auth_amount users-num font_green"></em>/<em class="auth-total"></em></span>
+                </div>
+                <div class="pro_bar">
+                    <span class="ad_num">用户授权数：</span>
+                    <div class="bar_info"><div class="bar_on bar_on_02"></div></div>
+                    <span class="bar_num"><em class="creat_amount auth-num font_green"></em>/<em class="users-num"></em></span>
+                </div>
+            </div>
+            <div class="right_bottom">
+                <span class="right_tit">子产品授权使用情况：</span>
+                <div class="sub_pro">
+                    <ul id="client_list">
+                        <!-- <li>
+                            <i class="sub_pro_virus"></i>
+                            <div class="sub_pro_info">
+                                <div class="sub_pro_tit">
+                                    <span class="sub_pro_name">防病毒</span>
+                                    <span class="sub_pro_point">100点</span>
+                                </div>
+                                <div class="sub_pro_bar"><div class="sub_pro_on"></div></div>
+                                <div><span class="sub_pro_num">500</span>/25400(点·天)</div>
+                            </div>
+                            <p class="sub_pro_msg">即将用完</p>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--导入授权modal-->
+<div class="modal hide js_sq_box" style="width:520px;margin-left:-260px;" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>导入授权</h3>
+    </div>
+    <div class="modal-body" style="margin-bottom:40px;">
+        <div class="step01">
+            <form novalidate="novalidate" style="margin-top:40px;">
+                <div class="step_form">
+                    <label>授权序列号：</label>
+                    <input type="text" name="sn" placeholder="请输入瑞星授权的序列号" maxlength="29">
+                    <em>*</em>
+                </div>
+                <div class="step_form">
+                    <label>授权文件：</label>
+                    <div class="step_file"><i></i><input type="file" name="auth"></div>
+                    <input type="text" class="js_seriseFile" placeholder="请上传“.lic”授权文件">
+                    <em>*</em>
+                </div>
+            </form>
+            <div class="step_box_footer">
+                <a class="step_box_btn01 js_step01">立即导入授权</a>
+            </div>
+        </div>
+        <div class="step02" style="display:none;">
+            <div class="step_box_info" style="padding-top:70px;">
+                <div class="step_box_info_box2 mt46">
+                    <div><i></i><span>恭喜您授权导入成功！</span></div>
+                </div>
+            </div>
+            <div class="step_box_footer" style="padding-top:80px;">
+                <a class="step_box_btn01 js_go_pruduct">查看授权详情</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--导入授权次数modal-->
+<div class="modal hide sq_histroy" style="width:820px;margin-left:-390px;" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>历史授权</h3>
+    </div>
+    <div class="modal-body" style="margin-bottom:40px;">
+        <div class="auth_popup">
+            <table class="table table-bordered text-center">
+                <thead class="sq_histroy_popup">
+                    <tr>
+                        <td>授权号</td>
+                        <td>授权产品</td>
+                        <td>产品代码</td>
+                        <td>系统类型</td>
+                        <td>授权终端数</td>
+                        <td>授权有效期</td>
+                    </tr>				     
+                </thead>
+                <tbody>
+                    <tr><td colspan="6" style="text-align: center">无记录！</td></tr>
+                    <!--<tr>
+                        <td rowspan="4">111111-111111-111111-111111-111111</td>
+                        <td>防病毒</td>
+                        <td>XRV</td>
+                        <td>windows</td>
+                        <td>30</td>
+                        <td>2016-12-12 至 2016-12-12</td>
+                    </tr>
+                    <tr>
+                        <td>防病毒</td>
+                        <td>XRV</td>
+                        <td>windows</td>
+                        <td>30</td>
+                        <td>2016-12-12 至 2016-12-12</td>
+                    </tr>
+                    <tr>
+                        <td>防病毒</td>
+                        <td>XRV</td>
+                        <td>windows</td>
+                        <td>30</td>
+                        <td>2016-12-12 至 2016-12-12</td>
+                    </tr>
+                    <tr>
+                        <td>防病毒</td>
+                        <td>XRV</td>
+                        <td>windows</td>
+                        <td>30</td>
+                        <td>2016-12-12 至 2016-12-12</td>
+                    </tr>-->
+                </tbody>
+                </table>
+        </div>
+    </div>
+</div>

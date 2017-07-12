@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr
+END
+arrayDestructuring.test
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/arrayDestructuring.test
+END
+shortArraySyntax.test
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/shortArraySyntax.test
+END
+yield.test
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/yield.test
+END
+variables.test
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/variables.test
+END
+call.test
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/call.test
+END
+list.test
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/list.test
+END
+numbers.test
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/numbers.test
+END
+closure.test
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/closure.test
+END
+uvs.test
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/uvs.test
+END
+anonymousClass.test
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/anonymousClass.test
+END
+operators.test
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/operators.test
+END
+docStrings.test
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/docStrings.test
+END
+literals.test
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/literals.test
+END
+stringEscaping.test
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/stringEscaping.test
+END
+parentheses.test
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/parentheses.test
+END
+include.test
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/include.test
+END
+intrinsics.test
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/intrinsics.test
+END
+constant_deref.test
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/expr/constant_deref.test
+END

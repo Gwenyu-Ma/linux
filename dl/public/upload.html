@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/download.css">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="./js/lib/respond.min.js">
+			</script>
+		<![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+		<div class="down-page-nav">
+			<span class="dpn-title">下载管理平台</span>
+			<div class="nav">
+			  <a href="index.html"><span><i class="fa fa-cube fa-2x" aria-hidden="true"></i></span>当前包</a>
+			  <a  class="active" href="upload.html"><span><i class="fa fa-upload fa-2x" aria-hidden="true"></i></span>上传新包</a>
+			  <a href="eids.html"><span><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>EID列表</a>
+			</div>
+		</div>
+		<div class="down-page-content">
+			<div class="header">
+				<a class="hide" href="javascript:void(0)">
+					<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div class="page-content">
+				<div class="upload_data">
+					<p class="first">
+						<span>选择平台:</span>
+						<select id="platForm" name="platform">
+							<option value="" selected>请选择</option>
+							<option value="android">android</option>
+							<option value="linux">linux</option>
+							<option value="windows">windows</option>
+						</select>
+					</p>
+					<div class="upload-line">
+						<span>选择包:</span>
+						<div class="upload-btn">选择文件</div>
+						<input type="file" id="base" name="base" class="upbase">
+						<b class="filePath"></b>
+					</div>
+					<p class="last">
+						<button class="uploadBtn">
+							上传
+						</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="shadowBox hide">
+		</div>
+		<div class="errorTip hide">
+			<span></span>
+			<p clsss="slitLine"></p>
+			<a>确定</a>
+		</div>
+		<script type="text/javascript" src="./js/lib/jquery-1.12.3.min.js">
+		</script>
+		<script type="text/javascript" src="./js/lib/ajaxfileupload.js">
+		</script>
+		<script type="text/javascript" src="./js/script.js">
+		</script>
+    </body>
+</html>

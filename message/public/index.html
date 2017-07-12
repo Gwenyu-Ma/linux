@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息系统管理</title>
+    <link rel="stylesheet" href="./js/lib/responsive-nav.css">
+    <style type="text/css" rel="stylesheet">
+        html,body{
+            min-height:100%;
+        }
+        body{
+            background-color: #0d47a1;
+            width: 100%;
+            height:100%;
+            padding: 0;
+            margin: 0;
+            min-width: 1200px;
+        }
+        #nav{
+            padding: 100px 10px;
+            color: #fff3e0;
+        }
+        #nav a{
+            display: block;
+            padding: 5px 20px;
+            width: auto;
+            background: rgba(0,0,0,.1);
+            cursor: pointer;
+            /*padding: 5px 10px;*/
+        }
+        #nav a:hover{
+            background: rgba(255,255,255,.3);
+            color: #ffffff;
+            background: transparent;
+         }
+        #main{
+            background-color: #00bfa5;
+            position: fixed;
+            left:150px;
+            top:8px;
+            right:5px;
+            bottom: 5px;
+        }
+    </style>
+    <script src="./js/lib/responsive-nav.min.js"></script>
+    <script src="./js/lib/vue.min.js"></script>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li><a v-on:click="aClick('msglist.html')">消息列表</a></li>
+            <li><a v-on:click="aClick('sublist.html')">订阅列表</a></li>
+            <li><a v-on:click="aClick('subobjlist.html')">对象列表</a></li>
+            <li><a v-on:click="aClick('distrib.html')">分发列表</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <iframe src="{{pageUrl}}" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+</body>
+<script>
+    var nav=responsiveNav("#nav",{
+        init:function () {
+            
+        },
+        open:function () {
+            alert('open');
+        },
+        close:function () {
+            alert('close');
+        }
+    });
+    var mainAre=new Vue({
+        el:"#main",
+        data:{
+            pageUrl:'msglist.html'
+        }
+    });
+    var navAre=new Vue({
+        el:"#nav",
+        methods:{
+            aClick:function (pageName) {
+                mainAre.pageUrl=pageName;
+            }
+        }
+    });
+</script>
+</html>

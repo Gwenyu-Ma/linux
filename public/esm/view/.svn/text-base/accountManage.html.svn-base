@@ -1,0 +1,11 @@
+<div class="userCenter">
+	<ul>
+		<li data-current="overview">账户信息</li>
+		<li data-current="message">我的消息</li>
+		<li data-current="operlog">操作日志</li>
+		<li class="last active" data-current="accountManage">账号管理</li>
+	</ul>
+	<div class="uc-content">
+此页暂无内容
+	</div>
+</div>

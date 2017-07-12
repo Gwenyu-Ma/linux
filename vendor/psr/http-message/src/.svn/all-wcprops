@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/esm/!svn/ver/29125/soho/code/ESMCenter/vendor/psr/http-message/src
+END
+RequestInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm/!svn/ver/29125/soho/code/ESMCenter/vendor/psr/http-message/src/RequestInterface.php
+END
+StreamInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm/!svn/ver/29125/soho/code/ESMCenter/vendor/psr/http-message/src/StreamInterface.php
+END
+UploadedFileInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm/!svn/ver/29125/soho/code/ESMCenter/vendor/psr/http-message/src/UploadedFileInterface.php
+END
+ResponseInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm/!svn/ver/29125/soho/code/ESMCenter/vendor/psr/http-message/src/ResponseInterface.php
+END
+ServerRequestInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm/!svn/ver/29125/soho/code/ESMCenter/vendor/psr/http-message/src/ServerRequestInterface.php
+END
+UriInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm/!svn/ver/29125/soho/code/ESMCenter/vendor/psr/http-message/src/UriInterface.php
+END
+MessageInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm/!svn/ver/29125/soho/code/ESMCenter/vendor/psr/http-message/src/MessageInterface.php
+END

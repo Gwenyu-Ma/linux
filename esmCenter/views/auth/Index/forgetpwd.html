@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> </meta>
+    <title>找回密码</title>
+    <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{$cssAuth}/base.css">
+    <link rel="stylesheet" href="{$cssAuth}/forgetpwd.css">
+</head>
+
+<body class="login">
+    <div class="bg" bgImg="{$imgAuth}/banner_3.jpg">
+        <!--<img src="{$pub}/img/banner_3.png">--></div>
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a href="/" class="logo"><img src="{$imgAuth}/logo2.png"><span class="logo_font">{$title}</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="step_box step_1" style="display: none;">
+            <h3 class="step_box_tit">找回密码</h3>
+            <div class="step_box_bod">
+                <div class="step_box_process"></div>
+                <div class="step_box_info">
+                    <div class="step_box_info_box mt40">
+                        <div>尊敬的用户，忘记密码需要您重新导入授权后再进行密码重置。</div>
+                    </div>
+                </div>
+                <form class="mt35" enctype="multipart/form-data">
+                    <div class="step_form">
+                        <label>授权序列号：</label>
+                        <input type="text" name="sn" placeholder="请输入瑞星授权的序列号" maxlength="29">
+                        <em>*</em>
+                    </div>
+                    <div class="step_form">
+                        <label>授权文件：</label>
+                        <div class="step_file"><i></i><input type="file" name="auth"></div>
+                        <input type="text" name="seriseFile" class="js_seriseFile" placeholder="请上传“.lic”授权文件">
+                        <em>*</em>
+                    </div>
+                </form>
+            </div>
+            <div class="step_box_footer">
+                <a class="step_box_btn01 js_step01" href="javascript:void(0)">验证授权</a>
+            </div>
+        </div>
+        <div class="step_box step_2" style="display: none;">
+            <h3 class="step_box_tit">找回密码</h3>
+            <div class="step_box_bod">
+                <div class="step_box_process"></div>
+                <form class="form-horizontal" action="" style="margin-top:60px;">
+                    <div class="control-group log_box_in">
+                        <label class="control-label">密码：</label>
+                        <div class="controls">
+                            <input type="password" value="" placeholder="请输入密码" id="txtPwd" name="txtPwd" /><span class="require">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group log_box_in">
+                        <label class="control-label">确认密码：</label>
+                        <div class="controls">
+                            <input type="password" value="" placeholder="请输入密码" id="rtxtPwd" name="rtxtPwd" /><span class="require">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group log_box_in">
+                        <label class="control-label">验证码：</label>
+                        <div class="controls">
+                            <input type="text" value="" placeholder="请输入验证码" class="w106" id="txtCode" name="txtCode" />
+                            <span class="verify ml7"><img src="/index.php/Index/verify" id="codeImg"><a href="#" id="verify_btn">&nbsp;</a></span>
+                            <span class="require">*</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="step_box_footer">
+                <a class="step_box_btn01 js_step02" href="javascript:void(0)">设置新密码</a>
+            </div>
+        </div>
+        <div class="step_box step_3" style="display: none;">
+            <h3 class="step_box_tit">找回密码</h3>
+            <div class="step_box_bod">
+                <div class="step_box_process"></div>
+                <div class="step_box_info">
+                    <div class="step_box_info_box2 mt46">
+                        <div><i></i><span>恭喜您密码重置成功！</span></div>
+                    </div>
+                </div>
+                <p class="rem_pwd">请牢记帐号密码信息。</p>
+            </div>
+            <div class="step_box_footer">
+                <a class="step_box_btn01 js_step03" href="javascript:void(0)">立即登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="msg-box"></div>
+    <script src="{$pub}/dep/jquery.js"></script>
+    <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+    <script src="{$pub}/dep/jquery-validation/jquery.validate.min.js"></script>
+    <script src="{$pub}/dep/jquery.form.js"></script>
+    <script src="{$jsAuth}/plugin/fixbg.js"></script>
+    <script src="{$jsAuth}/plugin/base.js"></script>
+    <script src="{$jsAuth}/noAuth/fpwd.js"></script>
+</body>
+
+</html>

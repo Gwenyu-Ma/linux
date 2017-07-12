@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/es5-shim/tests/spec
+END
+s-function.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/es5-shim/tests/spec/s-function.js
+END
+helpers-jasmine.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/es5-shim/tests/spec/helpers-jasmine.js
+END
+s-object.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/es5-shim/tests/spec/s-object.js
+END
+s-string.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/es5-shim/tests/spec/s-string.js
+END
+s-number.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/es5-shim/tests/spec/s-number.js
+END
+s-error.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/es5-shim/tests/spec/s-error.js
+END
+s-regexp.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/es5-shim/tests/spec/s-regexp.js
+END
+s-date.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/es5-shim/tests/spec/s-date.js
+END
+s-array.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/es5-shim/tests/spec/s-array.js
+END
+s-global.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/es5-shim/tests/spec/s-global.js
+END

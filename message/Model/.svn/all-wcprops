@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/Model
+END
+Test.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/Model/Test.php
+END
+Distrib.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/Model/Distrib.php
+END
+MsgManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/Model/MsgManager.php
+END

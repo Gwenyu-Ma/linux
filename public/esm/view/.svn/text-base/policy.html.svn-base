@@ -1,0 +1,13 @@
+<div class="c-moudle-nav">
+    <ul class="nav nav-pills" id="policy-product">
+        {{#policy}}
+        <li><a href="javascript:;" da-toggle="#{{value}}">{{name}}</a></li>
+        {{/policy}}
+    </ul>
+</div>
+<div class="c-moudle-container form-horizontal policy-form" id="policyContent">
+    
+</div>
+<div class="c-policy-btn">
+    <a href="javascript:;" class="btn" id="policy-save">保存</a>
+</div>

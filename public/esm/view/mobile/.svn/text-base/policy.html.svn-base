@@ -1,0 +1,235 @@
+<div class="c-moudle-nav">
+    <ul class="nav nav-pills" id="policyTab">
+        <li class="active"><a href="javascript:void(0)" da-toggle="#tab-pub">全局设置</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-viru">查杀设置</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-harass">防骚扰设置</a></li>
+        <!-- <li><a href="javascript:void(0)" da-toggle="#tab-local">定位设置</a></li> -->
+    </ul>
+</div>
+<div class="c-moudle-container form-horizontal policy-form" id="policyContent">
+    <div class="c-moudle-wrap">
+        <div class="policy-box" id="tab-pub">
+            <h3 class="policy-tit">全局设置</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd>
+                        <span class="inblock" style="width:140px;"><i id="pub_stateBar_lock" class="lock"></i>状态栏显示：</span>
+                        <label class="radio">
+                            <input type="radio" name="pub_stateBar" id="stateBar_1" value="0" checked>不显示
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="pub_stateBar" id="stateBar_2" value="1">显示
+                        </label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-viru">
+            <h3 class="policy-tit">查杀设置</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:140px;"><i id="viru_scanMode_lock" class="lock"></i>杀毒方式：</span>
+                        <label class="radio">
+                            <input type="radio" name="viru_scanMode" id="scanMode_1" value="0" checked>快速查杀
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="viru_scanMode" id="scanMode_2" value="1">全盘查杀
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:140px;"><i id="viru_dealMode_lock" class="lock"></i>处理方式：</span>
+                        <label class="radio">
+                            <input type="radio" name="viru_dealMode" id="dealMode_1" value="0" checked>手动处理
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="viru_dealMode" id="dealMode_2" value="1">自动处理
+                        </label>
+                    </dd>
+                    <dd>
+                        <span class="inblock" style="width:140px;"><i id="viru_updateMode_lock" class="lock"></i>病毒库更新方式：</span>
+                        <label class="radio">
+                            <input type="radio" name="viru_updateMode" id="updateMode_1" value="0" checked>自动更新
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="viru_updateMode" id="updateMode_2" value="1">WiFi下自动更新
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="viru_updateMode" id="updateMode_3" value="2">手动更新
+                        </label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-harass">
+            <h3 class="policy-tit">防骚扰设置</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <label class="checkbox"><i id="harass_switch_lock" class="lock"></i>
+                            <input type="checkbox" id="harass_switch" >开启拦截服务</label>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock"><i id="harass_viru_spamMode_lock" class="lock"></i>拦截模式：</span>
+                    </dd>
+                    <dd class="policy-border">
+                        <dl>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" name="viru_spamMode" id="spamMode_1" value="1" checked>只拦截黑名单
+                                </label>
+                            </dd>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" name="viru_spamMode" id="spamMode_2" value="2">只接受白名单
+                                </label>
+                            </dd>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" name="viru_spamMode" id="spamMode_3" value="3">只接受白名单和通讯录
+                                </label>
+                            </dd>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" name="viru_spamMode" id="spamMode_4" value="4">只拦截来电
+                                </label>
+                            </dd>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" name="viru_spamMode" id="spamMode_5" value="5">全部拦截
+                                </label>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>时段拦截</dt>
+                    <dd class="policy-border">
+                        <label class="checkbox"><i id="harass_viru_timespanswitch_lock" class="lock"></i>
+                            <input type="checkbox" id="viru_timespanswitch" >开启拦截服务</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock"><i id="harass_viru_timeSpamMode_lock" class="lock"></i>拦截模式：</span>
+                    </dd>
+                    <dd class="policy-border">
+                        <dl>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" name="viru_timeSpamMode" id="timeSpamMode_1" value="1" checked >只拦截黑名单
+                                </label>
+                            </dd>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" name="viru_timeSpamMode" id="timeSpamMode_2" value="2" >只接受白名单
+                                </label>
+                            </dd>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" name="viru_timeSpamMode" id="timeSpamMode_3" value="3" >只接受白名单和通讯录
+                                </label>
+                            </dd>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" name="viru_timeSpamMode" id="timeSpamMode_4" value="4" >只拦截来电
+                                </label>
+                            </dd>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" name="viru_timeSpamMode" id="timeSpamMode_5" value="5" >全部拦截
+                                </label>
+                            </dd>
+                            <dd>
+                                <label><i id="start_time_lock" class="lock"></i>开始时间：
+                                    <input type="text" class="input-mini js_time" value="9:00" id="start_time" >
+                                </label>
+                            </dd>
+                            <dd>
+                                <label><i id="end_time_lock" class="lock"></i>结束时间：
+                                    <input type="text" class="input-mini js_time" value="9:00" id="end_time" >
+                                </label>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock"><i id="viru_rejectMode_lock" class="lock"></i>来电拒接方式：</span>
+                        <label class="radio">
+                            <input type="radio" name="viru_rejectMode" id="rejectMode_1" value="1" checked>本机静音
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="viru_rejectMode" id="rejectMode_2" value="2">返回忙音
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="viru_rejectMode" id="rejectMode_3" value="3">返回空号
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="viru_rejectMode" id="rejectMode_4" value="4">返回已关机
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="viru_rejectMode" id="rejectMode_5" value="5">返回停机
+                        </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label class="checkbox"><i id="viru_autoUnknown_lock" class="lock"></i>
+                            <input type="checkbox" id="viru_autoUnknown">自动加入黑名单</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label class="checkbox"><i id="viru_callUnknown_lock" class="lock"></i>
+                            <input type="checkbox" id="viru_callUnknown">陌生人来电挂断后提示</label>
+                    </dd>
+                    <dd>
+                        <label class="checkbox"><i id="viru_intelligentfilter_lock" class="lock"></i>
+                            <input type="checkbox" id="viru_intelligentfilter">自动拦截垃圾短信</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-local">
+            <h3 class="policy-tit">防骚扰设置</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd>
+                        <label class="checkbox"><i id="local_switch_lock" class="lock"></i>
+                            <input type="checkbox" id="local_switch" class="js_switch">开启定位服务</label>
+                        <dl>
+                            <dd>
+                                <span class="inblock">定位周期：</span>
+                                <label class="checkbox">
+                                    <i id="local_reportTime_lock" class="lock"></i> 间隔
+                                    <input type="text" id="local_reportTime" class="input-mini" >&nbsp;秒上报
+                                </label>
+                            </dd>
+                            <dd>
+                                <span class="inblock">位移距离：</span>
+                                <label class="checkbox">
+                                    <i id="local_reportDistance_lock" class="lock"></i> 位移
+                                    <input type="text" id="local_reportDistance" class="input-mini" >&nbsp;米上报
+                                </label>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="c-policy-btn">
+    <a href="javascript:;" class="btn" id="policy-save">应用</a>
+</div>
+<!-- Modal -->
+<div id="autoGroup_modal" class="modal hide" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>选择组</h3>
+    </div>
+    <div class="modal-body">
+        <ul id="autoGroup_list" class="unstyled"></ul>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+        <button id="autoGroup_chioce" class="btn btn-primary">选择</button>
+    </div>
+</div>

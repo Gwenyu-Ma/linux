@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" > </meta>
+  <title>激活账号验证</title>
+  <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="{$css}/fromMailPage.css">
+</head>
+<body>
+  <div class="container register">
+    <div class="row">
+      <h1 class="logo-title">验证您的身份</h1>
+    </div>
+    <div class="row panel">
+      <p class="muted" style="text-align:left;">您正在尝试登陆到瑞星SOHO。要确保您的SOHO账号安全，我们必须验证您的身份。请输入我们通过电子邮件发送到<span id="username" class="text-info">{$email}</span>的验证码。<input id="str" type="hidden" value="{$str}"></p>
+      <label for="scode">验证码</label>
+      <input id="scode" type="text">
+      <p>
+        <a id="btnSubmit" href="/index.php/" class="btn btn-success" data-loading-text="验证中...">验证</a>
+      </p>
+      <p>
+        <a id="btnResendEmail" href="#" data-loading-text="邮件发送中...">重新发送邮件</a>
+      </p>
+    </div>
+  </div>
+  <script src="{$pub}/dep/jquery.js"></script>
+  <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+  <script src="{$js}/welcome/activateAccountFromMail.js"></script>
+</body>
+</html>

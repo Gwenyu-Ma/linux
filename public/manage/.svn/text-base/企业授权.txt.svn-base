@@ -1,0 +1,134 @@
+1.添加企业管理员
+/Enterprisemanager/enterpriseAdd
+Method：POST
+参数：
+{
+	'UserName' :'rising',  //用户名
+	'PWD' : '123456', //密码
+        'EMail' : 'rising@rising.com.cn',  //邮箱
+        'PhoneNo' : '15910303731', //手机号
+        'OName' : 'Rising',   //企业名称
+        
+}
+返回值：
+{
+	"r":
+	{
+		"code":0,
+		"action":0,
+		"msg":"错误信息"
+	}
+}
+
+2.中心管理员给企业授权子产品列表
+/Authmanager/authList
+参数：
+	null
+返回值：
+{
+	"r":
+    {
+        "code":0,
+        "action":0,
+        "msg":"错误信息",
+        "data":返回值  //参考具体返回值
+    }
+}
+
+3.中心管理员提交企业授权页面
+/Authmanager/writeAuth
+参数：json格式，key=strJson  
+ 转化成json之前的数组格式：	$aParams = [
+            [
+               'EID' => '53B2C38679500448',
+               'productGuid' => 'D49170C0-B076-4795-B079-0F97560485AF', 
+               'starttime' =>'2017-04-28 00:10:20',
+               'endtime' =>'2017-07-28 00:10:20',
+               'accreditCount' => 2,
+               'authAmount' => 10
+            ],
+            [
+               'EID' => '53B2C38679500448',
+               'productGuid' => 'F1A05321-8959-48C7-8182-04A8DB6EEBF0', 
+               'starttime' =>'2017-04-28 00:10:20',
+               'endtime' =>'2017-07-28 00:10:20',
+               'accreditCount' => 1,
+               'authAmount' => 20
+            ]
+        ];
+        
+4.中心管理员->企业管理页面统计数据
+Enterprisemanager/getTotalNum
+返回值：json
+[authTotal]   瑞星总授权数
+[authNum]	中心管理员已经授权的企业数
+[notAuthNum]   中心管理员没有授权的企业数
+[usersNum]	总企业数
+[soonExpireNum]  即将过期的企业数
+
+5.显示企业列表
+Enterprisemanager/enterpriseList
+参数：
+{
+	UserName  模糊用户名
+	OName  企业名
+	createStartTime  创建开始时间
+	createEndTime  创建结束时间
+	status 0未授权  1正常 2即将到期  3过期（失效）
+}
+
+6.企业列表点击子产品数
+Enterprisemanager/productList
+参数：
+{
+	EID
+}
+
+7.企业详情 提交修改
+Enterprisemanager/editErprise
+
+参数：
+{
+	EID：
+	UserName：
+	EMail：
+	PhoneNo：
+	OName：
+}
+返回值：
+	bool
+
+8.删除没有授权的某一个企业
+Enterprisemanager/delEnterprise
+参数：
+	{
+		EID
+	}
+
+9.重置企业密码
+Enterprisemanager/passEdit
+参数：
+	{
+		EID
+		passwd
+		repasswd
+	}
+返回值：
+	bool
+
+10.产品授权页面
+/Authmanager/productAuth
+返回值：
+	如交互图左边授权信息
+	{
+		userNum   //授权用户数
+		importNum  //导入授权次数
+		authStartTime //授权开始日期
+		authEndTime  //授权结束日期
+		lastImportTime  //最后一次导入时间
+		authStatus  //授权状态
+		productNum //授权子产品数
+	}
+
+11.产品授权页面  各个子产品使用情况
+/Authmanager/productDetails

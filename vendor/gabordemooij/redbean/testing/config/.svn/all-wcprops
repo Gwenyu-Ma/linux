@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm/!svn/ver/29035/soho/code/ESMCenter/vendor/gabordemooij/redbean/testing/config
+END
+test-travis.ini
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/29035/soho/code/ESMCenter/vendor/gabordemooij/redbean/testing/config/test-travis.ini
+END
+test-dist.ini
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm/!svn/ver/29035/soho/code/ESMCenter/vendor/gabordemooij/redbean/testing/config/test-dist.ini
+END

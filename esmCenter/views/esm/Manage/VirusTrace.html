@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>病毒信息</title>
+  <link rel="stylesheet" href="{pub}/dep/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="{css}/index.css">
+  <link rel="stylesheet" href="{pub}/dep/selectric/jquery.selectric.css">
+  <link rel="stylesheet" href="{pub}/dep/datetimepicker/jquery.datetimepicker.css">
+  <link rel="stylesheet" href="{css}/VirusTrace.css">
+</head>
+<body>
+  <div class="head">
+    <div class="log-panel form-inline bar-search">
+      <div class="item-search">
+        <label>显示类型</label>
+        <select id="selType">
+          <option value="day">日</option>
+          <option value="week">周</option>
+          <option value="month">月</option>
+        </select>
+      </div>
+      <div class="item-search">
+        <label>时间范围</label>
+        <select id="selTime">
+          <option value="0" selected>本周</option>
+          <option value="1">上周</option>
+          <option value="2">本月</option>
+          <option value="3">上月</option>
+          <option value="4">指定范围</option>
+        </select>
+        <div id="panelDate" class="item" style="display:none">
+          <label>从</label>
+          <input id="date_timepicker_start" type="text" value="">
+          <label>到</label>
+          <input id="date_timepicker_end" type="text" value="">
+        </div>
+      </div>
+
+      <button id="btnSearch" class="btn btn-primary btn-small"> <i class="icon-search icon-white"></i></button>
+    </div>
+    <!--<div class="titles">
+      <div>2015-09-25</div>
+      <div>2015-09-26</div>
+      <div>2015-09-27</div>
+      <div>2015-09-28</div>
+      <div>2015-09-29</div>
+      <div>2015-09-30</div>
+    </div>-->
+  </div>
+  <div class="canvas"></div>
+  
+  <script src="{pub}/dep/jquery.js"></script>
+  <script src="{pub}/dep/bootbox/bootbox.js"></script>
+  <script src="{pub}/dep/selectric/jquery.selectric.js"></script>
+  <script src="{pub}/dep/datetimepicker/jquery.datetimepicker.js"></script>
+  <script src="{pub}/dep/require/require.js"></script>
+  <script src="{pub}/dep/echarts/echarts.amd.js"></script>
+  <script src="{js}/core.js"></script>
+  <script src="{js}/manage/VirusTrace.js"></script>
+</body>
+</html>

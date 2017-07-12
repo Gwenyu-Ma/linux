@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm/!svn/ver/30122/soho/code/ESMCenter/authCenter/controllers
+END
+Error.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm/!svn/ver/29393/soho/code/ESMCenter/authCenter/controllers/Error.php
+END
+Authhome.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm/!svn/ver/29813/soho/code/ESMCenter/authCenter/controllers/Authhome.php
+END
+Systemconfig.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm/!svn/ver/30048/soho/code/ESMCenter/authCenter/controllers/Systemconfig.php
+END
+Authwhitelist.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm/!svn/ver/29393/soho/code/ESMCenter/authCenter/controllers/Authwhitelist.php
+END
+User.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm/!svn/ver/29608/soho/code/ESMCenter/authCenter/controllers/User.php
+END
+Auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm/!svn/ver/29695/soho/code/ESMCenter/authCenter/controllers/Auth.php
+END
+Authproduct.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm/!svn/ver/30122/soho/code/ESMCenter/authCenter/controllers/Authproduct.php
+END
+My.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm/!svn/ver/29603/soho/code/ESMCenter/authCenter/controllers/My.php
+END
+Index.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm/!svn/ver/29965/soho/code/ESMCenter/authCenter/controllers/Index.php
+END

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> </meta>
+    <title>忘记密码</title>
+    <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{$pub}/dep/swiper/css/swiper.css">
+    <link rel="stylesheet" href="{$css}/base.css">
+    <link rel="stylesheet" href="{$css}/forgotPwd.css">
+</head>
+
+<body>
+    <div class="bg" bgImg="{$pub}/img/banner_3.jpg">
+        <!--<img src="{$pub}/img/banner_3.png">--></div>
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a href="/" class="logo"><img src="{$img}/logo2.png"><img src="{$img}/nav_txt.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left_side">
+            <div class="slide swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="{$img}/side01.png"></div>
+                    <div class="swiper-slide"><img src="{$img}/side02.png"></div>
+                    <div class="swiper-slide"><img src="{$img}/side01.png"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <dl class="fgt_box" id="fgt_phone">
+            <dt>找回密码</dt>
+            <dd>
+                <div class="node_process">
+                    <ul>
+                        <li class="node node_f active"><i></i>
+                            <p>输入信息</p>
+                        </li>
+                        <li class="node "><i></i><span></span>
+                            <p>重置密码</p>
+                        </li>
+                        <li class="node node_l"><i></i><span></span>
+                            <p>完成</p>
+                        </li>
+                    </ul>
+                </div>
+                <form class="form-horizontal" action="">
+                    <div class="control-group fgt_box_in">
+                        <label class="control-label" for="">手机号：</label>
+                        <div class="controls">
+                            <input type="text" placeholder="请输入手机号" name="txtName" id="txtName" />
+                        </div>
+                    </div>
+                    <div class="control-group fgt_box_in mp70">
+                        <label class="control-label" for="">手机校验码：</label>
+                        <div class="controls">
+                            <input type="text" placeholder="请输入校验码" class="w106" disabled="disabled" name="txtCode" id="txtCode" />
+                            <input type="button" value="获取校验码" class="btn btn-purple checkbtn js_getCode disabled" />
+                            <div class="warn_msg hidden pt10" id="phoneCodeMsg">效验码已发出，请注意查收短信。如果没有收到，<br/>您可以在<i class="red">60</i>秒后重新获取</div>
+                        </div>
+                    </div>
+                    <div class="control-group fgt_box_btn">
+                        <div class="controls">
+                            <input type="button" value="立即找回" class="btn btn-large btn-block btn-purple w250 js_submit" />
+                        </div>
+                        <div class="controls  ie-fixed-padding"><a href="/findPwdByEmail.html" class="ml200">邮箱找回</a></div>
+                    </div>
+                    <div class="control-group hidden js_warn">
+                        <div class="controls gray">
+                            <p><i class="icon-info-sign ml_20"></i>&nbsp;&nbsp;手机校验码已发到您的手机，请及时录入，以便<br/>找回密码。</p>
+                        </div>
+                    </div>
+                </form>
+            </dd>
+        </dl>
+    </div>
+    <div class="footer">
+        <div>
+            <span>地址：北京市中关村大街22号  中科大厦1305室</span>&nbsp;
+            <span>邮编：100190</span>&nbsp;
+            <span>总机：(010)82678866</span>
+        </div>
+        <div>
+            <span>版权所有 北京瑞星信息技术股份有限公司</span>&nbsp;
+            <span>许可证号：京ICP证080383号 京ICP备08104897</span>&nbsp;
+            <span>总机：(010)82678866</span>
+        </div>
+        <div>
+            <span>备案编号：京ICP备08104897号-9</span>&nbsp;
+            <span>京网文[2011]0121-043号</span>
+        </div>
+    </div>
+    <script src="{$pub}/dep/jquery.js"></script>
+    <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+    <script src="{$pub}/dep/jquery-placeholder/jquery.enplaceholder.js"></script>
+    <script src="{$pub}/dep/bootbox/bootbox.js"></script>
+    <script src="{$pub}/dep/jquery-validation/jquery.validate.js"></script>
+    <script src="{$pub}/dep/jquery-validation/custom-methods.js"></script>
+    <script src="{$pub}/dep/swiper/js/swiper.js"></script>
+    <script src="{$js}/plugin/assist.js"></script>
+    <script src="{$js}/plugin/fixbg.js"></script>
+    <script src="{$js}/welcome/forgotPwd_new.js"></script>
+</body>
+
+</html>

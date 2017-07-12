@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire
+END
+AMQPWriter.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPWriter.php
+END
+AMQPArray.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPArray.php
+END
+AMQPDecimal.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPDecimal.php
+END
+AMQPAbstractCollection.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPAbstractCollection.php
+END
+AMQPReader.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPReader.php
+END
+AbstractClient.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AbstractClient.php
+END
+Constants080.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/Constants080.php
+END
+AMQPTable.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPTable.php
+END
+Constants091.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/Constants091.php
+END
+GenericContent.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/GenericContent.php
+END

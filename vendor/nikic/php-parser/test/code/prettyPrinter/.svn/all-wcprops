@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter
+END
+onlyInlineHTML.file-test
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/onlyInlineHTML.file-test
+END
+comments.test
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/comments.test
+END
+onlyPHP.file-test
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/onlyPHP.file-test
+END
+inlineHTMLandPHPtest.file-test
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/prettyPrinter/inlineHTMLandPHPtest.file-test
+END

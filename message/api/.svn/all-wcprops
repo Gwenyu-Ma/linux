@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/esm/!svn/ver/29983/soho/code/ESMCenter/message/api
+END
+postMsg.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/postMsg.php
+END
+addScriberObj.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/addScriberObj.php
+END
+addSubObj.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/addSubObj.php
+END
+delMsg2.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/delMsg2.php
+END
+getSubscriberList.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/getSubscriberList.php
+END
+addMsg.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/addMsg.php
+END
+addScriber.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/addScriber.php
+END
+addSub.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/addSub.php
+END
+addSubscriberObj.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/addSubscriberObj.php
+END
+getMsg2.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/getMsg2.php
+END
+delScriberObj.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/delScriberObj.php
+END
+delMsg.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/delMsg.php
+END
+addSubscriber.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/addSubscriber.php
+END
+test.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/test.php
+END
+getSubObjList.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/getSubObjList.php
+END
+getSubscriberObjs.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/getSubscriberObjs.php
+END
+getMsgList.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/getMsgList.php
+END
+readMsg.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/readMsg.php
+END
+delSubscriberObj.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/delSubscriberObj.php
+END
+rmSubObj.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/rmSubObj.php
+END
+makeMsg.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/makeMsg.php
+END
+getSubList.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/getSubList.php
+END
+rmMsg.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/rmMsg.php
+END
+getMsg.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm/!svn/ver/29983/soho/code/ESMCenter/message/api/getMsg.php
+END
+makeMsgMult.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/makeMsgMult.php
+END
+delSubscriber.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/delSubscriber.php
+END
+rmSub.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/rmSub.php
+END
+subscribeMsg.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm/!svn/ver/29683/soho/code/ESMCenter/message/api/subscribeMsg.php
+END

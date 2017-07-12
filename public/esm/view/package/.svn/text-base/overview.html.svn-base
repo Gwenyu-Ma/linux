@@ -1,0 +1,57 @@
+<div class="c-page-wrap">
+    <div>
+        <div class="c-page-nav">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="javascript:void(0);" da-toggle="#package/overview">上传安装包</a></li>
+                <li><a href="javascript:void(0);" da-toggle="#package/upload">上传升级包</a></li>
+            </ul>
+        </div>
+        <div class="c-page-content">
+            <div class="row-fluid overview-content">
+                <div class="bag-content">
+                    <div class="up_packages">
+                        <form novalidate="novalidate"  enctype="multipart/form-data">
+                            <div class="plat_form">
+                                <label>选择平台:</label>
+                                <select id="platForm"  name="platform" value="">
+                                    <option value="" selected>请选择</option>
+                                    <option value="linux">linux</option>
+                                    <option value="windows">windows</option>
+                                </select>
+                                <em>*</em>
+                            </div>
+                            <div class="plat_form">
+                                <label>选择包：</label>
+                                <div class="packages_file"><i></i><input type="file" id="base" name="base"></div>
+                                <input type="text" class="js_seriseFile" placeholder="请上传文件">
+                                <em>*</em>
+                            </div>
+                            <div class="upload_blg">
+                                <a class="upload_btn">上传</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="packages_now">
+                        <form>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>平台</th>
+                                        <th>基本包</th>
+                                        <th>上传时间</th>
+                                        <th>升级包</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4" style="text-align:center;">暂无数据</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

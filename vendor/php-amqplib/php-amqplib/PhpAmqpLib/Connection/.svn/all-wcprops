@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection
+END
+AMQPStreamConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPStreamConnection.php
+END
+AMQPConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPConnection.php
+END
+AMQPLazyConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php
+END
+AMQPSSLConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPSSLConnection.php
+END
+AbstractConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php
+END
+AMQPLazySocketConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazySocketConnection.php
+END
+AMQPSocketConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPSocketConnection.php
+END

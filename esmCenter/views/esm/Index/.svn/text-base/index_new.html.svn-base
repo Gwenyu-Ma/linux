@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> </meta>
+    <title>瑞星安全云</title>
+    <link rel="stylesheet" href="{$css}/index_new.css">
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="top_nav">
+            <div class="top_opt visibili_hide"><a href="#">快速体验</a></div>
+            <a class="logo"><img src="{$img}/logo.png" alt="logo"></a>
+        </div>
+        <div class="header_con">
+            <img class="header_txt mt120" src="{$img}/index_txt_1.png" alt="瑞星安全云" />
+            <img class="header_txt mt15 js_slogan1" src="{$img}/index_txt_2.png" alt="让安全伴随中小企业成长" />
+            <img class="header_txt mt15 js_slogan2" style="display:none" src="{$img}/index_txt_3.png" alt="安全感是人类第一需求" />
+            <a href="/register.html" class="header_reg_btn" tit="注册">&nbsp;</a>
+            <div class="header_log_btn">或<a href="/login.html">登录</a></div>
+            <a href="javascript:;" class="header_down">&nbsp;</a>
+        </div>
+        <div class="header_nav">
+            <ul>
+                <li class="enterprise active">
+                    <a href="#"></a>
+                </li>
+                <li class="family">
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <ul class="touch visibili_hide">
+            <li class="qq">
+                <a href="#"></a>
+            </li>
+            <li class="weixin">
+                <a href="#">
+                    <div>
+                        <h3>微信扫一扫</h3>
+                        <p>关注我们</p>
+                        <img src="{$img}/weixinREW.png">
+                    </div>
+                </a>
+            </li>
+            <li class="phone">
+                <a href="#"></a>
+            </li>
+        </ul>
+        <div class="bg active bigbg_1"></div>
+        <div class="bg bigbg_2"></div>
+        <!-- 首页攻击图 -->
+        <div class="homeMap">
+            <div id="ec_homeMap" style="width:100%;height:100%;"></div>
+        </div>
+        <div class="gongji">
+            <div id="gongji_list"></div>
+        </div>
+        <!-- 首页攻击图 -->
+    </div>
+    <!--content-->
+    <!--企业相关内容-->
+    <div class="content1">
+        <div class="list1">
+            <div class="auto_w">
+                <div class="sec_left sec_zindex_top">
+                    <div class="txt">
+                        <dl>
+                            <dt class="list_tit">产品优势</dt>
+                            <dd>
+                                <ul>
+                                    <li>超低投入，无需服务器</li>
+                                    <li>电脑、手机统一安全管理</li>
+                                    <li>防病毒、杀木马、防黑客</li>
+                                    <li>规范上网行为，提高办公效率</li>
+                                    <li>安全大数据支撑，精准防护</li>
+                                    <li>无广告无弹窗无捆绑，纯净简洁</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="sec_right">
+                    <div class="pic">
+                        <img src="{$img}/content1_list1_img.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list2">
+            <div class="auto_w">
+                <div class="sec_left sec_zindex_top">
+                    <dl class="txt">
+                        <dt class="list_tit">多地实时安全管理</dt>
+                        <dd>
+                            <p>出差、异地办公、移动办公立体安全防护，无服务器<br/>却能实时管理，全面掌控企业安全状态。</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="list2_right_img"><img src="{$img}/content1_list2_img.png"></div>
+        </div>
+        <div class="list3">
+            <div class="auto_w">
+                <div class="sec_left">
+                    <div class="pic">
+                        <img src="{$img}/content1_list3_img01.png">
+                        <span class="list3_img_11 animat1"></span>
+                        <span class="list3_img_12 animat2"></span>
+                        <span class="list3_img_13 animat3"></span>
+                        <span class="list3_img_21 animat4"></span>
+                        <span class="list3_img_22 animat5"></span>
+                        <span class="list3_img_31 animat6"></span>
+                        <span class="list3_img_32 animat7"></span>
+                        <span class="list3_img_33 animat8"></span>
+                        <span class="list3_img_41 animat9"></span>
+                        <span class="list3_img_42 animat10"></span>
+                        <span class="list3_img_43 animat11"></span>
+                    </div>
+                </div>
+                <div class="sec_right sec_zindex_top">
+                    <dl class="txt">
+                        <dt class="list_tit">防止企业信息泄漏</dt>
+                        <dd>
+                            <p>防止黑客通过病毒、木马等手段窃取企业信息，<br/>加强保护企业核心资料。</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="list4">
+            <div class="auto_w">
+                <div class="sec_left sec_zindex_top">
+                    <dl class="txt">
+                        <dt class="list_tit">规范上网，提高效率</dt>
+                        <dd>
+                            <p>网购、游戏、炒股、看视频等行为严重影响工作效率，<br/>使用上网管控，工作效率大幅提升。</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="sec_right">
+                    <div class="pic">
+                        <div class="pic01"><img src="{$img}/content1_list4_img01.png"></div>
+                        <img class="pic02" src="{$img}/content1_list4_img02.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--家庭相关内容-->
+    <div class="content2">
+        <div class="list1">
+            <div class="auto_w">
+                <div class="sec_left sec_zindex_top">
+                    <div class="txt">
+                        <dl>
+                            <dt class="list_tit">产品优势</dt>
+                            <dd>
+                                <ul>
+                                    <li>电脑、手机、Pad统一安全管理</li>
+                                    <li>老人小孩实时定位确保安全</li>
+                                    <li>防病毒、防盗号、防诈骗</li>
+                                    <li>创造绿色上网环境</li>
+                                    <li>无广告无弹窗无困绑，纯净简洁</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="sec_right">
+                    <div class="pic">
+                        <img src="{$img}/content1_list1_img.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list2">
+            <div class="auto_w">
+                <div class="sec_left sec_zindex_top">
+                    <dl class="txt">
+                        <dt class="list_tit">给亲人电脑、手机杀毒</dt>
+                        <dd>
+                            <p>随时随地通过云中心了解亲人电脑、手机安全状况，<br/>进行远程病毒查杀。</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="sec_right">
+                    <div class="pic"><img src="{$img}/content2_list2_img.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="list3">
+            <div class="auto_w">
+                <div class="sec_left">
+                    <div class="pic" style="padding-top:90px;"><img src="{$img}/content2_list3_img.jpg"></div>
+                </div>
+                <div class="sec_right sec_zindex_top">
+                    <dl class="txt">
+                        <dt class="list_tit">实时查看老人、孩子位置</dt>
+                        <dd>
+                            <p>实时了解您关心的家人所在位置，防止老人走失，<br/> 防止小孩被拐骗。
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="list4">
+            <div class="auto_w">
+                <div class="sec_left sec_zindex_top">
+                    <dl class="txt">
+                        <dt class="list_tit">远离黄、赌、毒</dt>
+                        <dd>
+                            <p>拦截、屏蔽各种不健康网站、信息内容，<br/> 打造安全绿色上网环境。
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="sec_right">
+                    <div class="pic"><img src="{$img}/content2_list4_img.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="list5">
+            <div class="auto_w">
+                <div class="sec_left">
+                    <div class="pic"><img src="{$img}/content2_list5_img.jpg"></div>
+                </div>
+                <div class="sec_right sec_zindex_top">
+                    <dl class="txt">
+                        <dt class="list_tit">防游戏沉迷</dt>
+                        <dd>
+                            <p>使用家长保护控制功能，设定上网时间，防止小孩沉迷。</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--相关功能点-->
+    <div class="info">
+        <div class="auto_w">
+            <h2 class="p82">功能点</h2>
+            <div class="p82">
+                <ul>
+                    <li>
+                        <img src="{$img}/list_ico01.png">
+                        <p>无需服务器</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico02.png">
+                        <p>云+端Saas模式</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico03.png">
+                        <p>支持Windows、Linux</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico04.png">
+                        <p>电脑、手机统一管理</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico05.png">
+                        <p>安全威胁手机预警</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico06.png">
+                        <p>安全大数据支撑</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico07.png">
+                        <p>电脑、手机杀毒</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico08.png">
+                        <p>手机定位</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico09.png">
+                        <p>上网行为控制</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico10.png">
+                        <p>流量使用统计</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico11.png">
+                        <p>共享管理</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico12.png">
+                        <p>杀木马</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico13.png">
+                        <p>防黑客</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico14.png">
+                        <p>防恶意网站</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico15.png">
+                        <p>防恶意下载</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico16.png">
+                        <p>安全搜索</p>
+                    </li>
+                    <li>
+                        <img src="{$img}/list_ico17.png">
+                        <p>广告过滤</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div>
+            <span>地址：北京市中关村大街22号  中科大厦1305室</span>&nbsp;
+            <span>邮编：100190</span>&nbsp;
+            <span>总机：(010)82678866</span>
+        </div>
+        <div>
+            <span>版权所有 北京瑞星信息技术股份有限公司</span>&nbsp;
+            <span>许可证号：京ICP证080383号 京ICP备08104897</span>&nbsp;
+            <span>总机：(010)82678866</span>
+        </div>
+        <div>
+            <span>备案编号：京ICP备08104897号-9</span>&nbsp;
+            <span>京网文[2011]0121-043号</span>
+        </div>
+    </div>
+    <!--首页网络威胁实况-->
+    <script type="text/javascript">
+        var srcArrs = [
+            '{$pub}/dep/echarts3/echarts_all_new.js',
+            '{$pub}/dep/echarts3/map/china.js',
+            '{$pub}/dep/jquery.vticker-min.js',
+            '{$pub}/dep/jquery.vticker-table-min.js',
+            '{$pub}/dep/underscore.js',
+            '{$js}/welcome/virus_map.js'
+        ];
+    </script>
+    <script src="{$pub}/dep/jquery.js"></script>
+    <script src="{$pub}/dep/jquery.easing.js"></script>
+    <script src="{$js}/welcome/index_new.js"></script>
+
+
+    <!--<script src="{$pub}/dep/echarts3/echarts_all_new.js"></script>
+    <script src="{$pub}/dep/echarts3/map/china.js"></script>
+    <script src="{$pub}/dep/jquery.vticker-min.js"></script>
+    <script src="{$pub}/dep/jquery.vticker-table-min.js"></script>
+    <script src="{$pub}/dep/underscore.js"></script>
+    <script src="{$js}/welcome/virus_map.js"></script>-->
+
+    <!--<script src="{$pub}/dep/echarts3/echarts.min.js"></script>-->
+
+</body>
+
+</html>

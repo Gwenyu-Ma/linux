@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/esm/!svn/ver/30563/soho/code/ESMCenter/config
+END
+esm_mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/esm/!svn/ver/29553/soho/code/ESMCenter/config/esm_mysql.php
+END
+logs_mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm/!svn/ver/29771/soho/code/ESMCenter/config/logs_mysql.php
+END
+mongo.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/esm/!svn/ver/29409/soho/code/ESMCenter/config/mongo.php
+END
+policy.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm/!svn/ver/29771/soho/code/ESMCenter/config/policy.php
+END
+rabbitmq.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/esm/!svn/ver/29632/soho/code/ESMCenter/config/rabbitmq.php
+END
+mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/esm/!svn/ver/29895/soho/code/ESMCenter/config/mysql.php
+END
+urls.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/esm/!svn/ver/30418/soho/code/ESMCenter/config/urls.php
+END
+const.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/esm/!svn/ver/30563/soho/code/ESMCenter/config/const.php
+END
+redis.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/esm/!svn/ver/29940/soho/code/ESMCenter/config/redis.php
+END
+domain.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm/!svn/ver/30295/soho/code/ESMCenter/config/domain.php
+END
+email.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/esm/!svn/ver/28931/soho/code/ESMCenter/config/email.php
+END

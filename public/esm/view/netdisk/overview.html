@@ -1,0 +1,35 @@
+<div class="c-page-wrap">
+    <div class="c-page-nav">
+        <ul class="nav nav-pills">
+            <li class="active"><a href="javascript:void(0);" da-toggle="#netdisk/overview">网盘文件</a></li>
+            <li><a href="javascript:void(0);" da-toggle="#netdisk/option">访问控制</a></li>
+        </ul>
+    </div>
+    <div class="c-page-content">
+        <div class="row-fluid overview-content">
+            <iframe name="ioa" style="width:100%;height:100%;" id="netParent" src="" frameborder="0"></iframe>
+            <form action="" method="POST" style="display:none;" target="ioa" id="ioaForm">
+                <input name="requestNo" value="" />
+                <input name="requestTime" value="" />
+                <input name="cmdType" value="" />
+                <input name="platformNo" value="" />
+                <input name="requestSign" value="" />
+                <input name="platformUserId" value="" />
+                <input name="platformOrgId" value="" />
+                <button type="submit">提交</button>
+            </form>
+        </div>
+        <div id="netdiskwarn" class="modal hide" tabindex="-1" aria-hidden="true" data-backdrop="static" style="width:360px;margin-left:-180px;margin-top:-10%;">
+            <div class="modal-header">
+                <button type="button" class="close" id="closeMs2" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3>提示</h3>
+            </div>
+            <div class="modal-body">
+                <div style="text-align:left;"><span class="orderFlowIco" style="height:60px;background-position:0 17px;padding-top:18px;margin-left:20px;">安全网盘当前为测试版，<br/>测试期间请您注意另外备份重要文件。</span></div>
+            </div>
+            <div class="modal-footer">
+                <button id="orderFlowSave2" class="btn btn-primary btn-sure" data-dismiss="modal" aria-hidden="true" style="width:100px;">我知道了</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+html,body {
+  margin: 0;
+  padding: 35px;
+}
+html, body, input, button, select, textarea {
+  font-family: "Microsoft YaHei";
+}
+a:link,a:visited,a:active,a:hover {
+  *text-decoration: none;
+}
+
+.success-info {
+  width:670px;
+  margin:0 auto;
+
+  border: solid 1px #d6d9db;
+  padding: 15px;
+  background-color: #fff;
+
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+  -moz-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+  box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#d6d9db,direction=120,strength=5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.success-info>h1 {
+  margin-bottom: 20px;
+}
+.step {
+  margin: 20px 0;
+}
+.step>div {
+  border-color: #333;
+  background-color: #fff;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  float: left;
+  margin: 0 10px;
+  padding: 10px;
+}

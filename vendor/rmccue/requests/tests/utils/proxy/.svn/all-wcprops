@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/utils/proxy
+END
+start.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/utils/proxy/start.sh
+END
+proxy.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/utils/proxy/proxy.py
+END
+stop.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/tests/utils/proxy/stop.sh
+END

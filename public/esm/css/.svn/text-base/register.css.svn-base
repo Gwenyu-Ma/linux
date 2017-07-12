@@ -1,0 +1,101 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+html, body, input, button, select, textarea {
+  font-family: "Microsoft YaHei";
+}
+a:link,a:visited,a:active,a:hover {
+  *text-decoration: none;
+}
+
+.reg_box {
+  margin:0;
+  padding-left:418px;
+}
+.reg {
+  
+}
+.reg>form {
+  margin: 0 auto;
+}
+.reg .control-label {
+  color: #5e5e5e;
+  font-weight: normal;
+  text-align: right;
+  font-size:14px;
+}
+.reg_box_in input {
+  width: 236px;
+}
+.reg_box_in .w106 {
+  width:106px;
+}
+
+.logo-title {
+  font-size: 30px;
+  text-align: center;
+  line-height: 32px;
+  color:#7b599d;
+  padding-bottom:20px;
+  background:url(../img/border01.png) no-repeat center bottom;
+  font-weight:normal;
+  margin-right:20px;
+}
+.btn{
+  padding: 8px 5px;
+}
+input.btn.w160 {
+  width: 160px;
+}
+input.btn.w80 {
+  width:80px;
+}
+
+
+#imgCode {
+  height: 32px;
+}
+#imgCode:hover {
+  cursor: pointer;
+}
+#txtCode {
+  width: 106px;
+}
+.verify-faild {
+  color: red;
+}
+.hidden {
+  display: none;
+}
+.row {
+  margin-left:0;
+}
+.row:after {
+  clear:none;
+}
+.reg_box_in input.checkbtn{
+  height:30px;
+  line-height: 22px;
+  margin-left:5px;
+  padding:4px 5px;
+  width:122px;
+  font-size:14px !important;
+}
+.reg_box_in .checkbtn.disabled,.reg_box_in.error .checkbtn.disabled:hover,.reg_box_in.error .checkbtn.disabled:focus {
+  background:#cbcbcb;
+  border-color:#cbcbcb;
+  color:#fff;
+  box-shadow: none;
+}
+.warn_msg {
+  font-size:12px;
+  line-height: 18px;
+  color:#999;  
+  position:absolute;
+  top:38px;
+}
+.warn_msg i.red {
+  color:#f40;
+  font-style: normal;
+}

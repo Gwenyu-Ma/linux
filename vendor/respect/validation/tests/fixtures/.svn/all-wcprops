@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/fixtures
+END
+valid-image.png
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/fixtures/valid-image.png
+END
+valid-image.gif
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/fixtures/valid-image.gif
+END
+invalid-image.png
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/fixtures/invalid-image.png
+END
+valid-image.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/fixtures/valid-image.jpg
+END

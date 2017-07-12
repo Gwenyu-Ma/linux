@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> </meta>
+    <title>注册</title>
+    <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{$pub}/dep/swiper/css/swiper.css">
+    <link rel="stylesheet" href="{$pub}/dep/icheck-1.x/skins/polaris/polaris.css">
+    <link rel="stylesheet" href="{$css}/base.css">
+    <link rel="stylesheet" href="{$css}/register.css">
+</head>
+
+<body>
+    <div class="bg" bgImg="{$pub}/img/banner_3.jpg">
+        <!--<img src="{$pub}/img/banner_3.png">--></div>
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a href="/" class="logo"><img src="{$img}/logo2.png"><img src="{$img}/nav_txt.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left_side">
+            <div class="slide swiper-container  js_slide_scroll1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="{$img}/side01.png"></div>
+                    <div class="swiper-slide"><img src="{$img}/side02.png"></div>
+                    <div class="swiper-slide"><img src="{$img}/side03.png"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="slide swiper-container  js_slide_scroll2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="{$img}/side11.png"></div>
+                    <div class="swiper-slide"><img src="{$img}/side12.png"></div>
+                    <div class="swiper-slide"><img src="{$img}/side13.png"></div>
+                    <div class="swiper-slide"><img src="{$img}/side14.png"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="reg_box">
+            <div class="row">
+                <h1 class="logo-title">用户注册</h1>
+            </div>
+            <div class="row reg">
+                <form class="form-horizontal">
+                    <div class="control-group">
+                        <label class="control-label">类型：</label>
+                        <div class="controls">
+                            <label class="radio inline gray_ddep">
+                  <div class="iradio"><input type="radio" name="radRegType" value="1" checked>企业</div>
+                </label>
+                            <label class="radio inline gray_ddep" style="margin-left:70px;">
+                  <div class="iradio"><input type="radio" name="radRegType" value="2">家庭</div>
+                </label>
+                        </div>
+                    </div>
+                    <div class="control-group reg_box_in">
+                        <label class="control-label" for="txtUName">账号：</label>
+                        <div class="controls">
+                            <input id="txtUName" name="txtUName" type="text" placeholder="手机号码或者邮箱"><span class="require">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group reg_box_in">
+                        <label class="control-label" for="txtPwd">密码：</label>
+                        <div class="controls">
+                            <input id="txtPwd" name="txtPwd" type="password" placeholder="登录密码"><span class="require">*</span>
+                            <span class="pwdStrong hidden">
+                  <div>密码强度:<i></i></div>
+                  <ul>
+                    <li class="low"></li>
+                    <li class="middle"></li>
+                    <li class="high"></li>
+                  </ul>
+                </span>
+                        </div>
+                    </div>
+                    <div class="control-group reg_box_in">
+                        <label class="control-label" for="txtRPwd">确认密码：</label>
+                        <div class="controls">
+                            <input id="txtRPwd" name="txtRPwd" type="password" placeholder="请再次输入密码"><span class="require">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group reg_box_in">
+                        <label class="control-label" for="txtCode">验证码：</label>
+                        <div class="controls">
+                            <input id="txtCode" name="txtCode" type="text" placeholder="验证码">
+                            <span class="verify ml7"><img src="/index.php/Code/verify" id="codeImg"><a href="#" id="verify_btn">&nbsp;</a></span><span class="require">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group reg_box_in hidden">
+                        <label class="control-label" for="txtCode2">手机校验码：</label>
+                        <div class="controls">
+                            <input id="txtCode2" name="txtCode2" type="text" class="w106" disabled="disabled" placeholder="校验码">
+                            <input type="button" value="获取校验码" class="btn btn-purple checkbtn js_getCode">
+                            <div class="warn_msg hidden pt10" id="phoneCodeMsg">效验码已发出，请注意查收短信。如果没有收到，<br>您可以在<i class="red">60</i>秒后重新获取</div>
+                        </div>
+                    </div>
+                    <div class="control-group vali_noError">
+                        <div class="controls mt20">
+                            <label class="checkbox gray_deep" style="display:inline-block;">
+                  <div class="ichecbox"><input id="chkAgree" name="agree" type="checkbox"> 我已阅读并同意</div>
+                </label>&nbsp;
+                            <label style="display:inline-block;"><a href="{$pub}/pages/agreement.html" target="_blank" class="f12">用户"隐私及条款"</a></label>
+                        </div>
+                        <div class="controls ie-fixed-padding mt4">
+                            <input type="button" class="btn btn-purple js_submit w160" data-loading-text="注册中..." value="立即注册" disabled/>
+                            <input type="reset" class="btn js_reset w80 ml10" value="清除" />
+                        </div>
+                        <div class="controls ie-fixed-padding mt8">
+                            <span class="gray_deep">已经有账号了，还等什么？</span>
+                            <a href="/login.html" target="_blank">立即登录</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div>
+            <span>地址：北京市中关村大街22号  中科大厦1305室</span>&nbsp;
+            <span>邮编：100190</span>&nbsp;
+            <span>总机：(010)82678866</span>
+        </div>
+        <div>
+            <span>版权所有 北京瑞星信息技术股份有限公司</span>&nbsp;
+            <span>许可证号：京ICP证080383号 京ICP备08104897</span>&nbsp;
+            <span>总机：(010)82678866</span>
+        </div>
+        <div>
+            <span>备案编号：京ICP备08104897号-9</span>&nbsp;
+            <span>京网文[2011]0121-043号</span>
+        </div>
+    </div>
+    <script src="{$pub}/dep/jquery.js"></script>
+    <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+    <script src="{$pub}/dep/jquery-placeholder/jquery.enplaceholder.js"></script>
+    <script src="{$pub}/dep/bootbox/bootbox.js"></script>
+    <script src="{$pub}/dep/jquery-validation/jquery.validate.js"></script>
+    <script src="{$pub}/dep/jquery-validation/custom-methods.js"></script>
+    <script src="{$pub}/dep/swiper/js/swiper.js"></script>
+    <script src="{$pub}/dep/icheck-1.x/icheck.min.js"></script>
+    <script src="{$js}/plugin/assist.js"></script>
+    <script src="{$js}/plugin/fixbg.js"></script>
+    <script src="{$js}/welcome/register_new.js"></script>
+</body>
+
+</html>

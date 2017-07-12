@@ -1,0 +1,962 @@
+<div class="c-moudle-nav">
+    <ul class="nav nav-pills" id="policyTab">
+        <li class="active"><a href="javascript:void(0)" da-toggle="#tab-pub" >常规项</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-whitelist" >白名单</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-blacklist" >黑名单</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-isolation" >杀毒备份</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-scan" >查杀病毒</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-file" >文件监控</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-mail" >邮件监控</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-share">共享监控</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-udisk">U盘监控</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-sys">系统加固</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-app">应用加固</a></li>
+        <li><a href="javascript:void(0)" da-toggle="#tab-viru">Linux防病毒</a></li>
+    </ul>
+</div>
+<div class="c-moudle-container form-horizontal policy-form" id="policyContent">
+    <div class="c-moudle-wrap">
+        <div class="policy-box" id="tab-pub">
+            <h3 class="policy-tit">常规项</h3>
+            <div class="policy-bod active">
+                <dl>
+                    <dt>常规</dt>
+                    <dd class="policy-border">
+                        <span class="inblock">运行环境：</span>
+                        <label class="checkbox">
+                            <i id="pub_lockInnerWhiteList" class="lock"></i>
+                            <input id="pub_InnerWhiteList" type="checkbox" checked>运行环境智能判断</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock">病毒跟踪：</span>
+                        <label class="checkbox">
+                            <i id="pub_lockVtrack" class="lock"></i>
+                            <input id="pub_chkVtrack" type="checkbox" checked>启动病毒跟踪</label>
+                    </dd>
+                    <!-- <dd class="policy-border">
+                        <label class="checkbox">
+                            <i id="pub_lockMemlib" class="lock"></i>
+                            <input id="pub_chkMemlib" type="checkbox">启用内存模式病毒库
+                        </label>
+                    </dd> -->
+                    <dd class="policy-border">
+                        <span class="inblock">病毒日志：</span>
+                        <label class="checkbox">
+                            <i id="pub_lockWritelog" class="lock"></i>
+                            <input id="pub_chkWritelog" type="checkbox" checked>记录病毒日志</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock">扫描缓存：</span>
+                        <label class="checkbox">
+                            <i id="pub_lockCloserfm" class="lock"></i>
+                            <input id="pub_closerfm" type="checkbox">二次扫描加速</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock"><i id="pub_lockSmartcpuLevel" class="lock"></i>设定扫描模式：</span>
+                        <label class="radio inline">
+                            <input name="pub_radSmartcpuLevel" type="radio" value="10">办公模式</label>
+                        <label class="radio inline">
+                            <input name="pub_radSmartcpuLevel" type="radio" value="200" checked>自动模式</label>
+                        <label class="radio inline">
+                            <input name="pub_radSmartcpuLevel" type="radio" value="100">高速模式</label>
+                    </dd>
+                </dl>
+                <dl class="policy-border">
+                    <dt>云查杀</dt>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:140px;">CPU占用率百分比：</span>
+                        <select id="cpuradio" style="width:100px">
+                            <option value="5">5%</option>
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                            <option value="40">40%</option>
+                            <option value="50">50%</option>
+                            <option value="60">60%</option>
+                            <option value="70">70%</option>
+                            <option value="80">80%</option>
+                            <option value="90">90%</option>
+                            <option value="100">100%</option>
+                        </select>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:140px;">云连接测试时间间隔：</span>
+                        <select id="connrate" style="width:100px">
+                            <option value="60">1分钟</option>
+                            <option value="120">2分钟</option>
+                            <option value="180">3分钟</option>
+                            <option value="240">4分钟</option>
+                            <option value="300">5分钟</option>
+                        </select>
+                    </dd>
+                    <dd>
+                        <dl class="js_cloud">
+                            <dt><i class="lock" id="publicCloudLock">&nbsp;</i>
+                                <label class="checkbox inline">
+                                    <input type="checkbox" id="publicCloudEnable" checked="checked" />启用公有云</label>
+                            </dt>
+                            <dd>服务器地址或IP： rscloud.rising.net.cn</dd>
+                            <dd>服务器端口：80</dd>
+                            <dd>请求模式：
+                                <label class="radio inline">
+                                    <input type="radio" value="0" name="publicCloudMode" />GET</label>
+                                <label class="radio inline">
+                                    <input type="radio" value="1" name="publicCloudMode" checked="checked" />POST</label>
+                            </dd>
+                            <dd>一批次最多请求查询数量：
+                                <input type="text" id="publicCloudCount" value="0" validation="intNum" />（填0代表不限制）</dd>
+                            <dd>服务器友好名称：
+                                <input type="text" id="publicCloudName" />
+                            </dd>
+                        </dl>
+                    </dd>
+                    <dd id="privateCloudTmpl" style="display:none">
+                        <dl class="js_cloud">
+                            <dt><i class="lock privateCloudLock">&nbsp;</i>
+                                <label class="checkbox inline">
+                                    <input type="checkbox" class="privateCloudEnable" checked="checked" />启用私有云</label> <a href="javascript:;" class="js_delcloud">删除</a></dt>
+                            <dd>服务器地址或IP：
+                                <input type="text" class="privateCloudAddr" validation="ip" />
+                            </dd>
+                            <dd>服务器端口：
+                                <input type="text" class="privateCloudPort" value="80" validation="intNum" />
+                            </dd>
+                            <dd>请求模式：
+                                <label class="radio inline">
+                                    <input type="radio" value="0" name="privateCloudMode" />GET</label>
+                                <label class="radio inline">
+                                    <input type="radio" value="1" name="privateCloudMode" checked="checked" />POST</label>
+                            </dd>
+                            <dd>一批次最多请求查询数量：
+                                <input type="text" class="privateCloudCount" value="0" validation="intNum" />（填0代表不限制）</dd>
+                            <dd>服务器友好名称：
+                                <input type="text" class="privateCloudName" />
+                            </dd>
+                        </dl>
+                    </dd>
+                    <dd><a href="javascript:;" class="js_addcloud"><i class="fa fa-plus"></i>添加私有云</a></dd>
+                </dl>
+                <dl>
+                    <dt>专项查杀</dt>
+                    <dd class="policy-border">
+                        <label class="checkbox" style="width:200px;">
+                            <i id="pub_lockWorm08067" class="lock"></i>
+                            <input id="pub_worm08067" type="checkbox">飞客虫蠕虫(08067)</label>
+                        <label class="checkbox">
+                            <i id="pub_lockYunyu" class="lock"></i>
+                            <input id="pub_yunyu" type="checkbox">雨云病毒</label>
+                    </dd>
+                    <dd>
+                        <label class="checkbox" style="width:200px;">
+                            <i id="pub_lockVirut" class="lock"></i>
+                            <input id="pub_virut" type="checkbox">威客虫（virut）病毒免疫</label>
+                        <label class="checkbox">
+                            <i id="pub_lockLpktool" class="lock"></i>
+                            <input id="pub_lpktool" type="checkbox">DLL劫持免疫</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-whitelist">
+            <h3 class="policy-tit">白名单</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd style="position:relative;">
+                        <input id="pub_txtFile" type="text" style="width:260px;">
+                        <select id="pub_selFileType" style="width:100px;">
+                            <option value="0">文件</option>
+                            <option value="1">仅本目录</option>
+                            <option value="2">本目录+子目录</option>
+                            <option value="3">仅子目录</option>
+                        </select>
+                        <button id="pub_btnAddWhiteList" class="btn btn-small btn-add">&nbsp;</button>
+                    </dd>
+                    <dd>
+                        <div class="whiteListBox" style="width:440px">
+                            <table class="whiteListBoxTit">
+                                <tr>
+                                    <td style="width:300px;">文件/目录</td>
+                                    <td style="width:80px;">类型</td>
+                                    <td>操作</td>
+                                </tr>
+                            </table>
+                            <div class="whiteList">
+                                <div class="js_white_wrap">
+                                    <table id="pub_tbWhiteList">
+                                        <tr class="blank">
+                                            <td style="width:300px;"></td>
+                                            <td style="width:80px;"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="blank">
+                                            <td style="width:300px;"></td>
+                                            <td style="width:80px;"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="blank">
+                                            <td style="width:300px;"></td>
+                                            <td style="width:80px;"></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </dd>
+                    <dd>
+                        <span>扩展名：</span>
+                        <input id="pub_txtExt" type="text"><span>（以;分隔，例如：.zip;.com;.txt）</span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-blacklist">
+            <h3 class="policy-tit">黑名单</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd style="position:relative;">
+                        <input id="pub_txtFileBlack" type="text" style="width:260px;">
+                        <select id="pub_selFileTypeBlack" style="width:100px;">
+                            <option value="0">文件</option>
+                            <option value="1">仅本目录</option>
+                            <option value="2">本目录+子目录</option>
+                            <option value="3">仅子目录</option>
+                            <option value="4">文件哈希</option>
+                        </select>
+                        <button id="pub_btnAddBlackList" class="btn btn-small btn-add">&nbsp;</button>
+                    </dd>
+                    <dd>
+                        <div class="whiteListBox" style="width:440px">
+                            <table class="whiteListBoxTit">
+                                <tr>
+                                    <td style="width:300px;">文件/目录</td>
+                                    <td style="width:80px;">类型</td>
+                                    <td>操作</td>
+                                </tr>
+                            </table>
+                            <div class="whiteList">
+                                <div class="js_white_wrap">
+                                    <table id="pub_tbBlackList">
+                                        <tr class="blank">
+                                            <td style="width:300px;"></td>
+                                            <td style="width:80px;"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="blank">
+                                            <td style="width:300px;"></td>
+                                            <td style="width:80px;"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="blank">
+                                            <td style="width:300px;"></td>
+                                            <td style="width:80px;"></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-isolation">
+            <h3 class="policy-tit">杀毒备份</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:90px;"><i id="pub_lockNobackup" class="lock"></i>备份文件：</span>
+                        <label class="checkbox">
+                            <input id="pub_chkNobackup" type="checkbox" checked>杀毒时备份原文件</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:90px;"><i id="pub_lockBigfile" class="lock"></i>文件超长：</span>
+                        <label class="radio" style="width:150px;">
+                            <input name="pub_radBigfile" type="radio" value="0" checked>询问用户</label>
+                        <label class="radio" style="width:150px;">
+                            <input name="pub_radBigfile" type="radio" value="1">删除文件</label>
+                        <label class="radio" style="width:150px;">
+                            <input name="pub_radBigfile" type="radio" value="2">不处理</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:90px;"><i id="pub_lockNospace" class="lock"></i>空间不足：</span>
+                        <label class="radio" style="width:150px;">
+                            <input name="pub_radNospace" type="radio" value="0" checked>自动覆盖老文件</label>
+                        <label class="radio" style="width:150px;">
+                            <input name="pub_radNospace" type="radio" value="1">空间自动增长</label>
+                    </dd>
+                    <dd>
+                        <span class="inblock" style="width:90px;"><i id="pub_lockStorefailed" class="lock"></i>备份失败：</span>
+                        <label class="radio" style="width:150px;">
+                            <input name="pub_radStorefailed" type="radio" value="0" checked>询问用户</label>
+                        <label class="radio" style="width:150px;">
+                            <input name="pub_radStorefailed" type="radio" value="1">删除文件</label>
+                        <label class="radio" style="width:150px;">
+                            <input name="pub_radStorefailed" type="radio" value="2">不处理</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-scan">
+            <h3 class="policy-tit">查杀病毒</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <i id="scan_chkAllscanEnableLock" class="lock"></i>
+                            <input type="checkbox" id="scan_chkAllscanEnable">启动定时全盘扫描</label>
+                        <dl>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" value="2" name="scan_radAllscanTime" disabled>开机</label>
+                            </dd>
+                            <dd>
+                                <label class="radio inline">
+                                    <input type="radio" value="6" name="scan_radAllscanTime" checked disabled>每天</label>
+                                <input style="width:5em" type="text" id="scan_txtAllscanEveryDay" value="9:00" disabled class="js_time">(例19:00)
+                            </dd>
+                            <dd class="policy-week">
+                                <label class="radio inline">
+                                    <input type="radio" value="5" name="scan_radAllscanTime" disabled>每周</label>
+                                <label class="checkbox ml10">
+                                    <input type="checkbox" value="2" name="scan_chkAllscanEveryWeek" disabled>一</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="4" name="scan_chkAllscanEveryWeek" disabled>二</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="8" name="scan_chkAllscanEveryWeek" disabled>三</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="16" name="scan_chkAllscanEveryWeek" disabled>四</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="32" name="scan_chkAllscanEveryWeek" disabled>五</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="64" name="scan_chkAllscanEveryWeek" disabled>六</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="1" name="scan_chkAllscanEveryWeek" disabled>日</label>
+                                <input style="width:5em" type="text" id="scan_txtAllscanEveryWeek" value="15:00" disabled class="js_time"> (例19:00)
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <i id="scan_chkQuickscanEnableLock" class="lock"></i>
+                            <input type="checkbox" id="scan_chkQuickscanEnable">启动定时快速扫描</label>
+                        <dl>
+                            <dd>
+                                <label class="radio">
+                                    <input type="radio" value="2" name="scan_radQuickscanTime" disabled>开机</label>
+                            </dd>
+                            <dd>
+                                <label class="radio inline">
+                                    <input type="radio" value="6" name="scan_radQuickscanTime" checked disabled>每天</label>
+                                <input style="width:5em" type="text" id="scan_txtQuickscanEveryDay" value="12:00" class="js_time" disabled>(例19:00)
+                            </dd>
+                            <dd class="policy-week">
+                                <label class="radio inline">
+                                    <input type="radio" value="5" name="scan_radQuickscanTime" disabled>每周</label>
+                                <label class="checkbox  ml10">
+                                    <input type="checkbox" value="2" name="scan_chkQuickscanEveryWeek" disabled>一</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="4" name="scan_chkQuickscanEveryWeek" disabled>二</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="8" name="scan_chkQuickscanEveryWeek" disabled>三</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="16" name="scan_chkQuickscanEveryWeek" disabled>四</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="32" name="scan_chkQuickscanEveryWeek" disabled>五</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="64" name="scan_chkQuickscanEveryWeek" disabled>六</label>
+                                <label class="checkbox ">
+                                    <input type="checkbox" value="1" name="scan_chkQuickscanEveryWeek" disabled>日</label>
+                                <input style="width:5em" type="text" id="scan_txtQuickscanEveryWeek" value="9:00" class="js_time" disabled> (例19:00)
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="scan_lockFiletype" class="lock"></i>文件类型：</span>
+                        <label class="radio" style="width:150px;">
+                            <input type="radio" value="0" name="scan_radFiletype" checked>所有文件</label>
+                        <label class="radio" style="width:150px;">
+                            <input type="radio" value="3" name="scan_radFiletype">程序及文档</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">查杀引擎：</span>
+                        <label class="checkbox" style="width:150px;">
+                            <i id="scan_lockPopvirus" class="lock"></i>
+                            <input id="scan_chkPopvirus" type="checkbox" checked>仅扫描流行病毒 </label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"></span>
+                        <label class="checkbox" style="width:150px;">
+                            <i id="scan_lockHeuristic" class="lock"></i>
+                            <input id="scan_chkHeuristic" type="checkbox" checked>启发式扫描</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"></span>
+                        <label class="checkbox">
+                            <i id="scan_lockScanzip" class="lock"></i>
+                            <input id="scan_chkScanzip" type="checkbox" checked>启用压缩包扫描</label>
+                        <label>
+                            <i id="scan_lockFilesize" class="lock"></i>查杀不大于
+                            <input id="scan_txtFilesize" type="text" value="100" validation="intNum" style="width:50px;">M的压缩包</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><i id="scan_lockfindvirus" class="lock"></i>发现病毒：</span>
+                        <label class="radio" style="width:100px;">
+                            <input type="radio" value="0" name="scan_radFindvirus" checked>自动处理</label>
+                        <label class="radio" style="width:100px;">
+                            <input type="radio" value="1" name="scan_radFindvirus">手动处理</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;">锁定管理员扫描任务：</span>
+                        <label class="radio" style="width:100px;">
+                            <input type="radio" value="0" name="scan_radAdminscanoper" checked>不锁定</label>
+                        <label class="radio" style="width:100px;">
+                            <input type="radio" value="1" name="scan_radAdminscanoper">禁止停止</label>
+                        <label class="radio" style="width:150px;">
+                            <input type="radio" value="2" name="scan_radAdminscanoper">禁止暂停、停止</label>
+                    </dd>
+                    <dd>
+                        <label class="checkbox">
+                            <i id="scan_lockCloudScan" class="lock"></i>
+                            <input id="scan_chkCloudScan" type="checkbox" checked>启用云扫描引擎</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-file">
+            <h3 class="policy-tit">文件监控</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <i id="file_chkRundisableLock" class="lock"></i>
+                        <label class="checkbox">
+                            <input type="checkbox" id="file_chkRundisable" checked>开机启用</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <input type="checkbox" id="file_chkLockclose">锁定不允许终端关闭监控</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <i id="file_lockMonmode" class="lock"></i>
+                            <input id="file_chkMonmode" type="checkbox" checked>启用智能监控</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <i id="file_lockCore" class="lock"></i>
+                            <input id="file_chkCoreMonitor" type="checkbox" checked>启用内核监控</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <i id="file_smartblackLock" class="lock"></i>
+                        <label class="checkbox">
+                            <input type="checkbox" id="file_smartblack" checked>开启智能黑名单</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <i id="file_lockReportresult" class="lock"></i>
+                            <input id="file_chkReportresult" type="checkbox" checked>通知处理结果</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">
+                            <i id="file_lockFiletype2" class="lock"></i>文件类型：</span>
+                        <label class="radio" style="width:100px;">
+                            <input name="file_radFiletype2" type="radio" value="0">所有</label>
+                        <label class="radio">
+                            <input name="file_radFiletype2" type="radio" value="3" checked>程序及文档</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="lockSigsource" class="lock"></i>监控加速：</span>
+                        <label class="checkbox">                            
+                            <input id="sigsource" type="checkbox" checked>信任程序分析</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="ole_Lock" class="lock"></i>嵌入查杀：</span>
+                        <label class="checkbox">                            
+                            <input id="ole" type="checkbox">启用嵌入式查杀</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">查杀引擎：</span>
+                        <label class="checkbox" style="width:150px;">
+                            <i id="file_lockHeuristic2" class="lock"></i>
+                            <input id="file_chkHeuristic2" type="checkbox">启发式扫描</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"></span>
+                        <label class="checkbox">
+                            <i id="file_lockPopvirus2" class="lock"></i>
+                            <input id="file_chkPopvirus2" type="checkbox" checked>仅扫描流行病毒</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"></span>
+                        <label class="checkbox">
+                            <i id="file_lockScanzip2" class="lock"></i>
+                            <input id="file_chkScanzip2" type="checkbox">启用压缩包扫描</label>
+                        <label>
+                            <i id="file_lockFilesize2" class="lock"></i>查杀不大于
+                            <input type="text" id="file_txtFilesize2" value="20" validation="intNum" style="width:50px;">M的压缩包</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">
+                            <i id="file_lockFindvirus2" class="lock"></i>发现病毒：</span>
+                        <label class="radio" style="width:100px;">
+                            <input name="file_radFindvirus2" type="radio" value="0" checked>自动处理</label>
+                        <label class="radio">
+                            <input name="file_radFindvirus2" type="radio" value="1">询问用户</label>
+                    </dd>
+                    <dd>
+                        <label class="checkbox">
+                            <i id="file_lockCloudScan2" class="lock"></i>
+                            <input id="file_chkCloudScan2" type="checkbox" checked>启用云扫描引擎</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-mail">
+            <h3 class="policy-tit">邮件监控</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <i id="mail_chkRundisable2Lock" class="lock"></i>
+                        <label class="checkbox">
+                            <input type="checkbox" id="mail_chkRundisable2" checked>开机启用</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <input type="checkbox" id="mail_chkLockclose2">锁定不允许终端关闭监控</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="mail_lockFiletype3" class="lock"></i>文件类型：</span>
+                        <label class="radio" style="width:80px;">
+                            <input name="mail_radFiletype3" type="radio" value="0" checked>所有</label>
+                        <label class="radio">
+                            <input name="mail_radFiletype3" type="radio" value="3">程序及文档</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">查杀引擎：</span>
+                        <label class="checkbox" style="width:150px;">
+                            <i id="mail_lockHeuristic3" class="lock"></i>
+                            <input id="mail_chkHeuristic3" type="checkbox" checked>启发式扫描</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"></span>
+                        <label class="checkbox">
+                            <i id="mail_lockPopvirus3Lock" class="lock"></i>
+                            <input id="mail_chkPopvirus3" type="checkbox">仅扫描流行病毒</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"></span>
+                        <label class="checkbox">
+                            <i id="mail_lockScanzip3" class="lock"></i>
+                            <input id="mail_chkScanzip3" type="checkbox" checked>启用压缩包扫描</label>
+                        <label>
+                            <i id="mail_lockFilesize3" class="lock"></i>查杀不大于
+                            <input type="text" id="mail_txtFilesize3" value="20" validation="intNum" style="width:50px;">M的压缩包</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <i id="mail_lockCloudScan3" class="lock"></i>
+                            <input id="mail_chkCloudScan3" type="checkbox" checked>启用云扫描引擎</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="mail_lockFindvirus3" class="lock"></i>发现病毒：</span>
+                        <label class="radio" style="width:80px;">
+                            <input name="mail_radFindvirus3" type="radio" value="0" checked>自动处理</label>
+                        <label class="radio" style="width:100px;">
+                            <input name="mail_radFindvirus3" type="radio" value="1">不处理</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="mail_lockReportresult2" class="lock"></i>扫描结果：</span>
+                        <label class="radio" style="width:80px;">
+                            <input name="mail_radReportresult2" type="radio" value="0">不提示</label>
+                        <label class="radio" style="width:120px;">
+                            <input name="mail_radReportresult2" type="radio" value="1" checked>仅有病毒时提示</label>
+                        <label class="radio">
+                            <input name="mail_radReportresult2" type="radio" value="2">有病毒、无病毒都提示</label>
+                    </dd>
+                    <dd>
+                        <dl style="margin-left:-30px;">
+                            <dd>
+                                <span class="inblock" style="width:420px;"><i id="mail_lockPolicyWrap" class="lock"></i>端口策略：</span>
+                                <button class="btn btn-small btn-add mail_btnAddPort">&nbsp;</button>
+                            </dd>
+                            <dd>
+                                <div style="width:490px;">
+                                    <table class="whiteListBoxTit">
+                                        <tr>
+                                            <td style="width:20px;"></td>
+                                            <td style="width:120px;">端口</td>
+                                            <td style="width:265px;">协议</td>
+                                            <td style="width:40px;">操作</td>
+                                        </tr>
+                                    </table>
+                                    <div class="whiteList">
+                                        <div class="js_white_wrap">
+                                            <table class="mailPortPanel">
+                                                <tr class="blank">
+                                                    <td style="width:20px;"></td>
+                                                    <td style="width:120px;"></td>
+                                                    <td style="width:265px;"></td>
+                                                    <td style="width:40px;"></td>
+                                                </tr>
+                                                <tr class="blank">
+                                                    <td style="width:20px;"></td>
+                                                    <td style="width:120px;"></td>
+                                                    <td style="width:265px;"></td>
+                                                    <td style="width:40px;"></td>
+                                                </tr>
+                                                <tr class="blank">
+                                                    <td style="width:20px;"></td>
+                                                    <td style="width:120px;"></td>
+                                                    <td style="width:265px;"></td>
+                                                    <td style="width:40px;"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <table class="mailPortPanel_tit">
+                                    <tr>
+                                        <td style="width:20px;"></td>
+                                        <td style="width:120px;">端口</td>
+                                        <td style="width:265px;">协议</td>
+                                        <td style="width:40px;">操作</td>
+                                    </tr>
+                                </table>
+                                <table class="mailPortPanel">
+                                    <thead>
+                                        <tr>
+                                            <td style="width:20px;"><i name="mail_lockMailPortBox" class="lock"></i></td>
+                                            <td style="width:120px;">
+                                                <input type="text" value="" style="width:50px;" name="mail_txtMailPort">
+                                            </td>
+                                            <td style="width:265px;">
+                                                <label class="radio inline">
+                                                    <input name="mail_radMailPort0" type="radio" value="0" checked>SMTP
+                                                </label>
+                                                <label class="radio inline">
+                                                    <input name="mail_radMailPort0" type="radio" value="1">POP3
+                                                </label>
+                                            </td>
+                                            <td style="width:40px;">
+                                                <a href="#" class="mail_btnRemovePort">&nbsp;</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:20px;"><i name="mail_lockMailPortBox" class="lock"></i></td>
+                                            <td style="width:120px;">
+                                                <input type="text" value="" style="width:50px;" name="mail_txtMailPort">
+                                            </td>
+                                            <td style="width:265px;">
+                                                <label class="radio inline">
+                                                    <input name="mail_radMailPort0" type="radio" value="0" checked>SMTP
+                                                </label>
+                                                <label class="radio inline">
+                                                    <input name="mail_radMailPort0" type="radio" value="1">POP3
+                                                </label>
+                                            </td>
+                                            <td style="width:40px;">
+                                                <a href="#" class="mail_btnRemovePort">&nbsp;</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table> -->
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-share">
+            <h3 class="policy-tit">共享监控</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="share_RundisableLock" class="lock"></i>共享监控：</span>
+                        <label class="checkbox">
+                            <input type="checkbox" id="share_Rundisable" checked>开机启用</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="share_lockFiletype" class="lock"></i>文件类型：</span>
+                        <label class="radio" style="width:80px;">
+                            <input name="share_radFiletype" type="radio" value="0" checked>所有</label>
+                        <label class="radio">
+                            <input name="share_radFiletype" type="radio" value="3">程序及文档</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">查杀引擎：</span>
+                        <label class="checkbox" style="width:150px;">
+                            <i id="share_PopvirusLock" class="lock"></i>
+                            <input id="share_Popvirus" type="checkbox">仅查杀流行病毒</label>
+
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"></span>
+                        <label class="checkbox">
+                            <i id="share_lockHeuristic" class="lock"></i>
+                            <input id="share_chkHeuristic" type="checkbox" checked>启发式查杀</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"></span>
+                        <label class="checkbox">
+                            <i id="share_lockScanzip" class="lock"></i>
+                            <input id="share_chkScanzip" type="checkbox" checked>启用压缩包查杀</label>
+                        <label>
+                            <i id="share_lockFilesize" class="lock"></i>查杀不大于
+                            <input type="text" id="share_txtFilesize" value="20" validation="intNum" style="width:50px;">M的压缩包</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="share_lockFindvirus" class="lock"></i>发现病毒：</span>
+                        <label class="radio" style="width:80px;">
+                            <input name="share_radFindvirus" type="radio" value="0" checked>自动处理</label>
+                        <label class="radio" style="width:80px;">
+                            <input name="share_radFindvirus" type="radio" value="1">手动处理</label>
+                        <label class="radio" style="width:100px;">
+                            <input name="share_radFindvirus" type="radio" value="2">不处理</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="share_lockReportresult" class="lock"></i>扫描结果：</span>
+                        <label class="radio" style="width:80px;">
+                            <input name="share_radReportresult" type="radio" value="0">不提示</label>
+                        <label class="radio" style="width:120px;">
+                            <input name="share_radReportresult" type="radio" value="1" checked>提示</label>
+                        <label class="radio">
+                            <input name="share_radReportresult" type="radio" value="2">仅查杀结果提示</label>
+                        <label class="radio">
+                            <input name="share_radReportresult" type="radio" value="3">仅查杀成功提示</label>
+                    </dd>
+                    <dd>
+                        <label class="checkbox">
+                            <i id="share_lockCloudScan" class="lock"></i>
+                            <input id="share_chkCloudScan" type="checkbox" checked>启用云扫描引擎</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-udisk">
+            <h3 class="policy-tit">U盘监控</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <label class="checkbox">
+                            <i id="pub_chkUdiskmonLock" class="lock"></i>
+                            <input id="pub_chkUdiskmon" type="checkbox" checked>启用U盘监控</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;"><i id="pub_udiskmonAskLock" class="lock"></i>插入U盘时：</span>
+                        <label class="radio" style="width:100px;">
+                            <input name="pub_udiskAsk" type="radio" value="1" checked="">询问是否查杀</label>
+                        <label class="radio" style="width:100px;">
+                            <input name="pub_udiskAsk" type="radio" value="0">立即查杀</label>
+                    </dd>
+                    <dd>
+                        <span class="inblock" style="width:100px;"><i id="pub_udiskmonLevelLock" class="lock"></i>查杀深度：</span>
+                        <label class="checkbox">
+                            扫描递归深度
+                            <input type="text" value="2" class="input-mini" id="pub_udiskmonLevel" validation="Num lte gte" valid_lte="128" valid_gte="-1"> 层</label>
+                        <span class="inblock" style="color:#999;">(-1代表查杀所有目录)</span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-sys">
+            <h3 class="policy-tit">系统加固</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <i id="sys_chkAllsysdefEnableLock" class="lock"></i>
+                        <label class="checkbox">
+                            <input type="checkbox" id="sys_chkAllsysdefEnable">开机启用</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><i id="sys_lockSysdefnotify" class="lock"></i>发现威胁：</span>
+                        <label class="radio" style="width:100px;">
+                            <input name="sys_radSysdefnotify" type="radio" value="0" disabled>自动处理</label>
+                        <label class="radio" style="width:100px;">
+                            <input name="sys_radSysdefnotify" type="radio" value="1" checked disabled>通知我</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><i id="sys_lockSysdefneedlog" class="lock"></i>拦截日志：</span>
+                        <label class="checkbox">
+                            <input name="sys_radSysdefneedlog" type="checkbox"  disabled>记录拦截日志</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><i id="sys_lockSysdeflevel" class="lock"></i>监控灵敏度：</span>
+                        <label class="radio" style="width:100px;">
+                            <input name="sys_radSysdeflevel" type="radio" value="1" checked disabled>低</label>
+                        <label class="radio" style="width:100px;">
+                            <input name="sys_radSysdeflevel" type="radio" value="2" disabled>中</label>
+                        <label class="radio" style="width:100px;">
+                            <input name="sys_radSysdeflevel" type="radio" value="3" disabled>高</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><i id="sys_lockSysdefauditmode" class="lock"></i>审计模式：</span>
+                        <label class="checkbox">
+                            <input type="checkbox" id="app_chkSysdefauditmode" disabled>开启</label>
+                    </dd>
+                    <dd>
+                        <span class="inblock" style="width:120px;"><i id="sys_lockSysdefdigitalsignature" class="lock"></i>其他：</span>
+                        <label class="checkbox">
+                            <input name="sys_radSysdefdigitalsignature" type="checkbox" disabled>放过含有数字签名的程序</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-app">
+            <h3 class="policy-tit">应用加固</h3>
+            <div class="policy-bod">
+                <dl>
+                    <dd class="policy-border">
+                        <i id="app_chkAllaptEnableLock" class="lock"></i>
+                        <label class="checkbox">
+                            <input type="checkbox" id="app_chkAllaptEnable">开机启用</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><i id="app_lockAptdeal" class="lock"></i>发现威胁：</span>
+                        <label class="radio" style="width:100px;">
+                            <input name="app_radAptdeal" type="radio" value="0" checked disabled>允许运行</label>
+                        <label class="radio" style="width:100px;">
+                            <input name="app_radAptdeal" type="radio" value="1" disabled>禁止运行</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><i id="app_lockAptnotify" class="lock"></i>处理方式：</span>
+                        <label class="radio" style="width:100px;">
+                            <input name="app_radAptnotify" type="radio" value="0" disabled>自动处理</label>
+                        <label class="radio" style="width:100px;">
+                            <input name="app_radAptnotify" type="radio" value="1" checked disabled>通知我</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:120px;"><i id="app_lockAptlog" class="lock"></i>拦截日志：</span>
+                        <label class="checkbox" style="width:100px;">
+                            <input name="app_radAptlog" type="checkbox" checked disabled>记录拦截日志</label>
+                    </dd>
+                    <dd>
+                        <span class="inblock" style="width:120px;"><i id="app_lockAptstarttip" class="lock"></i>启动弹框：</span>
+                        <label class="checkbox">
+                            <input name="app_radAptstarttip" type="checkbox" disabled>启动时弹出软件保护框</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="policy-box" id="tab-viru">
+            <h3 class="policy-tit">Linux防病毒</h3>
+            <div class="policy-bod">
+                <dl class="policy-border">
+                    <dt>扫描优化</dt>
+                    <dd>
+                        <label class="checkbox">
+                            <input type="checkbox" id="keepDayAble">仅扫描最近
+                            <input type="text" id="keepDay" class="input-mini" disabled validation="intNum">天更新的文件</label>
+                        <label class="checkbox">
+                            <input type="checkbox" id="compsAble">压缩包文件不大于
+                            <input type="text" id="compress" class="input-mini" style="width:50px;" disabled validation="intNum">M</label>
+                    </dd>
+                </dl>
+                <dl class="policy-border">
+                    <dt>扫描路径</dt>
+                    <dd>
+                        <div class="mb5">
+                            <input type="text" class="input-large" id="scanPath" value="/">仅填写一个路径</div>
+                        <div class="mb5">
+                            <label class="checkbox inline">
+                                <input type="checkbox" name="ignPath">忽略以下路径</label>
+                        </div>
+                        <div class="mb5" style="position:relative">
+                            <input type="text" value="" class="ignPathVal" style="width:200px;">
+                            <button id="add_ignPath" class="btn btn-small btn-add ml10">&nbsp;</button>
+                        </div>
+                        <div class="li_ignPaths" style="width:440px;">
+                            <table class="whiteListBoxTit">
+                                <tr>
+                                    <td style="width:380px;">路径</td>
+                                    <td>操作</td>
+                                </tr>
+                            </table>
+                            <div class="whiteList">
+                                <div class="js_white_wrap">
+                                    <table class="li_ignPaths_bod">
+                                        <tr class="blank">
+                                            <td style="width:380px;"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="blank">
+                                            <td style="width:380px;"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="blank">
+                                            <td style="width:380px;"></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="policy-border">
+                    <dt>定时扫描</dt>
+                    <dd>
+                        <label class="checkbox">
+                            <input type="checkbox" name="setTimeViru" id="setTimeViru">启动定时扫描</label>
+                        <div class="mb5 policy-week mt5">
+                            <label class="checkbox">
+                                <input type="checkbox" name="scanTime" disabled>日</label>
+                            <label class="checkbox ">
+                                <input type="checkbox" name="scanTime" disabled>一</label>
+                            <label class="checkbox ">
+                                <input type="checkbox" name="scanTime" disabled>二</label>
+                            <label class="checkbox ">
+                                <input type="checkbox" name="scanTime" disabled>三</label>
+                            <label class="checkbox ">
+                                <input type="checkbox" name="scanTime" disabled>四</label>
+                            <label class="checkbox ">
+                                <input type="checkbox" name="scanTime" disabled>五</label>
+                            <label class="checkbox ">
+                                <input type="checkbox" name="scanTime" disabled>六</label>
+                        </div>
+                        <div class="mb5">开始时间：
+                            <input type="text" id="scanT" disabled class="input-small" value="" />
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>病毒设置</dt>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">发现病毒时：</span>
+                        <label class="radio" style="width:100px;">
+                            <input type="radio" name="findViru" id="findViru_1" value="1" checked>清除病毒</label>
+                        <label class="radio" style="width:100px;">
+                            <input type="radio" name="findViru" id="findViru_2" value="2">删除病毒文件</label>
+                        <label class="radio">
+                            <input type="radio" name="findViru" id="findViru_3" value="3">不处理</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">清除失败时：</span>
+                        <label class="radio" style="width:100px;">
+                            <input type="radio" name="clearViru" id="clearViru_1" value="1" checked>删除染毒文件</label>
+                        <label class="radio" style="width:100px;">
+                            <input type="radio" name="clearViru" id="clearViru_2" value="2">不处理</label>
+                    </dd>
+                    <dd class="policy-border">
+                        <span class="inblock" style="width:100px;">隔离失败时：</span>
+                        <label class="radio" style="width:100px;">
+                            <input type="radio" name="viruFail" id="viruFail_1" value="1" checked>清除病毒</label>
+                        <label class="radio" style="width:100px;">
+                            <input type="radio" name="viruFail" id="viruFail_2" value="2">删除病毒文件</label>
+                        <label class="radio">
+                            <input type="radio" name="viruFail" id="viruFail_3" value="3">不处理</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="c-policy-btn">
+    <a href="javascript:;" class="btn" id="policy-save">应用</a>
+</div>

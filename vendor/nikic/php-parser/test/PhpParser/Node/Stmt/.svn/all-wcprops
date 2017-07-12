@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/PhpParser/Node/Stmt
+END
+ClassConstTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/ClassConstTest.php
+END
+InterfaceTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/InterfaceTest.php
+END
+PropertyTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/PropertyTest.php
+END
+ClassTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/ClassTest.php
+END
+ClassMethodTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/PhpParser/Node/Stmt/ClassMethodTest.php
+END

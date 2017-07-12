@@ -1,0 +1,4 @@
+<div class="remark-wrap row-fluid overview-content">
+	<table id="tbClient" class="table table-hover  table-bordered table-condensed" data-toolbar-align="left" data-toggle="table" data-resizable="true">
+	</table>
+</div>

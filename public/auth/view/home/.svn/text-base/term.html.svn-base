@@ -1,0 +1,32 @@
+<div class="log-content">
+    <div id="custom-toolbar">
+        <div class="tod_term_info">今日成功授权<em class="black">0</em>台 未授权<em class="red">0</em>台</div>
+    </div>
+    <div id="customSearchBox">
+        <!-- 今日授权 -->
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">动作：</label>
+                <div class="controls js_act">
+                    <a href="javascript:void(0);" class="active" val="1">已授权</a>
+                    <a href="javascript:void(0);" val="2">未授权</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">筛选条件：</label>
+                <div class="controls js_search">
+                    <span>
+                        <select class="input-small js_searchType" style="width:100px">  
+                            <option value="ip">IP地址</option>
+                            <option value="mac">MAC地址</option>
+                        </select>
+                    </span>
+                    <input type="text" value="" class="js_searchKey">
+                    <button type="button" class="btn js_btn_search">筛选</button>
+                </div>
+            </div>
+        </form>
+        <div style="clear:both;overflow:hidden;height:0;"></div>
+    </div>
+    <table id="tbClient" data-toolbar-align="left" data-toolbar="#custom-toolbar" data-toggle="table"></table>
+</div>

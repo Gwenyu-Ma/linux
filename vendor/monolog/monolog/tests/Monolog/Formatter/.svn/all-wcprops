@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter
+END
+ChromePHPFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/ChromePHPFormatterTest.php
+END
+ElasticaFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/ElasticaFormatterTest.php
+END
+MongoDBFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/MongoDBFormatterTest.php
+END
+ScalarFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/ScalarFormatterTest.php
+END
+WildfireFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/WildfireFormatterTest.php
+END
+LineFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/LineFormatterTest.php
+END
+FlowdockFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/FlowdockFormatterTest.php
+END
+JsonFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/JsonFormatterTest.php
+END
+LogglyFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/LogglyFormatterTest.php
+END
+FluentdFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/FluentdFormatterTest.php
+END
+GelfMessageFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/GelfMessageFormatterTest.php
+END
+NormalizerFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/NormalizerFormatterTest.php
+END
+LogstashFormatterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/tests/Monolog/Formatter/LogstashFormatterTest.php
+END

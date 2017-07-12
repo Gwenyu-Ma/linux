@@ -1,0 +1,381 @@
+<div class="home-wrap">
+    <div class="row-fluid">
+        <div class="home-box home-msg span8">
+            <div class="home-tit">
+                <div class="opts">
+                    <ul>
+                        <li class="active"><a href="#" da-toggle="#home-msg-all">全部</a></li>
+                        <li><a href="#" da-toggle="#home-msg-sys"><i class="ico-sys-min">&nbsp;</i><span>系统类</span></a></li>
+                        <li><a href="#" da-toggle="#home-msg-safe"><i class="ico-safe-min">&nbsp;</i><span>安全类</span></a></li>
+                        <li><a href="#" da-toggle="#home-msg-log"><i class="ico-log-min">&nbsp;</i><span>日志类</span></a></li>
+                        <li><a href="#" da-toggle="#home-msg-firm"><i class="ico-firm-min">&nbsp;</i><span>厂商类</span></a></li>
+                    </ul>
+                </div>
+                <h3><span class="left">消息中心</span>
+                    <div class="home-search-box"><input type="text" value="" /><a href="javascript:;" title="搜索" class="search-btn">&nbsp;</a></div>
+                </h3>
+            </div>
+            <div class="home-bod">
+                <div id="home-msg-all">
+                </div>
+                <div id="home-msg-sys" style="display:none;">
+                    <!-- <ul class="msg-list">
+                        <li>
+                            <i class="ico-sys-min">&nbsp;</i>
+                            <div class="msg-list-txt">
+                                <div><a href="#">瑞星提醒：“幽灵电子书”病毒详细分析幽灵电子书”病毒详细分析幽灵电子书”病毒详细分析</a></div>
+                                <span>2016/3/10  12:02:03</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ico-sys-min">&nbsp;</i>
+                            <div class="msg-list-txt">
+                                <div><a href="#">瑞星提醒：“幽灵电子书”病毒详细分析</a></div>
+                                <span>2016/3/10  12:02:03</span>
+                            </div>
+                        </li>
+                    </ul> -->
+                </div>
+                <div id="home-msg-safe" style="display:none;">
+                    <!-- <ul class="msg-list">
+                        <li>
+                            <i class="ico-safe-min">&nbsp;</i>
+                            <div class="msg-list-txt">
+                                <div><a href="#">瑞星提醒：“幽灵电子书”病毒详细分析幽灵电子书”病毒详细分析幽灵电子书”病毒详细分析</a></div>
+                                <span>2016/3/10  12:02:03</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ico-safe-min">&nbsp;</i>
+                            <div class="msg-list-txt">
+                                <div><a href="#">瑞星提醒：“幽灵电子书”病毒详细分析</a></div>
+                                <span>2016/3/10  12:02:03</span>
+                            </div>
+                        </li>
+                    </ul> -->
+                    <div class="home-msg-nomatch">
+                        <p>
+                            暂无内容~ </p>
+                        <a href="/index#settings/message?g=0">
+                            查看更多
+                        </a>
+                    </div>
+                </div>
+                <div id="home-msg-log" style="display:none;">
+                    <!-- <ul class="msg-list">
+                        <li>
+                            <i class="ico-log-min">&nbsp;</i>
+                            <div class="msg-list-txt">
+                                <div><a href="#">瑞星提醒：“幽灵电子书”病毒详细分析幽灵电子书”病毒详细分析幽灵电子书”病毒详细分析</a></div>
+                                <span>2016/3/10  12:02:03</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ico-log-min">&nbsp;</i>
+                            <div class="msg-list-txt">
+                                <div><a href="#">瑞星提醒：“幽灵电子书”病毒详细分析</a></div>
+                                <span>2016/3/10  12:02:03</span>
+                            </div>
+                        </li>
+                    </ul> -->
+                    <div class="home-msg-nomatch">
+                        <p>
+                            暂无内容~ </p>
+                        <a href="/index#settings/message?g=0">
+                            查看更多
+                        </a>
+                    </div>
+                </div>
+                <div id="home-msg-firm" style="display:none;">
+                    <!--  <ul class="msg-list">
+                        <li>
+                            <i class="ico-firm-min">&nbsp;</i>
+                            <div class="msg-list-txt">
+                                <div><a href="#">瑞星提醒：“幽灵电子书”病毒详细分析幽灵电子书”病毒详细分析幽灵电子书”病毒详细分析</a></div>
+                                <span>2016/3/10  12:02:03</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ico-firm-min">&nbsp;</i>
+                            <div class="msg-list-txt">
+                                <div><a href="#">瑞星提醒：“幽灵电子书”病毒详细分析</a></div>
+                                <span>2016/3/10  12:02:03</span>
+                            </div>
+                        </li>
+                    </ul> -->
+                    <div class="home-msg-nomatch">
+                        <p>
+                            暂无内容~ </p>
+                        <a href="/index#settings/message?g=0">
+                            查看更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-box home-client span4">
+            <div class="home-tit">
+                <h3>终端部署情况</h3>
+            </div>
+            <div class="home-bod">
+                <div class="client-info">
+                    <ul>
+                        <li class="online">
+                            <div class="info_warp">
+                                <em>0台在线</em><br/>
+                                <span>占全网0%</span>
+                            </div>
+                        </li>
+                        <li class="offline">
+                            <div class="info_warp">
+                                <em>0台在线</em><br/>
+                                <span>占全网0%</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="vers-info">
+                    <ul>
+                    </ul>
+                    <a href="javascript:void(0);" class="btnupdate js_updateVersion">&nbsp;</a>
+                </div>
+                <div class="down-sys">
+                    <div class="down-other">
+                        <ul>
+                            <li>
+                                <a href="javascript:;" downType="windows"><img src="{{static_path}}/esm/img/icon/sys-windows2.png" alt="Windows版下载"></a>
+                            </li>
+                            <li class="last">
+                                <a href="javascript:;" downType="linux"><img src="{{static_path}}/esm/img/icon/sys-linux2.png" alt="Linux版下载"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear:both;height:0;overflow:hidden;"></div>
+    </div>
+    <div class="row-fluid">
+        <div class="home-box home-info span12">
+            <div class="home-tit">
+                <h3>全网数据统计
+                    <a class="custom-mod">自定义</a>
+                </h3>
+                <div class="custom-mod-box" style="height:378px;">
+                    <h3 class="custom-mod-title">自定义模块
+                        <a class="close"><a/></h3>
+                    <ul>
+                        <li data-module="threaten">
+                            <span>威胁终端</span>
+                            <b data-width="1" class="whiteSpace"></b>
+                            <b data-width="2">2倍宽</b>
+                            <a>
+                                <i class="left" data-show="0"></i>
+                                <i class="right" data-show="1"></i>
+                            </a>
+                        </li>
+                        <li data-module="os">
+                            <span>操作系统分布</span>
+                            <b data-width="1">1倍宽</b>
+                            <b data-width="2">2倍宽</b>
+                            <a>
+                                <i class="left" data-show="0"></i>
+                                <i class="right" data-show="1"></i>
+                            </a>
+                        </li>
+                        <li data-module="virCount">
+                            <span>病毒数量</span>
+                            <b data-width="1" class="whiteSpace"></b>
+                            <b data-width="2">2倍宽</b>
+                            <a>
+                                <i class="left" data-show="0"></i>
+                                <i class="right" data-show="1"></i>
+                            </a>
+                        </li>
+                        <li data-module="virKill" style="display:none;">
+                            <span>病毒查杀</span>
+                            <b data-width="1" class="whiteSpace"></b>
+                            <b data-width="2">2倍宽</b>
+                            <a>
+                                <i class="left" data-show="0"></i>
+                                <i class="right" data-show="1"></i>
+                            </a>
+                        </li>
+                        <li data-module="network">
+                            <span>违规联网</span>
+                            <b data-width="1">1倍宽</b>
+                            <b data-width="2">2倍宽</b>
+                            <a>
+                                <i class="left" data-show="0"></i>
+                                <i class="right" data-show="1"></i>
+                            </a>
+                        </li>
+                        <li data-module="flow">
+                            <span>当时流量排行</span>
+                            <b data-width="1">1倍宽</b>
+                            <b data-width="2">2倍宽</b>
+                            <a>
+                                <i class="left" data-show="0"></i>
+                                <i class="right" data-show="1"></i>
+                            </a>
+                        </li>
+                        <li data-module="interception">
+                            <span>骚扰拦截</span>
+                            <b data-width="1">1倍宽</b>
+                            <b data-width="2">2倍宽</b>
+                            <a>
+                                <i class="left" data-show="0"></i>
+                                <i class="right" data-show="1"></i>
+                            </a>
+                        </li>
+                        <!--<li data-module="location">
+                            <span>终端位置</span>
+                            <b data-width="1">1倍宽</b>
+                            <b data-width="2">2倍宽</b>
+                            <a>
+                                <i class="left" data-show="0"></i>
+                                <i class="right" data-show="1"></i>
+                            </a>
+                        </li>-->
+                        <li data-module="maliciousUrl" class="last">
+                            <span>恶意网址拦截</span>
+                            <b data-width="1">1倍宽</b>
+                            <b data-width="2">2倍宽</b>
+                            <a>
+                                <i class="left" data-show="0"></i>
+                                <i class="right" data-show="1"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>提供显示比例、模块是否显示设置<button class="default">恢复默认</button><button class="apply">应用</button></a>
+                </div>
+            </div>
+            <div class="home-bod patch_wrap">
+                <div class="patch_div"></div>
+                <ul class="echarts-list">
+                    <li class="echarts-w2 hide" data-mod="threaten">
+                        <h3>威胁终端</h3>
+                        <div class="threat-box">
+                            <div class="echart_opt">
+                                <div class="echart_info" style="margin-left:80px;">
+                                    <em>共0台</em>
+                                    <span>今日00:00</span>
+                                    <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span> 日平均：0台
+                                </div>
+                            </div>
+                            <div id="threat" class="customModeEmpty"></div>
+                        </div>
+                    </li>
+                    <li class="echarts-w1 hide" data-mod="os">
+                        <h3>操作系统分布</h3>
+                        <div class="system-box">
+                            <div id="system" class="customModeEmpty"></div>
+                        </div>
+                    </li>
+                    <li class="echarts-w2 hide" data-mod="virCount">
+                        <h3>病毒数量</h3>
+                        <div class="virus-box">
+                            <div class="echart_opt">
+                                <ul>
+                                    <li class="active" data-type="file">按染毒文件</li>
+                                    <li data-type="num">按染毒次数</li>
+                                </ul>
+                                <div class="echart_info" style="margin-left:80px;">
+                                    <em>共0个</em>
+                                    <span>今日00:00</span>
+                                    <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span> 日平均：0个
+                                </div>
+                            </div>
+                            <div id="virus" class="customModeEmpty"></div>
+                        </div>
+                    </li>
+                    <li class="echarts-w1 hide" data-mod="virKill" style="display:none;">
+                        <h3>病毒查杀</h3>
+                        <div class="virus2-box">
+                            <div class="echart_opt">
+                                <ul>
+                                    <li class="active" data-type="file">按染毒文件</li>
+                                    <li data-type="num">按染毒次数</li>
+                                </ul>
+                                <div class="echart_info" style="margin-left:80px;">
+                                    <em>0个</em>
+                                    <span>今日00:00</span>
+                                    <span>&nbsp;|&nbsp;</span> 日平均：0个
+                                </div>
+                            </div>
+                            <div id="virus2" class="customModeEmpty"></div>
+                        </div>
+                    </li>
+                    <li class="echarts-w1 hide" data-mod="network">
+                        <h3>违规联网</h3>
+                        <div class="network-box">
+                            <div class="echart_opt">
+                                <ul>
+                                    <li class="active">最近7天</li>
+                                </ul>
+                            </div>
+                            <div id="network" class="customModeEmpty"></div>
+                        </div>
+                    </li>
+                    <li class="echarts-w1 hide" data-mod="flow">
+                        <h3>当日流量排行</h3>
+                        <div class="flow-box">
+                            <div id="flow"></div>
+                        </div>
+                    </li>
+                    <li class="echarts-w1 hide" data-mod="interception">
+                        <h3>骚扰拦截</h3>
+                        <div class="interception-box">
+                            <div id="interception" class="customModeEmpty"></div>
+                        </div>
+                    </li>
+                    <!--<li class="echarts-w2 hide" data-mod="location">
+                        <h3>终端定位</h3>
+                        <div class="map-box">
+                            <div id="map" class="customModeEmpty"></div>
+                        </div>
+                    </li>-->
+                    <li class="echarts-w1 hide" data-mod="maliciousUrl">
+                        <h3>恶意网址拦截</h3>
+                        <div class="site-box">
+                            <div class="echart_opt">
+                                <ul>
+                                    <li class="active">最近7天</li>
+                                </ul>
+                            </div>
+                            <div id="site" class="customModeEmpty"></div>
+                        </div>
+                    </li>
+                </ul>
+                <div style="clear:both;height:0;overflow:hidden;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="userCenter">
+    <div class="uc-content uc-padding">
+        <div class="row-fluid overview-content">
+        </div>
+        <div class="uc-content-left">
+            <div class="uc-cl-3">
+                <div class="messageBox hide">
+                    <div class="uc-mid-pwd addAccount messagec">
+                        <h3 class="pop">
+                            <a class="close"></a>
+                        </h3>
+                        <h1></h1>
+                        <p class="descri">
+                            类型：<span class="type"></span> 时间：
+                            <span class="time"></span>
+                        </p>
+                        <div class="content">
+                        </div>
+                        <div class="footer">
+                            <span>附件:<!-- <i>****报</i> --></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

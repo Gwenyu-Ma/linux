@@ -1,0 +1,10 @@
+
+Authhome/getTodayAccredit(今天授权)，在搜索的情况下可以传IP，mac，isAccredit(0未授权,1授权)
+
+Authproduct/historyAccredit 历史授权  两个参数startDate，endDate
+
+Authproduct/getProductAccredit  产品授权
+
+Authproduct/productDetail  详情
+
+Authhome/loginOut  退出接口

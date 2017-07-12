@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/download.css">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="./js/lib/respond.min.js">
+			</script>
+		<![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+		  <div class="down-page-nav">
+			<span class="dpn-title">下载管理平台</span>
+			<div class="nav">
+			  <a href="index.html"><span><i class="fa fa-cube fa-2x" aria-hidden="true"></i></span>当前包</a>
+			  <a href="upload.html"><span><i class="fa fa-upload fa-2x" aria-hidden="true"></i></span>上传新包</a>
+			  <a class="active" href="eids.html"><span><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>EID列表</a>
+			</div>
+		  </div>
+		  <div class="down-page-content">
+			<div class="header">
+				<a class="hide" href="javascript:void(0)">
+					<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+				</a>
+			</div>
+		    <div class="page-content">
+				<input id="eid" class="eid" placeholder="请输入eid"/> 
+				<button class="addEid">手动添加eid</button>
+				<table>
+				  <thead>
+					<tr>
+					  <th>EID</th>
+					  <th>Android签名包</th>
+					  <th>Linux签名包</th>
+					  <th>Windows签名包</th>
+					  <th>最后活跃时间</th>
+					</tr>
+				  </thead>
+				  <tbody class="editlist">
+					
+				  </tbody>
+				  <tfoot>
+					<tr class="last">
+						<td>
+							<button>
+								上一页
+							</button>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<button>
+								下一页
+							</button>
+						</td>
+					</tr>
+				  </tfoot>
+				</table>
+			</div>
+		</div>
+		<div class="shadowBox hide">
+		</div>
+		<div class="errorTip hide">
+			<span></span>
+			<p clsss="slitLine"></p>
+			<a>确定</a>
+		</div>
+		<script type="text/javascript" src="./js/lib/jquery-1.12.3.min.js">
+		</script>
+		<script type="text/javascript" src="./js/script.js">
+		</script>
+		<script type="text/javascript">
+			var currentPage = location.href.split(".");
+			    currentPage = currentPage[currentPage.length -2].split("/");
+				currentPage = currentPage[currentPage.length - 1];
+		</script>
+    </body>
+</html>

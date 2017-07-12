@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed
+END
+ActivationStrategyInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ActivationStrategyInterface.php
+END
+ChannelLevelActivationStrategy.php
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ChannelLevelActivationStrategy.php
+END
+ErrorLevelActivationStrategy.php
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ErrorLevelActivationStrategy.php
+END

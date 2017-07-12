@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdp
+END
+UdpSocket.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/28954/soho/code/ESMCenter/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdp/UdpSocket.php
+END

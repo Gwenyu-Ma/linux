@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>消息列表</title>
+    <link rel="stylesheet" href="./js/lib/bootstrap.min.css" />
+    <script src="./js/lib/jquery-1.12.3.min.js"></script>
+    <script src="./js/bundle.js"></script>
+    <script>
+        var R = require('superagent');
+        var B = require('rivets');
+    </script>
+</head>
+
+<body style="margin: 10px;">
+    <div id="addMsg" class="form-horizontal">
+           <div class="control-group">
+                <label for="" class="control-label">订阅者(一行一个)：</label>
+                <div class="controls">
+                    <textarea rows="3" v-model="post.context" id="subscribers">b:326548E995483709:admins:1</textarea>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                 <button onclick="go()" class="btn">查询</button>
+                 每隔<input type="number" value="2" style="width:50px;" id="s"/>秒
+                 自动刷新<input type="checkbox" id="run" onclick="javascript:window.hh=!window.hh;if(window.hh){window.zl = setInterval(function(){go();}, parseInt($('#s').val())*1000);}else{window.clearTimeout(window.zl);}" />
+                 </div>
+            </div>
+    </div>
+   <div></div>
+    <div class="" id="msglist" style="height:500px;">
+        <!--
+        <div class="row">
+            <div class="form-inline">
+                <div class="input-prepend">
+                    <span class="add-on">消息：</span>
+                    <input type="text" v-model="request.type" />
+                </div>
+                <div class="input-prepend">
+                    <span class="add-on">标题：</span>
+                    <input type="text" v-model="request.title" />
+                </div>
+                <button v-on:click="search" class="btn">查询</button>
+            </div>
+        </div>
+        -->
+        <div class="">
+
+        </div>
+        <div class="">
+            <div style="height:500px;overflow:auto;">
+                <table class="table table-striped table-condensed table-bordered table-hover">
+                    <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>时间</th>
+                                <th>标题</th>
+                                <th>消息</th>
+                                <th>已读</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-each-row="rows">
+                                    <td>{row.did.$id}</td>
+                                    <td v-text="row.outtime | time"></td>
+                                    <td>{row.msgtitle}</td>
+                                    <td v-html="row.msgcontext"></td>
+                                    <td v-text="row.isread | isread"></td>
+                                    <td><button v-on-click="remove">删除</button></td>
+                            </tr>
+                    </tbody>
+                </table>
+                 <button style="float:right;" onclick="more()" class="btn">更多</button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        B.configure({prefix: 'v'});var db = B.bind($('body'), {}).models;
+        B.formatters.isread = function (v){
+            if(v === 0){
+                return '未读';
+            }
+            if(v === 1){
+                return '已读';
+            }
+        }
+        B.formatters.time = function (v){
+            var date = new Date(v*1000);
+            return date.getFullYear()+"-"+date.getMonth()+"-"+date.getDay()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+        }
+        db.rows = [];
+        db.lastid = '';
+
+        function go (){
+            db.rows = [];
+            db.lastid = '';
+            more();
+        }
+        function more (){
+            R.get('../api/getMsg2.php')
+            .query({
+                subscribers: $('#subscribers').val(),
+                count: 10,
+                lastid: db.lastid
+            })
+            .end(function(err, res){
+                if(res.status !== 200){
+                    alert('ERROR');
+                    return;
+                }
+                if(res.body.error !== null){
+                    alert(res.body.error);
+                    return;
+                }
+                if(res.body.result.messages.length === 0){
+                    alert('没了');
+                    return;
+                }
+                if(res.body.result.lastid){
+                    db.lastid = res.body.result.lastid;
+                }
+                db.rows = db.rows.concat(res.body.result.messages);
+            });
+        }
+        db.remove = function (e, db){
+            R.get('../api/delMsg2.php')
+            .query({
+                did: db.rows[db.index].did.$id
+            })
+            .end(function(err, res){
+                if(res.status !== 200){
+                    alert('ERROR');
+                    return;
+                }
+                if(res.body.error !== null){
+                    alert(res.body.error);
+                    return;
+                }
+                db.rows.splice(db.index, 1);
+            });
+        }
+
+    </script>
+</body>
+</html>

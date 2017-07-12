@@ -1,0 +1,58 @@
+<div class="log-content">
+    <div id="custom-toolbar">
+        <ul class="nav nav-pills">
+            <li class="active" ><a href="javascript:void(0);" >安装部署</a></li>           
+        </ul>
+    </div>
+    <div id="customSearchBox">
+        <!-- 病毒扫描 -->
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">时间范围：</label>
+                <div class="controls js_date">
+                    <a href="javascript:void(0);" class="active" val="nolimt">全部</a>
+                    <a href="javascript:void(0);" val="week">本周</a>
+                    <a href="javascript:void(0);" val="month">本月</a>
+                    <a href="javascript:void(0);" val="lastMonth">上月</a>
+                    <span class="date"><a href="javascript:void(0);" val="special">指定：</a><input id="timeStart" type="text" value="" class="input-mini" style="width:106px" placeholder="请选择开始日期" disabled> — <input id="timeEnd" type="text" value="" class="input-mini"  style="width:106px" placeholder="请选择结束日期" disabled></span>
+                </div>
+            </div>           
+            <div class="control-group">
+                <label class="control-label">动作：</label>
+                <div class="controls js_act">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="1">安装</a>
+                    <a href="javascript:void(0);" val="2">升级</a>
+                    <a href="javascript:void(0);" val="3">卸载</a>
+                    <a href="javascript:void(0);" val="4">修复</a>
+                    <a href="javascript:void(0);" val="0">重启</a>
+                </div>
+            </div>            
+            <div class="control-group">
+                <label class="control-label">条目：</label>
+                <div class="controls js_role">
+                    <a href="javascript:void(0);" class="active" val="-1">全部</a>
+                    <a href="javascript:void(0);" val="2">病毒库</a>
+                    <a href="javascript:void(0);" val="3" style="width:65px;">恶意网址库</a>
+                    <a href="javascript:void(0);" val="1" style="width:65px;">安全云终端</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">筛选条件：</label>
+                <div class="controls js_search">
+                    <span>
+                        <select class="input-small js_searchType" style="width:100px">                            
+                            <option value="computername">终端名称</option>
+                            <option value="ip">IP地址</option>
+                            <option value="newver">新版本</option>
+                        </select>
+                    </span>
+                    <input type="text" value="" class="js_searchKey">
+                    <button type="button" class="btn js_btn_search">筛选</button>
+                </div>
+            </div>
+        </form>
+        <div style="clear:both;overflow:hidden;height:0;"></div>
+    </div>
+    <table id="tbClient" data-toolbar-align="left" data-toolbar="#custom-toolbar" data-toggle="table"></table>
+</div>

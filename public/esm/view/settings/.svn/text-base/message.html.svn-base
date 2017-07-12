@@ -1,0 +1,54 @@
+<div class="userCenter">
+    <ul>
+        <li data-current="overview">账户信息</li>
+        <li class="active" data-current="message">我的消息</li>
+        <li data-current="operlog">审计日志</li>
+        <li data-current="company" class="mlast level_contr">企业信息</li>
+    </ul>
+    <div class="uc-content uc-padding">
+        <div class="row-fluid overview-content">
+
+        </div>
+        <div class="uc-content-left">
+            <div class="uc-cl-3">
+                <div class="messageBox hide">
+                    <div class="uc-mid-pwd addAccount messagec">
+                        <h3 class="pop">
+                            <a class="close"></a>
+                        </h3>
+                        <h1></h1>
+                        <p class="descri">
+                            类型：<span class="type"></span> 时间：
+                            <span class="time"></span>
+                        </p>
+                        <div class="content">
+                        </div>
+                        <div class="footer">
+                            <span>附件:<!-- <i>****报</i> --></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="c-page-wrap">
+    <div class="c-page-container" style="margin-left:0;">
+        <div class="c-page-nav">
+
+        </div>
+        <div class="c-page-content myMessage">
+            <div class="row-fluid overview-content">
+                <div id="custom-toolbar">
+                    <a id="btnDel" class="btn">
+                        删除选中
+                      </a>
+                    <a id="readmsga" class="btn">
+                        标记已读
+                      </a>
+                </div>
+                <table id="tbClient" data-toolbar-align="left" data-toolbar="#custom-toolbar" data-toggle="table" data-resizable="true"></table>
+            </div>
+        </div>
+    </div>
+</div>

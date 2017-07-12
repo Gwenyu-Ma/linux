@@ -1,0 +1,60 @@
+<div class="log-content">
+    <a href="javascript:void(0);" class="submit_info js_sq_box_show" style="top:5px;">导入授权</a>
+    <div id="custom-toolbar" style="position:relative;">
+        <div class="tod_term_info">当前获得瑞星授权子产品<em class="black">0</em>项<a href="javascript:void(0);" class="js_sq_info_modal">查看详情</a></div>
+    </div>
+    <table id="tbClient" data-toolbar-align="left" data-toolbar="#custom-toolbar" data-toggle="table"></table>
+</div>
+
+<!-- 弹出框 -->
+<div class="modal hide js_sq_info_box sq_info_box noborder" style="width:850px;margin-left:-425px;" tabindex="-1" aria-hidden="true"
+    data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>当前授权详情</h3>
+    </div>
+    <div class="modal-body" style="margin-bottom:20px;">
+        <div class="sq_info_detail"><em>橙色</em>:便是到期的产品，请及时导入授权。</div>
+        <table id="sqInfo" style="width:810px;"></table>
+    </div>
+</div>
+
+
+<!-- 弹出框 -->
+
+<div class="modal hide js_sq_box" style="width:520px;margin-left:-260px;" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>导入授权</h3>
+    </div>
+    <div class="modal-body" style="margin-bottom:40px;">
+        <div class="step01">
+            <form novalidate="novalidate" style="margin-top:40px;">
+                <div class="step_form">
+                    <label>授权序列号：</label>
+                    <input type="text" name="sn" placeholder="请输入瑞星授权的序列号" maxlength="29">
+                    <em>*</em>
+                </div>
+                <div class="step_form">
+                    <label>授权文件：</label>
+                    <div class="step_file"><i></i><input type="file" name="auth"></div>
+                    <input type="text" class="js_seriseFile" placeholder="请上传“.lic”授权文件">
+                    <em>*</em>
+                </div>
+            </form>
+            <div class="step_box_footer">
+                <a class="step_box_btn01 js_step01">立即导入授权</a>
+            </div>
+        </div>
+        <div class="step02" style="display:none;">
+            <div class="step_box_info" style="padding-top:70px;">
+                <div class="step_box_info_box2 mt46">
+                    <div><i></i><span>恭喜您授权导入成功！</span></div>
+                </div>
+            </div>
+            <div class="step_box_footer" style="padding-top:80px;">
+                <a class="step_box_btn01 js_go_pruduct">确定</a>
+            </div>
+        </div>
+    </div>
+</div>

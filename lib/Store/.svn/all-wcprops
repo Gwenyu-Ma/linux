@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/esm/!svn/ver/29977/soho/code/ESMCenter/lib/Store
+END
+EsmMysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm/!svn/ver/29666/soho/code/ESMCenter/lib/Store/EsmMysql.php
+END
+LogsMysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm/!svn/ver/29977/soho/code/ESMCenter/lib/Store/LogsMysql.php
+END
+MongoCollection.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm/!svn/ver/29409/soho/code/ESMCenter/lib/Store/MongoCollection.php
+END
+MongoClient.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm/!svn/ver/29409/soho/code/ESMCenter/lib/Store/MongoClient.php
+END
+Rabbitmq.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm/!svn/ver/29531/soho/code/ESMCenter/lib/Store/Rabbitmq.php
+END
+MongoDB.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm/!svn/ver/29409/soho/code/ESMCenter/lib/Store/MongoDB.php
+END
+Mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/esm/!svn/ver/29894/soho/code/ESMCenter/lib/Store/Mysql.php
+END
+Redis.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/esm/!svn/ver/29021/soho/code/ESMCenter/lib/Store/Redis.php
+END

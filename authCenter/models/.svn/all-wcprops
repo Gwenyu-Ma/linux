@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm/!svn/ver/30595/soho/code/ESMCenter/authCenter/models
+END
+AuthHome.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm/!svn/ver/30114/soho/code/ESMCenter/authCenter/models/AuthHome.php
+END
+SystemConfig.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/esm/!svn/ver/29653/soho/code/ESMCenter/authCenter/models/SystemConfig.php
+END
+AuthWhiteList.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm/!svn/ver/29393/soho/code/ESMCenter/authCenter/models/AuthWhiteList.php
+END
+User.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm/!svn/ver/29393/soho/code/ESMCenter/authCenter/models/User.php
+END
+Auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm/!svn/ver/29828/soho/code/ESMCenter/authCenter/models/Auth.php
+END
+AuthProduct.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm/!svn/ver/30595/soho/code/ESMCenter/authCenter/models/AuthProduct.php
+END

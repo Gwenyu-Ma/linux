@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm/!svn/ver/28955/soho/code/ESMCenter/vendor/smarty/smarty/demo/plugins
+END
+resource.extendsall.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm/!svn/ver/28955/soho/code/ESMCenter/vendor/smarty/smarty/demo/plugins/resource.extendsall.php
+END
+resource.mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm/!svn/ver/28955/soho/code/ESMCenter/vendor/smarty/smarty/demo/plugins/resource.mysql.php
+END
+cacheresource.memcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm/!svn/ver/28955/soho/code/ESMCenter/vendor/smarty/smarty/demo/plugins/cacheresource.memcache.php
+END
+cacheresource.pdo.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm/!svn/ver/28955/soho/code/ESMCenter/vendor/smarty/smarty/demo/plugins/cacheresource.pdo.php
+END
+cacheresource.apc.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm/!svn/ver/28955/soho/code/ESMCenter/vendor/smarty/smarty/demo/plugins/cacheresource.apc.php
+END
+resource.mysqls.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm/!svn/ver/28955/soho/code/ESMCenter/vendor/smarty/smarty/demo/plugins/resource.mysqls.php
+END
+cacheresource.mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm/!svn/ver/28955/soho/code/ESMCenter/vendor/smarty/smarty/demo/plugins/cacheresource.mysql.php
+END
+cacheresource.pdo_gzip.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm/!svn/ver/28955/soho/code/ESMCenter/vendor/smarty/smarty/demo/plugins/cacheresource.pdo_gzip.php
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/function
+END
+builtinTypeDeclarations.test
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/function/builtinTypeDeclarations.test
+END
+variadic.test
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/function/variadic.test
+END
+conditional.test
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/function/conditional.test
+END
+nullableTypes.test
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/function/nullableTypes.test
+END
+defaultValues.test
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/function/defaultValues.test
+END
+returnTypes.test
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/function/returnTypes.test
+END
+variadicDefaultValue.test
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/function/variadicDefaultValue.test
+END
+byRef.test
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/function/byRef.test
+END
+typeDeclarations.test
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/function/typeDeclarations.test
+END
+specialVars.test
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/function/specialVars.test
+END

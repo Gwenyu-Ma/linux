@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm/!svn/ver/29665/soho/code/ESMCenter/vendor/symfony/polyfill-mbstring
+END
+composer.json
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm/!svn/ver/29665/soho/code/ESMCenter/vendor/symfony/polyfill-mbstring/composer.json
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm/!svn/ver/29665/soho/code/ESMCenter/vendor/symfony/polyfill-mbstring/LICENSE
+END
+bootstrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm/!svn/ver/29665/soho/code/ESMCenter/vendor/symfony/polyfill-mbstring/bootstrap.php
+END
+Mbstring.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm/!svn/ver/29665/soho/code/ESMCenter/vendor/symfony/polyfill-mbstring/Mbstring.php
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm/!svn/ver/29665/soho/code/ESMCenter/vendor/symfony/polyfill-mbstring/README.md
+END

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" > </meta>
+  <title>确认密码</title>
+  <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="{$css}/fromMailPage.css">
+</head>
+<body>
+  <div class="container resetpwd">
+    <div class="row">
+      <h1 class="logo-title">确认您的密码</h1>
+    </div>
+    <div class="row panel">
+      <p>请为<span id="username" class="text-info">{$email}</span>输入新密码<input id="str" type="hidden" value="{$str}"></p>
+      <p class="muted">您的密码包括至少：6个字符，1个字母，1个数字</p>
+      <label for="pwd">新密码</label>
+      <input id="pwd" type="password">
+      <label for="rpwd">确认密码</label>
+      <input id="rpwd" type="password">
+      <p>
+        <a id="btnSet" href="/index.php/" class="btn btn-success" data-loading-text="设置密码">设置密码</a>
+      </p>
+    </div>
+  </div>
+  <script src="{$pub}/dep/jquery.js"></script>
+  <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+  <script src="{$js}/welcome/registerSetPwd.js"></script>
+</body>
+</html>

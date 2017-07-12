@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> </meta>
+    <title>瑞星产品授权</title>
+    <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{$cssAuth}/base.css">
+</head>
+
+<body class="login">
+    <div class="bg" bgImg="{$imgAuth}/banner_3.jpg">
+        <!--<img src="{$pub}/img/banner_3.png">--></div>
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a href="/" class="logo"><img src="{$imgAuth}/logo2.png"><span class="logo_font">瑞星产品授权</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="step_box step_1" style="display: none;">
+            <h3 class="step_box_tit">导入授权文件</h3>
+            <div class="step_box_bod">
+                <div class="step_box_process"></div>
+                <div class="step_box_info">
+                    <div class="step_box_info_box mt40">
+                        <div>导入产品授权文件后，您可以对各子产品的授权点数、客户端安装数等进行管控!</div>
+                    </div>
+                </div>
+                <form class="mt35" enctype="multipart/form-data">
+                    <div class="step_form">
+                        <label>授权序列号：</label>
+                        <input type="text" name="sn" placeholder="请输入瑞星授权的序列号" maxlength="29">
+                        <em>*</em>
+                    </div>
+                    <div class="step_form">
+                        <label>授权文件：</label>
+                        <div class="step_file"><i></i><input type="file" name="auth"></div>
+                        <input type="text" class="js_seriseFile" placeholder="请上传“.lic”授权文件">
+                        <em>*</em>
+                    </div>
+                </form>
+            </div>
+            <div class="step_box_footer">
+                <a class="step_box_btn01 js_step01" href="javascript:void(0)">立即授权</a>
+            </div>
+        </div>
+        <div class="step_box step_1" style="display: none;">
+            <h3 class="step_box_tit">产品授权</h3>
+            <div class="step_box_bod">
+                <div class="step_box_process"></div>
+                <div class="step_box_info">
+                    <div class="step_box_info_box2 mt46">
+                        <div><i></i><span>恭喜您授权成功！</span></div>
+                    </div>
+                </div>
+                <div class="step_box_sq_detail mt40">
+                    <ul>
+                        <li><label>用户信息：</label><span class="js_title">一所</span></li>
+                        <li><label>授权终端数：</label><span class="js_num">40台</span></li>
+                        <li><label>授权有效期：</label><span class="js_date">2016-3-13至2017-12-31</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step_box_footer">
+                <a class="step_box_btn01 js_step02" href="javascript:void(0)">下一步</a>
+            </div>
+        </div>
+        <div class="step_box step_2" style="display: none;">
+            <h3 class="step_box_tit">创建账号</h3>
+            <div class="step_box_bod">
+                <div class="step_box_process"></div>
+                <div class="step_box_info">
+                    <div class="step_box_info_box mt40">
+                        <div>创建管理员账号后，才能登录使用授权管理中心!</div>
+                    </div>
+                </div>
+                <form class="mt20">
+                    <div class="step_form mb10">
+                        <label>管理员账号：</label>
+                        <input type="text" name="username" placeholder="请输入管理账号">
+                        <em>*</em>
+                    </div>
+                    <div class="step_form mb10">
+                        <label>密码：</label>
+                        <input type="password" id="pwd" name="pwd" placeholder="请设置6位密码">
+                        <em>*</em>
+                    </div>
+                    <div class="step_form mb10">
+                        <label>确认密码：</label>
+                        <input type="password" id="rpwd" name="rpwd" placeholder="请再次输入密码">
+                        <em>*</em>
+                    </div>
+                </form>
+            </div>
+            <div class="step_box_footer">
+                <a class="step_box_btn01 js_step03" href="javascript:void(0)">立即创建</a>
+            </div>
+        </div>
+        <div class="step_box step_2" style="display: none;">
+            <h3 class="step_box_tit">完成配置</h3>
+            <div class="step_box_bod">
+                <div class="step_box_process"></div>
+                <div class="step_box_info">
+                    <div class="step_box_info_box2 mt46">
+                        <div><i class="step_box_icon02"></i><span>恭喜您创建管理员帐号成功！</span></div>
+                    </div>
+                </div>
+                <div class="step_box_info mt40">
+                    <strong>使用前请先阅读以下信息</strong>
+                    <div class="step_box_info_box clip_text">
+                        <div>请牢记创建的管理员帐号信息！<br/> 请保存好您的授权文件和授权序列号！
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="step_box_footer">
+                <a class="step_box_btn01 js_step04 process" href="javascript:void(0)">前往中心<span class="countDown"><div>(6s)</div></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="msg-box"></div>
+    <script src="{$pub}/dep/jquery.js"></script>
+    <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+    <script src="{$pub}/dep/jquery-validation/jquery.validate.min.js"></script>
+    <script src="{$pub}/dep/jquery.form.js"></script>
+    <script src="{$jsAuth}/plugin/fixbg.js"></script>
+    <script src="{$jsAuth}/plugin/base.js"></script>
+    <script src="{$jsAuth}/noAuth/sq.js"></script>
+</body>
+
+</html>

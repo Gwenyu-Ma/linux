@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill/LICENSE
+END
+package.json
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill/package.json
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill/.gitignore
+END
+.travis.yml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill/.travis.yml
+END
+bower.json
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill/bower.json
+END
+promise.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill/promise.js
+END
+.editorconfig
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill/.editorconfig
+END
+karma.conf.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill/karma.conf.js
+END
+promise.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill/promise.min.js
+END
+.eslintrc.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill/.eslintrc.js
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm/!svn/ver/29949/soho/code/ESMCenter/public/dep/promise-polyfill/README.md
+END

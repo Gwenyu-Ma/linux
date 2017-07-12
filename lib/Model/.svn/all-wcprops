@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/esm/!svn/ver/30296/soho/code/ESMCenter/lib/Model
+END
+RedisDataManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm/!svn/ver/30296/soho/code/ESMCenter/lib/Model/RedisDataManager.php
+END
+Oplog.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/esm/!svn/ver/29698/soho/code/ESMCenter/lib/Model/Oplog.php
+END
+Auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/esm/!svn/ver/29828/soho/code/ESMCenter/lib/Model/Auth.php
+END
+Clean.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/esm/!svn/ver/30250/soho/code/ESMCenter/lib/Model/Clean.php
+END
+Cmd.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm/!svn/ver/29850/soho/code/ESMCenter/lib/Model/Cmd.php
+END
+AutoGroup.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm/!svn/ver/30264/soho/code/ESMCenter/lib/Model/AutoGroup.php
+END

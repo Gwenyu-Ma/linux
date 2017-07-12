@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/examples
+END
+cookie.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/examples/cookie.php
+END
+multiple.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/examples/multiple.php
+END
+get.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/examples/get.php
+END
+basic-auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/examples/basic-auth.php
+END
+proxy.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/examples/proxy.php
+END
+session.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/examples/session.php
+END
+cookie_jar.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/examples/cookie_jar.php
+END
+post.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/examples/post.php
+END
+timeout.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm/!svn/ver/29684/soho/code/ESMCenter/vendor/rmccue/requests/examples/timeout.php
+END

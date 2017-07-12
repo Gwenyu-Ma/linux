@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>消息列表</title>
+    <link rel="stylesheet" href="./js/lib/bootstrap.min.css" />
+    <script src="./js/lib/jquery-1.12.3.min.js"></script>
+    <script src="./js/lib/vue.min.js"></script>
+    <script src="./js/lib/vue-js-infinite-scroll.js"></script>
+</head>
+
+<body style="margin:10px;">
+    <div id="addObj" class="form-horizontal " v-show="addShow">
+        <div class="control-group" >
+            <label for="inputEmail" class="control-label">对象：</label>
+            <div class="controls">
+                <input type="text" v-model="post.subscriber">
+                <button v-on:click="addObj" class="btn">发布</button>
+            </div>
+        </div>
+       
+    </div>
+    <div id="subobjlist" class="">
+        <div class="" style="height:40px;">
+            <div class="form-inline">
+                <div class="input-prepend">
+                    <span class="add-on">EID：</span>
+                    <input type="text" class="span2" v-model="request.eid"/>
+                </div>
+                <div class="input-prepend">
+                    <span class="add-on">对象：</span>
+                    <input type="text" v-model="request.scriber" />
+                </div>
+                <button v-on:click="search(true)" class="btn">查询</button>
+                <button v-on:click="remove" class="btn">删除</button>
+                <button v-on:click="add" class="btn">添加</button>
+            </div>
+        </div>
+        <div class="overflow:auto;height:100%;" v-infinite-scroll="loadMore()" infinite-scroll-disabled="busy" infinite-scroll-distance="10">
+            <div style="overflow:auto;">
+                <table class="table table-striped table-condensed table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" v-model="all" v-on:click="allChk">
+                            </th>
+                            <th>ID</th>
+                            <th>对象</th>
+                            <th>添加时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="item in rows">
+                            <td>
+                                <input type="checkbox" value="{{*item.id}}" v-model="keys">
+                            </td>
+                            <td>
+                                {{*item.id}}
+                            </td>
+                            <td>{{*item.subscriber}}</td>
+                            <td>{{*item.time|dateFormat}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+     <script src="./js/filter.js"></script>
+    <script src="./js/subobjlist.js"></script>
+</body>
+
+</html>

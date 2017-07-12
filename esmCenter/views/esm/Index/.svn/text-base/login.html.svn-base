@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> </meta>
+    <title>登录</title>
+    <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{$pub}/dep/swiper/css/swiper.css">
+    <link rel="stylesheet" href="{$pub}/dep/icheck-1.x/skins/polaris/polaris.css">
+    <link rel="stylesheet" href="{$cssEsm}/base.css">
+    <link rel="stylesheet" href="{$cssEsm}/login.css">
+</head>
+
+<body>
+    <div class="bg" bgImg="{$imgEsm}/banner_3.jpg">
+        <!--<img src="{$pub}/img/banner_3.png">--></div>
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a href="/" class="logo"><img src="{$imgEsm}/logo2.png"><span class="logo_font">{$title}</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left_side">
+            <img style="width:100%;height:100%;" src="{$imgEsm}/login_side.jpg">
+        </div>
+        <dl class="log_box pt40">
+            <dt>企业登录</dt>
+            <dd>
+                <form class="form-horizontal" action="" style="margin-top:60px;">
+                    <div class="control-group log_box_in">
+                        <label class="control-label">账号：</label>
+                        <div class="controls">
+                            <input type="text" value="" placeholder="请输入账号" id="txtName" name="txtName" /><span class="require">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group log_box_in">
+                        <label class="control-label">密码：</label>
+                        <div class="controls">
+                            <input type="password" value="" placeholder="请输入密码" id="txtPwd" name="txtPwd" /><span class="require">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group log_box_in">
+                        <label class="control-label">验证码：</label>
+                        <div class="controls">
+                            <input type="text" value="" placeholder="请输入验证码" class="w106" id="txtCode" name="txtCode" />
+                            <span class="verify ml7"><img src="/index.php/Index/verify" id="codeImg"><a href="#" id="verify_btn">&nbsp;</a></span>
+                            <span class="require">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group log_box_btn">
+                        <div class="controls">
+                            <input type="button" value="登录" data-loading-text="登录中..." class="btn btn-large btn-block btn-purple  w250 js_submit">
+                        </div>
+                    </div>
+                </form>
+            </dd>
+        </dl>
+    </div>
+    <div class="footer">
+
+
+    </div>
+
+    <script src="{$pub}/dep/jquery.js"></script>
+    <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+    <script src="{$pub}/dep/jquery-placeholder/jquery.enplaceholder.js"></script>
+    <script src="{$pub}/dep/bootbox/bootbox.js"></script>
+    <script src="{$pub}/dep/jquery-validation/jquery.validate.js"></script>
+    <script src="{$pub}/dep/swiper/js/swiper.js"></script>
+    <script src="{$pub}/dep/icheck-1.x/icheck.min.js"></script>
+    <script src="{$jsEsm}/plugin/assist.js"></script>
+    <script src="{$jsEsm}/plugin/fixbg.js"></script>
+    <script src="{$jsEsm}/welcome/login_new.js"></script>
+</body>
+
+</html>

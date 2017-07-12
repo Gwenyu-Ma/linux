@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> </meta>
+    <title>找回密码</title>
+    <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{$pub}/dep/swiper/css/swiper.css">
+    <link rel="stylesheet" href="{$css}/base.css">
+    <link rel="stylesheet" href="{$css}/forgotPwd.css">
+</head>
+
+<body>
+    <div class="bg" bgImg="{$pub}/img/banner_3.jpg">
+        <!--<img src="{$pub}/img/banner_3.png">--></div>
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a href="/" class="logo"><img src="{$img}/logo2.png"><img src="{$img}/nav_txt.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left_side">
+            <div class="slide swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="{$img}/side01.png"></div>
+                    <div class="swiper-slide"><img src="{$img}/side02.png"></div>
+                    <div class="swiper-slide"><img src="{$img}/side01.png"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <dl class="fgt_box">
+            <dt>找回密码</dt>
+            <dd>
+                <div class="node_process">
+                    <ul>
+                        <li class="node node_f act"><i></i>
+                            <p>输入信息</p>
+                        </li>
+                        <li class="node act"><i></i><span></span>
+                            <p>重置密码</p>
+                        </li>
+                        <li class="node node_l active"><i></i><span></span>
+                            <p>完成</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="correct ml120 mt50">
+                        <h3>密码重置成功！</h3>
+                        <p>请妥善保管好您的密码！</p>
+                    </div>
+                    <a href="/login.html" class="btn btn-large btn-block btn-purple  w250 auto mt25 js_login">立即登录</a>
+                </div>
+            </dd>
+        </dl>
+    </div>
+    <script src="{$pub}/dep/jquery.js"></script>
+    <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+    <script src="{$pub}/dep/jquery-validation/jquery.validate.js"></script>
+    <script src="{$pub}/dep/swiper/js/swiper.js"></script>
+    <script src="{$js}/plugin/assist.js"></script>
+    <script src="{$js}/plugin/fixbg.js"></script>
+    <script>
+        $(function() {
+            $('.js_login').attr('href', ('/login.html' + window.location.hash));
+        });
+    </script>
+</body>
+
+</html>

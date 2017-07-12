@@ -1,0 +1,651 @@
+<div class="userCenter">
+    <ul>
+        <li class="active" data-current="overview">账户信息</li>
+        <li data-current="message">我的消息</li>
+        <li data-current="operlog">审计日志</li>
+        <li data-current="company" class="mlast level_contr">企业信息</li>
+    </ul>
+    <div class="uc-content">
+        <div class="uc-content-right right">
+            <!--<div class="invite_wrap">
+                <img src="{{static_path}}/esm/img/packbg.jpg" style="width:333px;height:103px;">
+                <a class="js_invite" href="javascript:void(0);">{{invite_text}}</a>
+            </div>-->
+            <h3>云中心信息</h3>
+            <ul class="soreInfo">
+            </ul>
+            <div class="uc-grant">
+                <p>
+                    <span style="display:none;">共计授权
+					<i id="authDev"></i>
+					台</span>&nbsp;&nbsp;<span>已使用
+					<i id="useDev"></i>
+					台</span>
+                </p>
+                <div class="uc-grant-percent">
+                    <p class="uc-grant-pic">
+                        <span class="windows">
+						</span>
+                        <span class="Linux">
+						</span>
+                        <span class="Android">
+						</span>
+                    </p>
+                    <p class="uc-grant-tit">
+                        <span class="windows">
+							Windows(<i></i>)
+						</span>
+                        <span class="Linux">
+							Linux(<i></i>)
+						</span>
+                        <span class="Android">
+							Android(<i></i>)
+						</span>
+                    </p>
+                </div>
+            </div>
+            <div class="uc-storage">
+                <p>
+                    云中心存储信息情况
+                </p>
+                <ul>
+                </ul>
+            </div>
+            <div class="uc-pay-tip">
+                <div class="uc-pay-tip-title">
+                    联系我们
+                    <img src="{{static_path}}/esm/img/together_txt.png" style="margin-left:30px;">
+                </div>
+                <div class="uc-pay-tip-body">
+                    <div class="uc-pay-rwm">
+                        <div>关注微信，了解更多</div>
+                        <img src="{{static_path}}/esm/img/rising.png" style="width:120px;height:120px;">
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="hot_ico">咨询热线</div>
+                            <p>400-650-6025</p>
+                        </li>
+                        <li>
+                            <div class="email_ico">邮件联系</div>
+                            <p>sales@rising.com.cn</p>
+                        </li>
+                        <li>
+                            <div class="bbs_ico">产品论坛</div>
+                            <p><a href="http://bbs.ikaka.com/" target="_blank">瑞星安全云</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="uc-content-left">
+            <div class="uc-cl-1">
+                <h3>
+                    <span>
+						账户信息
+					</span>
+                    <p class="hide">
+                        <span class="left">
+							建议你先补充相关资料~
+						</span>
+                        <a class="left iknow">
+							我知道了
+						</a>
+                    </p>
+                </h3>
+                <ul>
+                    <li>
+                        <p class="last">
+                            <label>&nbsp;&nbsp;&nbsp;中心号：</label>
+                            <span class="account" id="ruserName">
+							</span>
+                            <a class="reBind">重新绑定</a>
+                            <span class="openPwd">
+								<b id="isOpenCenterPass"></b>启用中心密码：<i>(终端连接中心时所用)</i>
+								<input type="text" value="" class="disabled hide eitInfo" disabled id="centerPass"/>
+								<span class="disabledEdit">
+									<i class="edit">
+									</i>
+								</span>
+                            </span>
+                            <span class="errorTip hide">
+							</span>
+                        </p>
+                        <div class="tip">
+                            <p>
+                                客户端连接中心时所用
+                                <i class="angDown">
+								</i>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span style="margin-left:-8px;float:left;color:#f40;margin-top:14px;height:10px;line-height: 10px;">*</span>
+                        <p class="first">
+                            <label>
+								企业名称：
+							</label>
+                            <input type="text" value="" class="disabled eitInfo" disabled id="company" />
+                            <span class="errorTip">
+							</span>
+                            <span class="disabledEdit">
+								<i class="edit">
+								</i>
+							</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="first sel">
+                            <label>
+								所属行业：
+							</label>
+                            <select class="eitInfo" id="industry">
+								<option value="" selected>请选择所属行业</option>
+								<option value="互联网/电子商务">互联网/电子商务</option>
+								<option value="IT服务(系统/数据/维护)">IT服务(系统/数据/维护)</option>
+								<option value="计算机硬件">计算机硬件</option>
+								<option value="通信/电信运营、增值服务">通信/电信运营、增值服务</option>
+								<option value="基金/证券/期货/投资">基金/证券/期货/投资</option>
+								<option value="银行">银行</option>
+								<option value="房地产/建筑/建材/工程">房地产/建筑/建材/工程</option>
+								<option value="物业管理/商业中心">物业管理/商业中心</option>
+								<option value="广告/会展/公关">广告/会展/公关</option>
+								<option value="检验/检测/认证">检验/检测/认证</option>
+								<option value="快速消费品（食品/饮料/烟酒/日化）">快速消费品（食品/饮料/烟酒/日化）</option>
+								<option value="贸易/进出口">贸易/进出口</option>
+								<option value="租赁服务">租赁服务</option>
+								<option value="医疗设备/器械">医疗设备/器械</option>
+								<option value="交通/运输">交通/运输</option>
+								<option value="娱乐/体育/休闲">娱乐/体育/休闲</option>
+								<option value="石油/石化/化工">石油/石化/化工</option>
+								<option value="环保">环保</option>
+								<option value="学术/科研">学术/科研</option>
+								<option value="跨领域经营">跨领域经营</option>
+								<option value="计算机软件">计算机软件</option>
+								<option value="医药/生物工程">医药/生物工程</option>
+								<option value="通信/电信/网络设备">通信/电信/网络设备</option>
+								<option value="网络游戏">网络游戏</option>
+								<option value="信托/担保/拍卖/典当">信托/担保/拍卖/典当</option>
+								<option value="教育/培训/院校">教育/培训/院校</option>
+								<option value="加工制造（原料加工/模具）">加工制造（原料加工/模具）</option>
+								<option value="航空/航天研究与制造">航空/航天研究与制造</option>
+								<option value="物流/仓储">物流/仓储</option>
+								<option value="政府/公共事业/非盈利机构">政府/公共事业/非盈利机构</option>
+								<option value="电气/电力/水利">电气/电力/水利</option>
+								<option value="其他">其他</option>
+							</select>
+                            <span class="disabledEdit">
+								<i class="edit">
+								</i>
+							</span>
+                        </p>
+                        <div class="tip">
+                            <p>
+                                公司所属行业
+                                <i class="angDown">
+								</i>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="first sel">
+                            <label>
+								公司规模：
+							</label>
+                            <select class="eitInfo" id="companySize">
+								<option value="0" selected>请选择公司规模</option>
+								<option value="1">20人以下</option>
+								<option value="2">20到99人</option>
+								<option value="3">100到499人</option>
+								<option value="4">500到999人</option>
+								<option value="5">1000到9999人</option>
+								<option value="6">10000人以上</option>
+							</select>
+                            <span class="disabledEdit">
+								<i class="edit">
+								</i>
+							</span>
+                        </p>
+                    </li>
+                    <li class="upload">
+                        <div class="uploadlogo">
+                            <label>
+								自定义LOGO：
+							</label>
+                            <p class="mask lmask logopreview" id="ulogo">
+                                <img src="/mycenter/getlogo">
+                            </p>
+                            <form id="logoForm" action="/mycenter/uploadlogo" enctype="multipart/form-data" method="post">
+                                <input type="file" value="" capture="camera" name="logo" id="logo" class="webuploader-element-invisible" multiple="multiple"
+                                    accept=".jpg,.gif,.png">
+                                <input type="hidden" value="0" name="top" id="txtX1" />
+                                <input type="hidden" value="0" name="left" id="txtY1" />
+                                <input type="hidden" value="180" name="width" id="txtW" />
+                                <input type="hidden" value="70" name="height" id="txtH" />
+                            </form>
+                            <a>更换</a>
+                            <a class="restoreDefault hide">重置</a>
+                            <span>
+								格式：jpg/png&nbsp;&nbsp;尺寸：180px*70px&nbsp;&nbsp;大小：1M以内
+							</span>
+                        </div>
+                        <div class="tip">
+                            <p>
+                                企业logo
+                                <i class="angDown">
+								</i>
+                            </p>
+                        </div>
+                    </li>
+                    <!--<li>
+						<p class="first">
+							<label>
+								用户名：
+							</label>
+							<input type="text" value="" class="disabled" id="userName" disabled/>
+							<i class="edit">
+							</i>
+						</p>
+					</li> -->
+                    <!--<li>
+                        <p class="first">
+                            <label>
+								昵称：
+							</label>
+                            <input type="text" value="" class="ustInfo disabled" disabled id="nickName" />
+                            <span class="errorTip">
+							</span>
+                            <span class="disabledEdit">
+								<i class="edit">
+								</i>
+							</span>
+                        </p>
+                    </li>-->
+                    <li class="upload uploadAvt">
+                        <div class="uploadlogo">
+                            <label>
+								头像：
+							</label>
+                            <p class="mask amask avtpreview" id="avtor">
+                                <img src="/mycenter/getuserlogo">
+                            </p>
+                            <form id="avtForm" action="/mycenter/uploaduserlogo" enctype="multipart/form-data" method="post">
+                                <input type="file" capture="camera" name="logo" id="avtLogo" class="webuploader-element-invisible" multiple="multiple" accept=".jpg,.gif,.png">
+                                <input type="hidden" value="0" name="top" id="atxtX1" />
+                                <input type="hidden" value="0" name="left" id="atxtY1" />
+                                <input type="hidden" value="72" name="width" id="atxtW" />
+                                <input type="hidden" value="72" name="height" id="atxtH" />
+                            </form>
+                            <a>更换</a>
+                            <span>
+								格式:jpg/png&nbsp;&nbsp;尺寸:72px*72px&nbsp;&nbsp;大小:100k以内
+							</span>
+                        </div>
+                    </li>
+                    <li style="display:none;">
+                        <p class="first">
+                            <label>
+								手机号码：
+							</label>
+                            <input type="text" value="" class="disabled ustInfo" id="phone" disabled/>
+                            <span class="errorTip">
+							</span>
+                            <!-- 							<span class="disabledEdit">
+							</span> -->
+                            <!-- 							<i class="edit">
+							</i> -->
+                            <!-- <span class="right">
+								<label class="pdl60">
+									邮箱地址：
+								</label>
+								<input type="text" value="" class="disabled" id="email" disabled/>
+								<span class="errorTip">
+								</span>
+								<i class="edit">
+								</i>
+							</span> -->
+                        </p>
+                    </li>
+                    <li style="display:none;">
+                        <p class="first">
+                            <label>
+								邮箱地址：
+							</label>
+                            <input type="text" value="" class="disabled" id="email" disabled/>
+                            <span class="errorTip">
+							</span>
+                            <!-- 							<span class="disabledEdit">
+							</span> -->
+                            <!-- 							<i class="edit">
+							</i> -->
+                        </p>
+                    </li>
+                    <li>
+                        <p class="first">
+                            <!-- <span class="left">
+								<label>
+									联系人：
+								</label>
+								<input type="text" value="" class="disabled" disabled id="contact"/>
+								<i class="edit">
+								</i>
+							</span> -->
+                            <label>
+								联系电话：
+							</label>
+                            <input type="text" value="" class="disabled ustInfo" disabled id="tel" />
+                            <span class="errorTip">
+							</span>
+                            <span class="disabledEdit">
+								<i class="edit">
+								</i>
+							</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="first">
+                            <label>
+								联系地址：
+							</label>
+                            <input type="text" value="" class="disabled ustInfo" disabled id="addr" />
+                            <span class="errorTip">
+							</span>
+                            <span class="disabledEdit">
+								<i class="edit">
+								</i>
+							</span>
+                            <!-- <span class="right">
+								<label class="pdl60">
+									邮政编码：
+								</label>
+								<input type="text" value="" class="disabled" disabled id="postCode"/>
+								<i class="edit">
+								</i>
+							</span> -->
+                        </p>
+                    </li>
+                    <li>
+                        <p class="first">
+                            <!-- 							<span class="left">
+								<label>
+									联系地址：
+								</label>
+								<input type="text" value="" class="disabled" disabled id="address"/>
+								<i class="edit">
+								</i>
+							</span> -->
+                            <label>
+								邮政编码：
+							</label>
+                            <input type="text" value="" class="disabled ustInfo" disabled id="zcode" />
+                            <span class="errorTip">
+							</span>
+                            <span class="disabledEdit">
+								<i class="edit">
+								</i>
+							</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 		
+			<div class="uc-cl-2">
+				<h3>用户信息</h3>
+				<ul>
+
+				</ul>	
+			</div> -->
+            <div class="uc-cl-3">
+                <div class="uc-shadow uploadLogoShadow midAvtShadow hide">
+                </div>
+                <div class="uc-mid-pwd uc-mpwd  hide">
+                    <h3 class="pop">修改密码
+                        <a class="close"></a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <label>
+								旧密码：
+							</label>
+                            <input type="password" placeholder="原密码" id="oldPwd" />
+                            <span class="tip">
+							</span>
+                        </li>
+                        <li>
+                            <label>
+								新密码：
+							</label>
+                            <input type="password" placeholder="新密码" id="newPwd" />
+                            <span class="pwdStrong hide">
+			                  <div>密码强度:<i>低</i></div>
+			                  <ul>
+			                    <li class="low"></li>
+			                    <li class="middle"></li>
+			                    <li class="high"></li>
+			                  </ul>
+			                </span>
+                            <span class="tip midpasswordt">
+							</span>
+                        </li>
+                        <li>
+                            <label>
+								确认密码：
+							</label>
+                            <input type="password" placeholder="重新输入密码" id="confirmPwd" />
+                            <span class="tip">
+							</span>
+                        </li>
+                        <li class="uc-btn">
+                            <a class="uploadBtn">确定</a>
+                            <a class="cancelBtn">取消</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uc-mid-pwd reBindAccount reBindPhone hide">
+                    <h3 class="pop">账号重新绑定
+                        <a class="close"></a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <label>
+								原账号：
+							</label>
+                            <span class="initAccount">
+							</span>
+                        </li class="hide">
+                        <li>
+                            <label>
+								原密码：
+							</label>
+                            <input type="password" placeholder="请输入原始密码" id="roldPwd" />
+                            <span class="tip hide">
+								原密码错误
+							</span>
+                        </li class="hide" class="hide">
+                        <li>
+                            <label>
+								新账号：
+							</label>
+                            <input type="text" placeholder="手机号码或邮箱" id="newAccount" />
+                            <span class="tip hide">
+							</span>
+                        </li>
+                        <li class="hide">
+                            <label>
+								手机验证码：
+							</label>
+                            <input type="text" placeholder="校验码" id="code" class="code" />
+                            <a class="getCode reBindPho">
+								获取校验码
+							</a>
+                            <span class="tip">
+							</span>
+                        </li>
+                        <li class="reTime hide">
+                            <span>校验码已发出，请注意查收短信。如果没有收到，您可以在<i>60</i>秒后重新获取
+							</span>
+                        </li>
+                        <li class="hide">
+                            <label>
+								验证码：
+							</label>
+                            <input type="text" placeholder="校验码" id="icode" class="code" />
+                            <a class="getCode reBindEmail">
+                                <img src="/index.php/Code/verify?rdm=114" />
+                                <i>
+								</i>
+                            </a>
+                            <span class="tip">
+							</span>
+                        </li>
+                        <li class="bindPhone hide">
+                            <span class="success">
+								恭喜您！账号重新绑定成功
+							</span>
+                            <span class="baccount">
+							</span>
+                        </li>
+                        <li class="bindLogin hide">
+                            <span class="success">
+								立即登陆后，查看更多账户信息。
+							</span>
+                            <a href="/login.html" target="_blank">立即登录</a>
+                        </li>
+                        <li class="bindPhone hide">
+                            <span class="success">
+								确认邮件已经发送到你的邮箱：
+							</span>
+                            <span class="baccount">
+							</span>
+                        </li>
+                        <li class="bindLogin hide">
+                            <span class="success">
+								邮箱激活后查看更多账号信息
+							</span>
+                            <a href="/login.html" target="_blank">
+								立即登录
+							</a>
+                        </li>
+                        <li class="uc-btn">
+                            <span>重新绑定账号之前，先验证原始密码</span>
+                            <a class="nextBtn">下一步</a>
+                            <a class="cancelBtn">取消</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uc-mid-pwd uploadLogo uplogo hide" id="uplogo">
+                    <h3 class="pop">上传企业LOGO
+                        <a class="close"></a>
+                    </h3>
+                    <ul>
+                        <li class="logo">
+                            <img alt="图片加载中" id="target" />
+                            <span class="loadding hide">
+								图片加载中
+							</span>
+                        </li>
+                        <li class="desc">
+                            上传的图片将成比例缩放至180*70像素，请留意LOGO是否清晰。建议选用白色透底图片。
+                        </li>
+                        <li class="uc-btn">
+                            <a class="uploadBtn">确定</a>
+                            <a class="cancelBtn">取消</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uc-mid-pwd uploadLogo midAvt hide" id="auplogo">
+                    <h3 class="pop">修改头像
+                        <a class="close"></a>
+                    </h3>
+                    <ul>
+                        <li class="logo midAvtImg">
+                            <img alt="图片加载中" id="atarget" />
+                            <span class="loadding hide">
+								图片加载中
+							</span>
+                        </li>
+                        <li class="desc">
+                            上传的图片将成比例缩放至72*72像素，请留意头像是否清晰。
+                        </li>
+                        <li class="uc-btn">
+                            <a class="uploadBtn">确定</a>
+                            <a class="cancelBtn">取消</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uc-mid-pwd uploadLogo midAvt hide" id="fillPinfo">
+                    <h3 class="pop">补全信息
+                        <a class="close"></a>
+                    </h3>
+                    <ul>
+                        <li class="desc">
+                            您的<span></span>信息不完整，请补充！<br> 修改完成请及时保存。
+                        </li>
+                        <li class="uc-btn">
+                            <a class="uploadBtn">确定</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a class="saveBtn disabledSubmit">
+				保存修改
+			</a>
+            <div class="shadowPopBox hide">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <form id="restoreDefault" action="/mycenter/uploadlogo" enctype="multipart/form-data" method="post"> 
+	<input type="file" value="" capture="camera" name="logo" id="restorePic" accept=".jpg,.gif,.png">
+	<input type="hidden" value="0" name="top" id="txtX1"/> 
+	<input type="hidden" value="0" name="left" id="txtY1"/> 
+	<input type="hidden" value="180" name="width" id="txtW"/> 
+	<input type="hidden" value="70" name="height" id="txtH"/> 
+</form> -->
+
+
+<!-- ****start****  弹出框  分享-->
+<div class="modal hide js_invite_box" style="width:680px;margin-left:-320px;" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>邀请同事/家人</h3>
+    </div>
+    <div class="modal-body">
+        <div class="js_invite_step01">
+            <div>欢迎您首次使用瑞星安全云！目前中心数据不够丰富，请尽快将更多的设备加入进来呦~</div>
+            <input type="button" value="邀请加入">
+        </div>
+        <div class="js_invite_step02" style="display:none;">
+            <div class="invite_step02_wrap">
+                <p>我正在使用瑞星安全云，为了您的设备安全，现邀请您加入我们的“企业名称/家庭名称”安全云中心，享受更高级别的安全保护，点击链接行下载安装~</p>
+                <ul class="invite_product">
+                    <li class="active win"><i></i></li>
+                    <li class="and"><i></i></li>
+                </ul>
+                <div class="invite_down_box">
+                    <a href="javascript:void(0);" class="invite_copy">点击复制</a>
+                    <span>安装包地址：</span>
+                    <a href="#" target="_blank" class="invite_down">加载中...</a>
+                </div>
+                <div class="invite_method">
+                    <h5>邀请放式:</h5>
+                    <a href="javascript:void(0);" class="invite_icon invite_qq disable">QQ</a>
+                    <a href="javascript:void(0);" class="invite_icon invite_webcat disable">微信</a>
+                    <a href="javascript:void(0);" class="invite_icon invite_mail disable">邮箱</a>
+                    <div class="invite_method_box">
+                        <div class="invite_wx_qr">
+                            <img src="" class="win">
+                            <img src="" class="and">
+                        </div>
+                        <div class="invite_mail_msg">
+                            <input type="text" class="invite_mail_txt" value="" placeholder="多个邮箱地址，以半角”;”间隔。示例：123@qq.com;456@...">
+                            <input type="button" class="invite_mail_btn disable disabled" value="发送邮件">
+                            <div class="err" style="display:none;">邮箱格式错误，请检查！</div>
+                            <div class="succ" style="display:none;">邀请成功！可以继续邀请哦~</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

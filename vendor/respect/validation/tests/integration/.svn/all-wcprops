@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration
+END
+issue-727.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/issue-727.phpt
+END
+issue-179.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/issue-179.phpt
+END
+issue-719.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/issue-719.phpt
+END
+get_full_message_should_include_all_validation_messages_in_a_chain.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/get_full_message_should_include_all_validation_messages_in_a_chain.phpt
+END
+set_template_with_single_validator_should_use_template_as_main_message.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/set_template_with_single_validator_should_use_template_as_main_message.phpt
+END
+get_messages_should_include_all_validation_messages_in_a_chain.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/get_messages_should_include_all_validation_messages_in_a_chain.phpt
+END
+not_without_recursion.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/not_without_recursion.phpt
+END
+issue-689.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/issue-689.phpt
+END
+issue-799.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/issue-799.phpt
+END
+not_should_work_by_builder.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/not_should_work_by_builder.phpt
+END
+set_template_with_multiple_validators_should_use_template_as_full_message.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/set_template_with_multiple_validators_should_use_template_as_full_message.phpt
+END
+issue_85_find_messages_should_not_trigger_catchable_fatal_error.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/issue_85_find_messages_should_not_trigger_catchable_fatal_error.phpt
+END
+assert-with-keys.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/assert-with-keys.phpt
+END
+not_with_recursion.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/not_with_recursion.phpt
+END
+should_not_overwrite_defined_names.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/should_not_overwrite_defined_names.phpt
+END
+keys_as_validator_names.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/keys_as_validator_names.phpt
+END
+do_not_rely_on_nested_validation_exception_interface_for_check.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/do_not_rely_on_nested_validation_exception_interface_for_check.phpt
+END
+find_messages_should_apply_templates_to_flattened_messages.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/find_messages_should_apply_templates_to_flattened_messages.phpt
+END
+translator-assert.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/translator-assert.phpt
+END
+find_messages_should_return_composite_validation_messages_flattened.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/find_messages_should_return_composite_validation_messages_flattened.phpt
+END
+issue-620.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/issue-620.phpt
+END
+issue-425.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/issue-425.phpt
+END
+exception_update.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/exception_update.phpt
+END
+bsn_1.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/bsn_1.phpt
+END
+bsn_2.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/bsn_2.phpt
+END
+issue-446.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/issue-446.phpt
+END
+bsn_3.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/bsn_3.phpt
+END
+set_template_with_multiple_validators_should_use_template_as_main_message.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/set_template_with_multiple_validators_should_use_template_as_main_message.phpt
+END
+translator-check.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/translator-check.phpt
+END
+issue-690.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/29664/soho/code/ESMCenter/vendor/respect/validation/tests/integration/issue-690.phpt
+END

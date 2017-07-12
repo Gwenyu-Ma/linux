@@ -1,0 +1,21 @@
+<div class="log-content">
+    <div id="customSearchBox">
+        <!-- 历史授权 -->
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">时间范围：</label>
+                <div class="controls js_date">
+                    <a href="javascript:void(0);" val="week" class="active">本周</a>
+                    <a href="javascript:void(0);" val="month">本月</a>
+                    <a href="javascript:void(0);" val="lastMonth">上月</a>
+                    <span class="date"><a href="javascript:void(0);" val="special">指定：</a><input id="timeStart" type="text" value="" class="input-mini" style="width:106px" placeholder="请选择开始日期" disabled> — <input id="timeEnd" type="text" value="" class="input-mini"  style="width:106px" placeholder="请选择结束日期" disabled></span>
+                    <button type="button" class="btn js_btn_search" style="margin-top:5px;margin-left:5px;">筛选</button>
+                </div>
+            </div>
+        </form>
+        <div style="clear:both;overflow:hidden;height:0;"></div>
+    </div>
+    <div id="customEcharBox" style="height:200px;">
+    </div>
+    <table id="tbClient" data-toolbar-align="left" data-toggle="table"></table>
+</div>

@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt
+END
+switch.test
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/switch.test
+END
+haltCompilerInvalidSyntax.test
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/haltCompilerInvalidSyntax.test
+END
+inlineHTML.test
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/inlineHTML.test
+END
+tryWithoutCatch.test
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/tryWithoutCatch.test
+END
+blocklessStatement.test
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/blocklessStatement.test
+END
+controlFlow.test
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/controlFlow.test
+END
+hashbang.test
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/hashbang.test
+END
+echo.test
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/echo.test
+END
+tryCatch.test
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/tryCatch.test
+END
+haltCompiler.test
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/haltCompiler.test
+END
+const.test
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/const.test
+END
+haltCompilerOffset.test
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/haltCompilerOffset.test
+END
+multiCatch.test
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/multiCatch.test
+END
+unset.test
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/unset.test
+END
+if.test
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/if.test
+END
+haltCompilerOutermostScope.test
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/haltCompilerOutermostScope.test
+END
+declare.test
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/stmt/declare.test
+END

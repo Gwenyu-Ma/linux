@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp
+END
+BitwiseAnd.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseAnd.php
+END
+Minus.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Minus.php
+END
+ShiftRight.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftRight.php
+END
+Mul.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mul.php
+END
+BitwiseXor.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseXor.php
+END
+Mod.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mod.php
+END
+Div.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Div.php
+END
+Plus.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Plus.php
+END
+Pow.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Pow.php
+END
+BitwiseOr.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseOr.php
+END
+Concat.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Concat.php
+END
+ShiftLeft.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftLeft.php
+END

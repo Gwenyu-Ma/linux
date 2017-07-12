@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/scalar
+END
+docStringNewlines.test
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/scalar/docStringNewlines.test
+END
+float.test
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/scalar/float.test
+END
+magicConst.test
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/scalar/magicConst.test
+END
+unicodeEscape.test
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/scalar/unicodeEscape.test
+END
+encapsedString.test
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/scalar/encapsedString.test
+END
+invalidOctal.test
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/scalar/invalidOctal.test
+END
+int.test
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/scalar/int.test
+END
+docString.test
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/scalar/docString.test
+END
+encapsedNegVarOffset.test
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/scalar/encapsedNegVarOffset.test
+END
+constantString.test
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/test/code/parser/scalar/constantString.test
+END

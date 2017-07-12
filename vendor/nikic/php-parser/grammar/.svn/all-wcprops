@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/grammar
+END
+php5.y
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/grammar/php5.y
+END
+php7.y
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/grammar/php7.y
+END
+parser.template
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/grammar/parser.template
+END
+tokens.y
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/grammar/tokens.y
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/grammar/README.md
+END
+rebuildParsers.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/grammar/rebuildParsers.php
+END
+tokens.template
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/grammar/tokens.template
+END

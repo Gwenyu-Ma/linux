@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar
+END
+DNumber.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/DNumber.php
+END
+EncapsedStringPart.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/EncapsedStringPart.php
+END
+Encapsed.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Encapsed.php
+END
+LNumber.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/LNumber.php
+END
+String_.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/String_.php
+END
+MagicConst.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm/!svn/ver/30016/soho/code/ESMCenter/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst.php
+END

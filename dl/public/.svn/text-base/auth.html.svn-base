@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/download.css">
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="./js/lib/respond.min.js">
+			</script>
+		<![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+		<div class="mdl-login">
+			<div class="mdl-login-head">
+				<div class="mdl-login-head-inner">瑞星下载平台登陆</div>
+			</div>
+			<div class="form">
+			  <div>
+				<p>
+					<label for="username">用户名:</label>
+				</p>
+				<p class="userWrap">
+					<span class="hide">请输入用户名</span>
+					<b></b>
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input name="username" type="text" id="username" autocomplete="off" placeholder="请输入用户名">
+					<span class="tip hide">用户名不能为空</span>
+				</p>
+			  </div>
+			  <div>
+			    <p>
+					<label for="password">密码:</label>
+				</p>
+				<p class="passWrap">
+					<span class="hide">请输入密码</span>
+					<b></b>
+					<i class="fa fa-lock" aria-hidden="true"></i>
+					<input name="password" id = "pwd" type="password" autocomplete="off" placeholder="请输入密码">
+					<span class="tip hide">密码不能为空</span>
+				</p>
+			  </div>
+			  <div class="last">
+				<button>
+				登录
+				</button>
+			  </div>
+			</div>
+		</div>
+		<div class="shadowBox hide">
+		</div>
+		<div class="errorTip hide">
+			<span></span>
+			<p clsss="slitLine"></p>
+			<a>确定</a>
+		</div>
+		<script type="text/javascript" src="./js/lib/jquery-1.12.3.min.js">
+		</script>
+		<script type="text/javascript" src="./js/script.js">
+		</script>
+    </body>
+</html>

@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm/!svn/ver/30627/soho/code/ESMCenter/esmCenter/controllers
+END
+Error.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm/!svn/ver/29393/soho/code/ESMCenter/esmCenter/controllers/Error.php
+END
+Rualog.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm/!svn/ver/29887/soho/code/ESMCenter/esmCenter/controllers/Rualog.php
+END
+Group.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm/!svn/ver/29887/soho/code/ESMCenter/esmCenter/controllers/Group.php
+END
+Authmanager.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm/!svn/ver/30515/soho/code/ESMCenter/esmCenter/controllers/Authmanager.php
+END
+Policy.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm/!svn/ver/30405/soho/code/ESMCenter/esmCenter/controllers/Policy.php
+END
+Rfwlog.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm/!svn/ver/29977/soho/code/ESMCenter/esmCenter/controllers/Rfwlog.php
+END
+Xavlog.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm/!svn/ver/29968/soho/code/ESMCenter/esmCenter/controllers/Xavlog.php
+END
+Auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm/!svn/ver/30028/soho/code/ESMCenter/esmCenter/controllers/Auth.php
+END
+Authproduct.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm/!svn/ver/30359/soho/code/ESMCenter/esmCenter/controllers/Authproduct.php
+END
+Cmd.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm/!svn/ver/30405/soho/code/ESMCenter/esmCenter/controllers/Cmd.php
+END
+Ep.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm/!svn/ver/30198/soho/code/ESMCenter/esmCenter/controllers/Ep.php
+END
+Index.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm/!svn/ver/30371/soho/code/ESMCenter/esmCenter/controllers/Index.php
+END
+Systemconfig.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm/!svn/ver/30508/soho/code/ESMCenter/esmCenter/controllers/Systemconfig.php
+END
+Enterprisemanager.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm/!svn/ver/30514/soho/code/ESMCenter/esmCenter/controllers/Enterprisemanager.php
+END
+User.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm/!svn/ver/30146/soho/code/ESMCenter/esmCenter/controllers/User.php
+END
+Sys.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm/!svn/ver/29887/soho/code/ESMCenter/esmCenter/controllers/Sys.php
+END
+Packages.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/esm/!svn/ver/30595/soho/code/ESMCenter/esmCenter/controllers/Packages.php
+END
+Test.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm/!svn/ver/30295/soho/code/ESMCenter/esmCenter/controllers/Test.php
+END
+Oplog.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm/!svn/ver/30384/soho/code/ESMCenter/esmCenter/controllers/Oplog.php
+END
+Center.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm/!svn/ver/29932/soho/code/ESMCenter/esmCenter/controllers/Center.php
+END
+Serverinfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/esm/!svn/ver/30624/soho/code/ESMCenter/esmCenter/controllers/Serverinfo.php
+END
+Message.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm/!svn/ver/29983/soho/code/ESMCenter/esmCenter/controllers/Message.php
+END
+My.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm/!svn/ver/30627/soho/code/ESMCenter/esmCenter/controllers/My.php
+END
+Mycenter.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/esm/!svn/ver/30546/soho/code/ESMCenter/esmCenter/controllers/Mycenter.php
+END
+Rwarning.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/esm/!svn/ver/30405/soho/code/ESMCenter/esmCenter/controllers/Rwarning.php
+END
+Manage.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm/!svn/ver/29918/soho/code/ESMCenter/esmCenter/controllers/Manage.php
+END

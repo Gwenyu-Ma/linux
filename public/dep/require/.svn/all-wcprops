@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/require
+END
+text.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/require/text.js
+END
+css.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/require/css.js
+END
+css.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/require/css.min.js
+END
+require.source.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/require/require.source.js
+END
+require.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/require/require.js
+END
+async.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/esm/!svn/ver/29052/soho/code/ESMCenter/public/dep/require/async.js
+END

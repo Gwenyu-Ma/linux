@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" > </meta>
+    <title>登录</title>
+    <link rel="stylesheet" href="{$pub}/dep/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{$pub}/dep/swiper/css/swiper.css">
+    <link rel="stylesheet" href="{$css}/base.css">
+    <link rel="stylesheet" href="{$css}/login.css">
+  </head>
+  <body class="bg2">
+    <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a href="/" class="logo"><img src="{$img}/logo2.png"><img src="{$img}/nav_txt.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left_side">
+        <div class="slide swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="{$img}/side11.png"></div>
+            <div class="swiper-slide"><img src="{$img}/side12.png"></div>
+            <div class="swiper-slide"><img src="{$img}/side11.png"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <dl class="log_box">
+        <dt>用户登录</dt>
+        <dd>
+          <form class="form-horizontal" action="">
+            <div class="control-group log_box_in">
+              <label class="control-label">账号：</label>
+              <div class="controls">
+                <input type="text" value="" placeholder="请输入账号" id="txtName" name="txtName"/><span class="req_char">*</span>
+              </div>
+            </div>
+            <div class="control-group log_box_in">
+              <label class="control-label">密码：</label>
+              <div class="controls">
+                <input type="password" value="" placeholder="请输入密码" id="txtPwd" name="txtPwd"/><span class="req_char">*</span>
+              </div>
+            </div>
+            <div class="control-group log_box_in">
+              <label class="control-label">验证码：</label>
+              <div class="controls">
+                <input type="text" value="" placeholder="请输入验证码" class="w106" id="txtCode" name="txtCode"/>
+                <span class="verify ml7"><img src="/Index.php/Code/verify" id="codeImg"><a href="#" id="verify_btn">&nbsp;</a></span>
+                <span class="req_char">*</span>
+              </div>
+            </div>
+            <div class="control-group log_box_opt">
+              <div class="controls">
+                <label class="checkbox inline"><input type="checkbox" value="" id="autoLogin"><span>自动登录</span></label>
+                <label class="checkbox inline" style="padding-left:107px;"><a href="/index.php/Index/findPass">忘记密码？</a></label>
+              </div>
+            </div>
+            <div class="control-group log_box_btn">
+              <div class="controls">
+                <input type="button" value="登录" class="btn btn-large btn-block btn-purple  w250 js_submit">
+              </div>
+              <div class="controls mt10" style="*padding-left:130px;">
+                <span class="gray">还没有账号，先注册一个!</span>
+                <a href="/index.php/Index/register" class="ml60">立即注册</a>
+              </div>
+            </div>            
+          </form>        
+          <div class="log_ewm_box">
+            <div class="log_ewm_warn"><i class="icon-info-sign"></i>&nbsp;&nbsp;手机也可以登录此系统，不妨下一个试试吧~</div>
+            <ul>
+              <li><img src="{$img}/ewm.png" alt="iPhone客户端"><a href="#">iPhone客户端下载</a></li>
+              <li><img src="{$img}/ewm.png" alt="Android客户端"><a href="#">Android客户端下载</a></li>
+            </ul>
+          </div>
+        </dd>
+      </dl>     
+    </div>
+    <div class="footer">
+      <div>
+        <span>地址：北京市中关村大街22号  中科大厦1305室</span>&nbsp;
+        <span>邮编：100190</span>&nbsp;
+        <span>总机：(010)82678866</span>
+      </div>
+      <div>
+        <span>版权所有 北京瑞星信息技术股份有限公司</span>&nbsp;
+        <span>许可证号：京ICP证080383号 京ICP备08104897</span>&nbsp;
+        <span>总机：(010)82678866</span>
+      </div>
+      <div>
+        <span>备案编号：京ICP备08104897号-9</span>&nbsp;
+        <span>京网文[2011]0121-043号</span>
+      </div>
+    </div>
+    <script src="{$pub}/dep/jquery.js"></script>
+    <script src="{$pub}/dep/bootstrap/js/bootstrap.js"></script>
+    <script src="{$pub}/dep/jquery-placeholder/jquery.enplaceholder.js"></script>
+    <script src="{$pub}/dep/bootbox/bootbox.js"></script>
+    <script src="{$pub}/dep/jquery-validation/jquery.validate.js"></script>
+    <script src="{$pub}/dep/swiper/js/swiper.js"></script>
+    <script src="{$js}/plugin/assist.js"></script>
+    <script src="{$js}/welcome/login_new.js"></script>
+  </body>
+</html>
